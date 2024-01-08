@@ -6,7 +6,7 @@ title = "WAV Reference Book"
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
 theme = "zola_easydocs"
 

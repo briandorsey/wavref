@@ -1,0 +1,9 @@
+{%- set ref = ref | lower -%}
+{%- set url = get_url(path="@/spec/" ~ ref ~ ".md") -%}
+{%- set data = load_data(path="static/data/specs.json") -%}
+{%- set ref = ref | upper -%}
+{%- set spec = data[ref] -%}
+<a href="{{url}}" class="spec_ref">[{{ ref | upper }}]</a> 
+{{ spec.title }}
+{{ spec.version }}
+({{ spec.publication_year }}). See {{spec.see}}.

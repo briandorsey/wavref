@@ -1,0 +1,3 @@
+{%- set ref = ref | lower -%}
+{%- set url = get_url(path="@/spec/" ~ ref ~ ".md") -%}
+<a href="{{url}}" class="spec_ref">[{{ ref | upper }}]</a>

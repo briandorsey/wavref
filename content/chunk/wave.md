@@ -10,14 +10,11 @@ TODO: overview
 
 ## Learning References
 
-https://www.mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html
-
-includes copies of original specs from MS & several follow ups
-
+* [Audio File Format Specifications](https://www.mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html) by Prof. Peter Kabal
+  * includes copies of original specs from MS & later specs. Overview of file format, sample WAV files. 
 
 ## Specification
 
-* Primary spec: :ref:`riff-1991`
-* biblio spec ref :cite:t:`RIFF_1991`
-* biblio spec ref :cite:t:`RIFF_1994`
-* biblio spec label :cite:label:`RIFF_1994`
+* {{ spec_bib(ref="RIFF1991") }}
+* {{ spec_bib(ref="RIFF1994") }}
+
