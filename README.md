@@ -1,4 +1,5 @@
-# wavbook
+# WAVRef
+
 DRAFT: WAV Reference Book.  
 
 An attempt to collect WAV file format specifications in one place. Primarily focused on metadata specs, but eventually hope it will be comprehensive resource.
