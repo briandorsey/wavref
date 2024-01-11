@@ -1,0 +1,17 @@
+{{ current_url }}
+{{ current_path }}
+{{ terms }} 
+
+{% for term in terms %}
+  <br/>
+  {% for key, value in term %}
+    {{key}} : {{value}} <br/>
+  {% endfor %}
+
+  <br/>
+
+  {% for page in term["pages"] %}
+    {{ page.title }}, {{ page.permalink }}
+  {% endfor %}
+  <br/>
+{% endfor %}

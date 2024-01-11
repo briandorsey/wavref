@@ -10,6 +10,10 @@ build_search_index = false
 
 theme = "zola_easydocs"
 
+taxonomies = [
+  { name = "spec", feed = false, render=false},
+]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola

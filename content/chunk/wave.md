@@ -1,5 +1,7 @@
 +++
 title = "RIFF-WAVE"
+[taxonomies]
+spec=["RIFF1991", "RIFF1994"]
 +++
 
 # WRID:RIFF-WAVE
@@ -15,6 +17,5 @@ TODO: overview
 
 ## Specification
 
-* {{ spec_bib(ref="RIFF1991") }}
-* {{ spec_bib(ref="RIFF1994") }}
+{{ chunk_specs() }}
 

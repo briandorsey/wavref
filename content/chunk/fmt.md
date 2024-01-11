@@ -1,5 +1,6 @@
 +++
 title = "fmt"
+spec=["RIFF1991", "RIFF1994"]
 +++
 
 # WRID>RIFF-WAVE>fmt >
