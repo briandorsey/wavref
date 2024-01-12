@@ -1,10 +1,12 @@
 +++
 title = "RIFF-WAVE"
+description = "TODO: description of RIFF-WAVE"
+
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]
 +++
 
-# WRID:RIFF-WAVE
+# WRID>RIFF-WAVE
 
 TODO: overview
 

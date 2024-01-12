@@ -7,6 +7,7 @@ title = "Change Log"
 ## Releases
 
 * Current - 0.1
+    * use spec taxonomy to create backlinks from specs to chunks
     * create spec taxonomy: enables full generation of Specification section of chunk entries, and in the future, backlinks from specs to chunks
     * create spec_detail shortcode (draft version for now)
     * create spec and spec_bib shortcodes, using static spec data
@@ -14,7 +15,6 @@ title = "Change Log"
 * [release_date] - [version]
 	* [things that were done]
 * Future maybe
-    * try to use tagging from chunks to create backlinks *from* specs
     * update sidebar with vertical line (similar to Zola docs)
     * collapse specification page on sidebar?
     * question: fill in specification references based on backlinks from static data?
@@ -26,8 +26,8 @@ title = "Change Log"
     * chunk: (Audio Definition Model)[https://www.bbc.co.uk/rd/publications/audio-definition-model-software]
     * fmt chunk: download and include table of audio types: 
         * [WAVE and AVI Codec Registries](https://www.iana.org/assignments/wave-avi-codec-registry/wave-avi-codec-registry.xhtml) RFC2361. 
-    * convert wrid_table shortcode to html version with md wrapper? 
     * write WRID spec and overview
+        * current WRID assumes chunks can only ever have one kind of parent... is this true?
     * test HTML layout on narrow windows - what to do about TOC? 
     * create reference files and WRID based metadata dumps
     * add chunk documentation from base spec

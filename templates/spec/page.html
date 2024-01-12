@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block title %} {{ config.title }} | {{ page.title }} {% endblock title %}
+    {% block content %}
+        {{ page.content | safe }}
+
+        <h2>Related Chunks</h2>
+        {% set specs= get_taxonomy(kind="spec") %}
+        {% for item in specs.items %}
+            {% if item.name == page.title %}
+                <ul>
+                {% for page in item.pages %}
+                    <li>[<a href="{{page.permalink}}">{{page.title}}</a>] : {{page.description}}</li>
+                {% endfor %} 
+                </ul>
+            {% endif %}
+        {% endfor %} 
+    {% endblock content %}
