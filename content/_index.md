@@ -1,6 +1,6 @@
 +++
 title = "index"
-sort_by = "title"
+sort_by = "weight"
 +++
 
 # WAV Reference book

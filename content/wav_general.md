@@ -1,5 +1,6 @@
 +++
 title = "WAV Files"
+weight = 20
 +++
 
 # WAV files
@@ -14,7 +15,8 @@ TODO: note about normalizing field names
 
 ## grammars and parser configuration files
 
-* (Kaitai Struct)[http://formats.kaitai.io/wav/] format specification 
+* [Kaitai Struct](http://formats.kaitai.io/wav/) format specification of RIFF-WAVE and many common chunks
+* [Hex Fiend](http://hexfiend.com/) (MacOS, open source) includes a WAV parsing template which parses many common chunks
 
 ## related file formats
 
