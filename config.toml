@@ -2,7 +2,7 @@
 
 # The URL the site will be built for
 base_url = "https://wavref.til.cafe"
-title = "WAV Reference Book"
+title = "WAVRef Book"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
