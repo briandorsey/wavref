@@ -228,7 +228,7 @@ main {
 
  .tree-toggle-label::before {
   display:inline-block;
-  content:"\E970";
+  //content:"\E970";
   font-family:'FabricMDL2Icons';
   font-size:.75rem;
   transform:rotate(0deg);
@@ -245,7 +245,7 @@ main {
  }
 
  .tree-toggle:checked+.tree-toggle-label::before {
-  content:"\E970";
+  //content:"\E970";
   font-family:'FabricMDL2Icons';
   font-size:.75rem;
   transform:rotate(90deg);
@@ -281,7 +281,7 @@ main {
   }
 
   &::before {
-    content: "\E7C3";
+    //content: "\E7C3";
     font-family:'FabricMDL2Icons';
     font-size:0.75rem;
   }

@@ -70,7 +70,7 @@
                 {% for p in section_.subsections -%}
                     {% set subsection = get_section(path=p) -%}
 
-                <label for="{{ subsection.title | slugify }}">{{ subsection.title }}</label>
+                <label for="{{ subsection.title | slugify }}"><a href="{{subsection.permalink }}">{{ subsection.title }}</a></label>
                 <ul class="subtree">
                         {% for page in subsection.pages -%}
                             <li {%- if current_path == page.path %} class="active"{% endif %}>{{ "" -}}
