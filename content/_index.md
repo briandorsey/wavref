@@ -5,7 +5,7 @@ sort_by = "weight"
 
 # WAV Reference book
 
-An attempt to collect WAV file format specifications in one place. Primarily focused on metadata specs, but eventually hope it will be comprehensive resource.
+An attempt to collect WAV file format specifications in one place. Primarily focused on [metadata](@/metadata.md) specs, but eventually hope it will be comprehensive resource.
 
 Goals: 
 

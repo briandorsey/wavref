@@ -17,6 +17,10 @@ TODO: note about normalizing field names
 
 ## other summary documents
 
+* [Audio File Format Specifications](https://www.mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html) by Prof. Peter Kabal
+  * includes copies of original specs from MS & later specs. Overview of file format, sample WAV files. 
+* [Recording Blogs - Wiki - WAV File Format](https://www.recordingblogs.com/wiki/wave-file-format)
+
 ## grammars and parser configuration files
 
 * [Kaitai Struct](http://formats.kaitai.io/wav/) format specification of RIFF-WAVE and many common chunks
