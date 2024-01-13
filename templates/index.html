@@ -15,19 +15,6 @@
 </head>
 <body>
 
-{% if config.extra.release -%}
-    <script>
-        fetch('{{ config.extra.release | safe }}')
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                let release_name = data.name;
-                let html_url = data.html_url;
-                release.innerHTML = `<a href='${html_url}'>${release_name}</a>`;
-            });
-    </script>
-{% endif -%}
 <main>
     {# Create variable to allow appending index.html at end of links if set in config #}
     {% if not config.extra.easydocs_uglyurls or config.mode == "serve" or config.mode == "Serve" -%}
@@ -55,10 +42,6 @@
                 <h1><a href="{{ config.base_url }}{{ _ugly_url }}">{{ config.title }}<hr></a></h1>
             {% endif -%}
 
-            {% if config.extra.release -%}
-                <div id="release"></div>
-            {% endif -%}
-
             <div id="trees">
                 {% set section_ = get_section(path="_index.md") -%}
                 {# pages in the root #}
@@ -78,6 +61,13 @@
                         {% endfor -%}
                 </ul>
                 {% endfor -%}
+
+            {% if config.extra.release -%}
+                <div id="release">
+                <img src="https://github.com/favicon.ico", height=20, width=20>
+                <a href="https://github.com/briandorsey/wavref/"> version: {{ config.extra.release }}</a>
+                </div>
+            {% endif -%}
 
             </div>
         </nav>

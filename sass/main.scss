@@ -133,10 +133,6 @@ nav {
   padding-right: $baseline;
   width: 10rem;
 
-  img {
-    width:128px;
-  }
-
   h1 {
     margin:0;
     line-height: 1;
@@ -174,14 +170,8 @@ main {
 
 #release {
   text-align: left;
-  margin:$baseline 0;
+  margin: 5px;
 
-&::before {
-  display: inline-block;
-  content: "\EE2E";
-  font-family: 'FabricMDL2Icons';
-  margin-right:calc(#{$baseline} / 8);
-}
 }
 
 @keyframes slideIn {

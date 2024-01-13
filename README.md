@@ -13,3 +13,8 @@ To prep the WRID JSON file from CSV:
 qsv tojsonl wrid_data.csv  | jq -s '.' > wrid_data.json
 ```
 
+## release checklist
+
+* changelog.md - move current --> release
+* config.toml - update extra.release
+
