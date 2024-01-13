@@ -21,26 +21,34 @@
 
 <table>
   <thead>
-    <th>Name</th>
-    <th>Bytes</th>
-    <th>Type</th>
-    {%- if literal_in_pattern %}<th>literal</th>{% endif -%}
-    <th>Description</th>
-    <th>WRID</th>
+    <tr>
+      <th>Name</th>
+      <th>Bytes</th>
+      <th>Type</th>
+      {%- if literal_in_pattern %}<th>literal</th>{% endif -%}
+      <th>Description</th>
+      <th>WRID</th>
+    </tr>
   </thead>
-<tbody>
-{%- for wrid in data %}
-  {%- if not prefix or wrid.WRID is matching(pattern) %}
-  <tr>
-    <td><code>{{ wrid.name}}</code></td>
-    <td><code>{{ wrid.bytes}}</code></td>
-    <td><code>{{ wrid.type}}</code></td>
-    {%- if literal_in_pattern %} <td><code>{{ wrid.literal_value}}</code></td> {% endif %}
-    <td>{{ wrid.desc}}</td>
-    <td class="WRID">{{ wrid.WRID }}</td>
-  </tr>
-  {%- endif %}
-{%- endfor %}
-</tbody>
+  <tbody>
+  {%- for wrid in data %}
+    {%- if not prefix or wrid.WRID is matching(pattern) %}
+    <tr>
+      <td><code>{{ wrid.name}}</code></td>
+      <td><code>{{ wrid.bytes}}</code></td>
+      <td><code>{{ wrid.type}}</code></td>
+      {%- if literal_in_pattern %} <td>
+          {%- if wrid.literal_value %}<code>"{{ wrid.literal_value}}"</code>{% endif %}
+      </td> {% endif %}
+      <td>{{ wrid.desc}}</td>
+      {%- if prefix %}
+      <td class="WRID">{{ wrid.WRID | replace(from=prefix, to="...") }}</td>
+      {%- else %}
+      <td class="WRID">{{ wrid.WRID }}</td>
+      {%- endif %}
+    </tr>
+    {%- endif %}
+  {%- endfor %}
+  </tbody>
 </table>
 
