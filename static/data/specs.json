@@ -6,7 +6,6 @@
     "title": "Multimedia Programming Interface and Data Specifications",
     "publication_date": "1991-08",
     "title_short": "RIFF",
-    "chunks": ["WRID>RIFF-WAVE"],
     "version": "1.0",
     "see": "pages 56-65"
   },
@@ -18,8 +17,18 @@
     "authority": "Microsoft",
     "urls": ["http://example.com"],
     "publication_date": "1994-04-15",
-    "chunks": ["WRID>RIFF-WAVE"],
     "version": "3.0",
     "see": "pages 12-22"
+  },
+  "BS.2088-1" : 
+  {
+    "id": "BS.2088-1",
+    "title": "Long-form file format for the international exchange of audio programme materials with metadata",
+    "publication_year": 2019,
+    "authority": "ITU-R",
+    "urls": ["https://www.itu.int/rec/R-REC-BS.2088-1-201910-I/en", "https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.2088-1-201910-I!!PDF-E.pdf"],
+    "publication_date": "2019-10",
+    "version": "2.0",
+    "see": ""
   }
 }

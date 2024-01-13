@@ -1,5 +1,5 @@
 +++
-title = "WAV Files"
+title = "WAV overview"
 weight = 20
 +++
 
@@ -7,7 +7,11 @@ weight = 20
 
 WAV files are based on the RIFF format which is made up of chunks of data with an `id`, `size` and binary data for each. The format is very extensible, and has been in use for over 30 years, leading to a *very* wide variety of chunks which could be in a file. Applications are expected to ignore chunks they don't use and preserve them when editing files (in practice, many applications only preserve chunks they use). 
 
-# normalization in this book
+## WAV file structure
+
+TODO: overview and some visualizations
+
+## normalization in this book
 
 TODO: note about normalizing field names
 
@@ -20,5 +24,6 @@ TODO: note about normalizing field names
 
 ## related file formats
 
-* BW64
-* RF64
+* [RF64](https://en.wikipedia.org/wiki/RF64)
+* [BW64](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.2088-1-201910-I!!PDF-E.pdf) {{ spec_bib(ref="BS.2088-1") }}
+

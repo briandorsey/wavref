@@ -39,4 +39,5 @@ weight = 90
     * --- initial release ---
     * test HTML layout on narrow windows - what to do about TOC? 
     * update sidebar with vertical line (similar to Zola docs)
-    * chunk: (Audio Definition Model)[https://www.bbc.co.uk/rd/publications/audio-definition-model-software]
+    * chunks: [Audio Definition Model](https://www.bbc.co.uk/rd/publications/audio-definition-model-software)
+        * [EBU ADM Guidelines Introduction](https://adm.ebu.io/index.html)
