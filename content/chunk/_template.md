@@ -1,6 +1,11 @@
 +++
-title = "RIFF-WAVE>TEMPLATE"
 draft = true
+title = "RIFF-WAVE>TEMPLATE"
+weight = 10
+description = "TODO: description of RIFF-WAVE"
+
+[taxonomies]
+spec=["RIFF1991", "RIFF1994"]
 +++
 
 # WRID>RIFF-WAVE>TEMPLATE
@@ -11,8 +16,7 @@ TODO: overview
 
 ## Learning References
 
-
 ## Specification
 
-
+{{ chunk_specs() }}
 
