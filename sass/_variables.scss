@@ -10,7 +10,8 @@ $visited-links:#009;
 $font-size: 1.0rem;
 $font-family: Segoe UI,system-ui,-apple-system,sans-serif;
 $line-height: 1.75;
-$code_font: 400 1.125rem/1.75 SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+$code_font:  ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+//SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 
 $quote-bg: #dcdcdc;
 $quote-border: #808080 8px solid;

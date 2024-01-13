@@ -4,6 +4,6 @@
 {%- set ref = ref | upper -%}
 {%- set spec = data[ref] -%}
 <a href="{{url}}" class="spec_ref">[{{ ref | upper }}]</a> 
-{{ spec.title }}
-{{ spec.version }}
+{{- spec.title -}}
+{{ spec.version -}}
 ({{ spec.publication_year }}). See {{spec.see}}.

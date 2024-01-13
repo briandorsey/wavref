@@ -358,5 +358,9 @@ blockquote {
   padding: 0 20px;
 }
 
+.WRID { 
+  font-family: $code_font; 
+}
+
 @import "fabric-icons-inline";
 @import "search";
