@@ -7,7 +7,8 @@
 <a href="{{url}}" class="spec_ref">[{{ ref | upper }}]</a> 
 {{ spec.title }}
 {{ spec.version }}
-({{ spec.publication_year }}). See {{spec.see}}.
+({{ spec.publication_year }}).
+{%- if spec.see %} See {{spec.see}}.{% endif %}
 <p>TODO: implement spec details widget </p>
 <p>
 {%- for key, value in spec %} 

@@ -8,7 +8,8 @@
 <li><a href="{{url}}" class="spec_ref">[{{ ref | upper }}]</a> 
 {{ spec.title }}
 {{ spec.version }}
-({{ spec.publication_year }}). See {{spec.see}}.
+({{ spec.publication_year }}).
+{%- if spec.see %} See {{spec.see}}.{% endif %}
 </li>
 {%- endfor %}
 </ul>

@@ -10,6 +10,7 @@ If you find an error or would like additional information added, please check th
 ## Releases
 
 * Current - 0.1
+    * fix shortcodes when no value in `spec.see`
     * added chunk overview page and status info to each chunk
     * more intro text, move intro to it's own file, redirect root to intro
     * better blockquote via CSS (last quote in series treated as source)
@@ -25,10 +26,8 @@ If you find an error or would like additional information added, please check th
 	* [things that were done]
 * Future maybe
     * go through each chunk and pull a few spec quotes
-    * write introduction - _index.md
     * write WAV overview - wav_general.md
     * glossary - figure out linking to a specific definition
-    * fix `spec_bib()` when no value in `see`
     * write initial glossary
     * write initial doc about metadata
     * chunk: cue - see how it fits into WRID model 
