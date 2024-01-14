@@ -1,6 +1,14 @@
 +++
 title = "iXML"
 weight = 100
+
+description = "TODO: description of iXML"
+
+[taxonomies]
+spec=[]
+
+[extra]
+status = "DRAFT"
 +++
 
 # WRID>RIFF-WAVE>iXML

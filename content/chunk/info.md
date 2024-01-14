@@ -5,6 +5,9 @@ description = "TODO: description of LIST-INFO"
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]
+
+[extra]
+status = "DRAFT"
 +++
 
 # WRID>RIFF-WAVE>LIST-INFO

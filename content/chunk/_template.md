@@ -6,6 +6,9 @@ description = "TODO: description of RIFF-WAVE"
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]
+
+[extra]
+status = "DRAFT"
 +++
 
 # WRID>RIFF-WAVE>TEMPLATE

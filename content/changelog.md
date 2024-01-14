@@ -8,6 +8,8 @@ weight = 90
 ## Releases
 
 * Current - 0.1
+    * added chunk overview page and status info to each chunk
+    * more intro text, move intro to it's own file, redirect root to intro
     * better blockquote via CSS (last quote in series treated as source)
     * display release version in the HTML
     * add wrid_table_subchunks shortcode, test with LIST-INFO 
@@ -24,6 +26,7 @@ weight = 90
     * write introduction - _index.md
     * write WAV overview - wav_general.md
     * glossary - figure out linking to a specific definition
+    * fix `spec_bib()` when no value in `see`
     * write initial glossary
     * write initial doc about metadata
     * chunk: cue - see how it fits into WRID model 
