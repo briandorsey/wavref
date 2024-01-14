@@ -40,6 +40,7 @@ weight = 90
     * setup build and deployment
     * fix HTML layout on narrow windows - what to do about TOC? 
     * --- initial release ---
+    * document XMP: [XMP specification](https://www.adobe.com/devnet/xmp.html)
     * update sidebar with vertical line (similar to Zola docs)
     * chunks: [Audio Definition Model](https://www.bbc.co.uk/rd/publications/audio-definition-model-software)
         * [EBU ADM Guidelines Introduction](https://adm.ebu.io/index.html)
