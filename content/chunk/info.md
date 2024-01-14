@@ -26,11 +26,11 @@ The `LIST` chunk is a container which holds additional subchunks of `list_type`.
 
 TODO: info about subchunks... example subchunk:
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-INFO>ICMT") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-INFO>ICMT", col_desc=false) }}
 
 INFO subchunks defined in {{ spec(ref="RIFF1991") }}:
 
-{{ wrid_table_subchunks(prefix="WRID>RIFF-WAVE>LIST-INFO") }}
+{{ wrid_table_subchunks(prefix="WRID>RIFF-WAVE>LIST-INFO", spec="WAVRef", col_wrid=false) }}
 ## Learning References
 
 ## Specification

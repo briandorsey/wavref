@@ -8,4 +8,4 @@ weight = 60
 
 TODO: 
 
-{{ wrid_table() }}
+{{ wrid_table(spec="WAVRef") }}

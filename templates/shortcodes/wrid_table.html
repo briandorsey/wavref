@@ -1,5 +1,15 @@
 {% set data = load_data(path="static/data/wrid_data.json") %}
 
+{%- if spec %}
+    {% set data = data | filter(attribute="spec", value=spec) %}
+{%- endif %}
+{%- if col_desc is undefined %}
+    {% set col_desc = true %}
+{%- endif %}
+{%- if col_wrid is undefined %}
+    {% set col_wrid = true %}
+{%- endif %}
+
 {%- if prefix %}
     {%- set pattern = "^" ~ prefix ~ ">[^>]*$" %}
     {%- set filtered_data = [] %}
@@ -25,9 +35,9 @@
       <th>Name</th>
       <th>Bytes</th>
       <th>Type</th>
-      {%- if literal_in_pattern %}<th>literal</th>{% endif -%}
-      <th>Description</th>
-      <th>WRID</th>
+      {% if literal_in_pattern %}<th>literal</th>{% endif -%}
+      {% if col_desc %}<th>Description</th>{% endif -%}
+      {% if col_wrid %}<th>WRID</th>{% endif -%}
     </tr>
   </thead>
   <tbody>
@@ -40,11 +50,15 @@
       {%- if literal_in_pattern %} <td>
           {%- if wrid.literal_value %}<code>"{{ wrid.literal_value}}"</code>{% endif %}
       </td> {% endif %}
+      {%- if col_desc%}
       <td>{{ wrid.desc}}</td>
+      {%- endif %}
+      {%- if col_wrid %}
       {%- if prefix %}
       <td class="WRID">{{ wrid.WRID | replace(from=prefix, to="...") }}</td>
       {%- else %}
       <td class="WRID">{{ wrid.WRID }}</td>
+      {%- endif %}
       {%- endif %}
     </tr>
     {%- endif %}

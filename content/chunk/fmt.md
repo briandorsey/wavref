@@ -14,12 +14,16 @@ status = "DRAFT"
 
 TODO: overview
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", spec="WAVRef") }}
 
 ## Learning References
 
 
 ## Specification
+
+### RIFF1991 original notation
+
+{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", spec="RIFF1991", col_wrid=false) }}
 
 TODO: use references ... same as RIFF-WAVE
 
