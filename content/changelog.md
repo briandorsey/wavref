@@ -5,6 +5,8 @@ weight = 90
 
 # Change Log
 
+If you find an error or would like additional information added, please check the [issue tracker](https://github.com/briandorsey/wavref/issues) and comment on an existing issue or add a new one. Thank you in advance! 
+
 ## Releases
 
 * Current - 0.1
@@ -51,6 +53,7 @@ weight = 90
     * fix HTML layout on narrow windows - what to do about TOC? 
     * --- initial release ---
     * document XMP: [XMP specification](https://www.adobe.com/devnet/xmp.html)
+    * document UMID: [UMID](https://en.wikipedia.org/wiki/Unique_Material_Identifier)
     * update sidebar with vertical line (similar to Zola docs)
     * chunks: [Audio Definition Model](https://www.bbc.co.uk/rd/publications/audio-definition-model-software)
         * [EBU ADM Guidelines Introduction](https://adm.ebu.io/index.html)
