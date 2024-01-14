@@ -46,7 +46,7 @@
                 {% set section_ = get_section(path="_index.md") -%}
                 {# pages in the root #}
                 {% for page in section_.pages -%}
-                    <li {%- if current_path == page.path %}class="active"{%- endif %}>{{ "" -}}
+                    <li{%- if current_path == page.path %} class="active"{%- endif %}>{{ "" -}}
                         <a href="{{ page.permalink | safe }}{{ _ugly_url }}">{{ page.title }}</a> </li>
                 {% endfor -%}
 
