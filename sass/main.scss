@@ -346,8 +346,50 @@ blockquote {
   margin: 0;
   background-color: $quote-bg;
   padding: 0 20px;
-}
 
+// treat the final quote in a multi quote sequence as source
+// via: https://stackoverflow.com/questions/2002120/citing-the-author-of-a-blockquote-using-markdown-syntax#answer-55894538
+    p {
+        display: inline;
+
+        &:first-of-type {
+            quotes: '\201C' '\201D' '\2018' '\2019';
+
+            &::before {
+                content: open-quote;
+                margin-right: 0.1rem;
+            }
+        }
+
+        &:last-of-type {
+            quotes: '\201C' '\201D' '\2018' '\2019';
+            font-style: italic;
+
+            &::before {
+                content: close-quote "\000A" "\2014" " ";
+                white-space: pre;
+                margin-left: 0.1rem;
+                font-style: normal;
+            }
+        }
+
+        // In case of a quote without a source.
+        &:only-of-type {
+            font-style: normal;
+            quotes: '\201C' '\201D' '\2018' '\2019';
+
+            &::before {
+               content: open-quote;
+               margin-right: 0.1rem;
+            }
+
+            &::after {
+                content: close-quote;
+                margin-left: 0.1rem;
+            }
+        }
+    }
+}
 .WRID { 
   font-family: $code_font; 
 }
