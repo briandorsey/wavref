@@ -29,5 +29,5 @@ TODO: note about normalizing field names
 ## related file formats
 
 * [RF64](https://en.wikipedia.org/wiki/RF64)
-* [BW64](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.2088-1-201910-I!!PDF-E.pdf) {{ spec_bib(ref="BS.2088-1") }}
+* [BW64](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.2088-1-201910-I!!PDF-E.pdf) {{ spec_bib(ref="BW64") }}
 

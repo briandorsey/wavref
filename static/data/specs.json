@@ -20,9 +20,9 @@
     "version": "3.0",
     "see": "pages 12-22"
   },
-  "BS.2088-1" : 
+  "BW64" : 
   {
-    "id": "BS.2088-1",
+    "id": "BW64",
     "title": "Long-form file format for the international exchange of audio programme materials with metadata",
     "publication_year": 2019,
     "authority": "ITU-R",

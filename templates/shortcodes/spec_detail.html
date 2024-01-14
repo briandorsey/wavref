@@ -8,10 +8,9 @@
 {{ spec.title }}
 {{ spec.version }}
 ({{ spec.publication_year }}). See {{spec.see}}.
-<p>Raw spec data for now: </p>
+<p>TODO: implement spec details widget </p>
 <p>
 {%- for key, value in spec %} 
-&nbsp;&nbsp;&nbsp;&nbsp;{{key}}: {{value}}<br/>
+|&nbsp;&nbsp;&nbsp;&nbsp;<b>{{key}}</b>: {{value}}<br/>
 {%- endfor %}
 </p>
-(TODO: decide which fields, and make it look nicer)

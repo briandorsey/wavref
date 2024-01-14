@@ -66,15 +66,18 @@ h4 {
 
 table {
   border-collapse: collapse;
-}
 
-td, th {
-  border: 2px solid #bbbbbb;
-  padding: 4px; 
+  td, th {
+    border: 2px solid #bbbbbb;
+    padding: 4px; 
+    }
+
+  td.WRID {
+    white-space: nowrap;
   }
-
-td.WRID {
-  white-space: nowrap;
+  code {
+    background:transparent;
+  }
 }
 
 pre {
@@ -101,7 +104,10 @@ pre {
 }
 
  code {
-    font: $code_font;
+    font-family: $code_font;
+    background: #dddddd; 
+    border-radius: 4px;
+    padding: 2px; 
   }
 
   .copy-code-button {
@@ -356,8 +362,12 @@ blockquote {
             quotes: '\201C' '\201D' '\2018' '\2019';
 
             &::before {
-                content: open-quote;
+                // content: open-quote;
                 margin-right: 0.1rem;
+            }
+            &::after {
+                // content: close-quote;
+                margin-left: 0.1rem;
             }
         }
 
@@ -366,7 +376,7 @@ blockquote {
             font-style: italic;
 
             &::before {
-                content: close-quote "\000A" "\2014" " ";
+                content: "\000A" "\2014" " ";
                 white-space: pre;
                 margin-left: 0.1rem;
                 font-style: normal;
@@ -379,12 +389,14 @@ blockquote {
             quotes: '\201C' '\201D' '\2018' '\2019';
 
             &::before {
-               content: open-quote;
+                content: ""; 
+               // content: open-quote;
                margin-right: 0.1rem;
             }
 
             &::after {
-                content: close-quote;
+                content: ""; 
+                // content: close-quote;
                 margin-left: 0.1rem;
             }
         }
