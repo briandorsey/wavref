@@ -10,6 +10,8 @@ If you find an error or would like additional information added, please check th
 ## Releases
 
 * Current - 0.1
+    * glossary: use heading links and custom CSS for links 
+        * ex: `[chunk](/g#chunk)` renders as: [chunk](/g#chunk)
     * fix shortcodes when no value in `spec.see`
     * added chunk overview page and status info to each chunk
     * more intro text, move intro to it's own file, redirect root to intro
@@ -27,11 +29,11 @@ If you find an error or would like additional information added, please check th
 * Future maybe
     * go through each chunk and pull a few spec quotes
     * write WAV overview - wav_general.md
-    * glossary - figure out linking to a specific definition
     * write initial glossary
     * write initial doc about metadata
     * chunk: cue - see how it fits into WRID model 
         * anything with more than one parent? 
+        * what to do about sequence numbers? ignore? we're just trying to get to specific fields in the general sense, not specific data
     * decide on data structure changes to include field details from specs. (in addition to the normalized WAVRef version)
         * add wrid_table() chunk filtering on "spec" as well as chunk (based on Taxonomies?) needed due to multiple specs refering to the same chunk
         * this implies a WAVRef spec as the default and an attempt to normalize?

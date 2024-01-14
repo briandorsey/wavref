@@ -107,7 +107,8 @@ pre {
     font-family: $code_font;
     background: #dddddd; 
     border-radius: 4px;
-    padding: 2px; 
+    padding-left: 2px; 
+    padding-right: 2px; 
   }
 
   .copy-code-button {
@@ -402,8 +403,19 @@ blockquote {
         }
     }
 }
+
 .WRID { 
   font-family: $code_font; 
+}
+
+.glossary {
+  h3 {
+    margin-bottom: unset;
+  }
+  p {
+    margin-top: unset; 
+    margin-left: 2rem; 
+  }
 }
 
 @import "fabric-icons-inline";
