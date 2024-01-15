@@ -10,6 +10,8 @@ If you find an error or would like additional information added, please check th
 ## Releases
 
 * Current - 0.1
+    * better table column wrapping
+    * introduction: add text and pointer to gh issue tracker for corrections/additions
     * add favicon.ico
     * add column display filtering for `desc` and `wrid` to wrid_table() and wrid_table_subchunks()
     * add wrid_table() and wrid_table_subchunks() filtering on "spec" 
@@ -31,7 +33,6 @@ If you find an error or would like additional information added, please check th
 * [release_date] - [version] - [summary]
 	* [things that were done]
 * Future maybe
-    * introduction: add text and pointer to gh issue tracker for corrections/additions
     * go through full RIFF1991 spec and add data to wrid_data.csv
     * chunk: cue - see how it fits into WRID model 
         * anything with more than one parent? 

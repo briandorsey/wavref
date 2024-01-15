@@ -46,12 +46,12 @@
     <tr>
       <td><code>{{ wrid.name}}</code></td>
       <td><code>{{ wrid.bytes}}</code></td>
-      <td><code>{{ wrid.type}}</code></td>
+      <td class="type"><code>{{ wrid.type}}</code></td>
       {%- if literal_in_pattern %} <td>
           {%- if wrid.literal_value %}<code>"{{ wrid.literal_value}}"</code>{% endif %}
       </td> {% endif %}
       {%- if col_desc%}
-      <td>{{ wrid.desc}}</td>
+      <td class="desc">{{ wrid.desc}}</td>
       {%- endif %}
       {%- if col_wrid %}
       {%- if prefix %}

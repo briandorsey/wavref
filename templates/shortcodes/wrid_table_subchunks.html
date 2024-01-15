@@ -43,7 +43,7 @@
       {% if literal_in_pattern %}<td>
           {%- if wrid.literal_value %}<code>"{{ wrid.literal_value}}"</code>{% endif -%}
       </td> {% endif %}
-      <td>{{ wrid.desc}}</td>
+      <td class="desc">{{ wrid.desc}}</td>
       {%- if col_wrid %}
       {%- if prefix %}
       <td class="WRID">{{ wrid.WRID | replace(from=prefix, to="...") }}</td>

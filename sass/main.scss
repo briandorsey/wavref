@@ -66,14 +66,23 @@ h4 {
 
 table {
   border-collapse: collapse;
+  table-layout: fixed;
+  width: max-content;
+  font-size: 0.8rem;
 
   td, th {
     border: 2px solid #bbbbbb;
     padding: 4px; 
-    }
+  }
 
+  td.type{
+    max-width: 6rem; 
+  }
+  td.desc {
+    max-width: 20rem; 
+  }
   td.WRID {
-    white-space: nowrap;
+    // white-space: nowrap;
   }
   code {
     background:transparent;
