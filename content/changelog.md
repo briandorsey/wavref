@@ -10,6 +10,7 @@ If you find an error or would like additional information added, please check th
 ## Releases
 
 * Current - 0.1.1
+    * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
     * fix broken tables in Safari. 
 * [release_date] - [version] - [summary]
 	* [things that were done]
@@ -45,7 +46,6 @@ If you find an error or would like additional information added, please check th
     * wav files: both simple and complex, depending on what you want to do with them. 
     * wav files: better intro to riff (maybe with a visual?)
     * metadata: why do people care about metadata?
-    * undo redirect to introduction.md. Put that content back in the index and manually create an intro entry on the sidebar. 
     * create list of WRID normalized data types and shortcode to link to them
     * scroll wide tables horizontally without affecting overall page
     * RIFF1991:data 
