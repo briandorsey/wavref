@@ -35,13 +35,19 @@ If you find an error or would like additional information added, please check th
 * [release_date] - [version] - [summary]
 	* [things that were done]
 * Future maybe
-    * go through full RIFF1991 spec and add data to wrid_data.csv
-    * chunk: cue - see how it fits into WRID model 
-        * anything with more than one parent? 
-        * what to do about sequence numbers? ignore? we're just trying to get to specific fields in the general sense, not specific data
-    * create list of wrid normalized data types and shortcode to link to them
     * setup build and deployment
     * --- draft release ---
+    * create list of wrid normalized data types and shortcode to link to them
+    * scroll wide tables horizontally without affecting overall page
+    * RIFF1991:data 
+    * RIFF1991:cue
+    * RIFF1991:LIST-adtl
+    * RIFF1991:FACT
+    * RIFF1991:LIST-wavl
+    * RIFF1991:slnt
+    * RIFF1991:plst
+    * RIFF1991: country codes
+    * RIFF1991: language and dialect codes
     * go through full RIFF1994 spec and add data to wrid_data.csv
     * go through each chunk and pull a few spec quotes
     * write WAV overview - wav_general.md
@@ -58,6 +64,7 @@ If you find an error or would like additional information added, please check th
         * fix table scrolling under nav bar
         * ok for chunks to repeat for WRID, since the goal is to reliably map field names to which chunk they're stored in. 
             * question: if this is true... do we actually need the full chunk path? Or can we assume chunk ids are unique? Would shorten WRIDs a lot if we go with that.
+        * what to do about sequence numbers (cue, for example)? ignore? we're just trying to get to specific fields in the general sense, not specific data
     * update `spec/_index` to show more info
     * fix HTML layout on narrow windows - what to do about TOC? 
     * --- initial release ---
