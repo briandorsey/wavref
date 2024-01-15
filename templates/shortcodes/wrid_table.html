@@ -21,21 +21,22 @@
     {%- set pattern = "" %}
 {%- endif %}
 
-{%- set literal_in_pattern = false %}
-{%- set has_literal = data | filter(attribute="literal_value") %} 
-{%- for item in has_literal %}
+{%- set condition_in_pattern = false %}
+{%- set has_condition= data | filter(attribute="condition") %} 
+{%- for item in has_condition %}
   {%- if not prefix or item.WRID is matching(pattern) %}
-{%- set_global literal_in_pattern = true %}
+    {%- set_global condition_in_pattern = true %}
   {%- endif %}
 {%- endfor %}
 
 <table>
   <thead>
     <tr>
+      <th>Chunk</th>
       <th>Name</th>
       <th>Bytes</th>
       <th>Type</th>
-      {% if literal_in_pattern %}<th>literal</th>{% endif -%}
+      {% if condition_in_pattern %}<th>condition</th>{% endif -%}
       {% if col_desc %}<th>Description</th>{% endif -%}
       {% if col_wrid %}<th>WRID</th>{% endif -%}
     </tr>
@@ -44,11 +45,12 @@
   {%- for wrid in data %}
     {%- if not prefix or wrid.WRID is matching(pattern) %}
     <tr>
+      <td>{{ wrid.chunk}}</td>
       <td><code>{{ wrid.name}}</code></td>
       <td><code>{{ wrid.bytes}}</code></td>
       <td class="type"><code>{{ wrid.type}}</code></td>
-      {%- if literal_in_pattern %} <td>
-          {%- if wrid.literal_value %}<code>"{{ wrid.literal_value}}"</code>{% endif %}
+      {%- if condition_in_pattern %} <td class="condition">
+         <code>{{ wrid.condition}}</code>
       </td> {% endif %}
       {%- if col_desc%}
       <td class="desc">{{ wrid.desc}}</td>

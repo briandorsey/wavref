@@ -18,6 +18,16 @@ TODO: overview
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", spec="WAVRef") }}
 
+## WAVE Format Categories
+
+| format_tag | Value (u16) | Format Category |
+| - | - | - |
+| WAVE_FORMAT_PCM | (0x0001) | Microsoft Pulse Code Modulation (PCM) format |
+| IBM_FORMAT_MULAW | (0x0101) | IBM mu-law format |
+| IBM_FORMAT_ALAW | (0x0102) | IBM a-law format |
+| IBM_FORMAT_ADPCM | (0x0103) | IBM AVC Adaptive Differential Pulse Code Modulation format |
+
+
 ## Learning References
 
 

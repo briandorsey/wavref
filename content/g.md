@@ -13,6 +13,9 @@ weight = 80
 ### chunk {#chunk}
 TODO: definition of a chunk
 
+### chunk_id {#chunk_id}
+TODO: lookup rules for chunk ids shorter than four bytes in RIFF1991
+
 ## -- types -- 
 
 ### ZSTR {#zstr}

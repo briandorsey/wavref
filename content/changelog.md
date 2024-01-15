@@ -10,6 +10,8 @@ If you find an error or would like additional information added, please check th
 ## Releases
 
 * Current - 0.1
+    * wrid_data.csv refactor: literal --> condition
+    * added WAVE Format Categories from {{ spec=(ref"RIFF1991") }}
     * better table column wrapping
     * introduction: add text and pointer to gh issue tracker for corrections/additions
     * add favicon.ico
@@ -40,6 +42,7 @@ If you find an error or would like additional information added, please check th
     * create list of wrid normalized data types and shortcode to link to them
     * setup build and deployment
     * --- draft release ---
+    * go through full RIFF1994 spec and add data to wrid_data.csv
     * go through each chunk and pull a few spec quotes
     * write WAV overview - wav_general.md
     * write initial glossary
@@ -50,6 +53,7 @@ If you find an error or would like additional information added, please check th
     * write WRID spec and overview
         * current WRID assumes chunks can only ever have one kind of parent... is this true?
         * how to refer to the chunk itself? Include trailing `>` to make ids with spaces clearer? 
+        * field names: use words from spec, but lowered_and_underscores
         * XML chunks? Use simplified XPath? `/Path/To/Node[idx]`
         * fix table scrolling under nav bar
         * ok for chunks to repeat for WRID, since the goal is to reliably map field names to which chunk they're stored in. 
@@ -57,6 +61,8 @@ If you find an error or would like additional information added, please check th
     * update `spec/_index` to show more info
     * fix HTML layout on narrow windows - what to do about TOC? 
     * --- initial release ---
+    * add footer note to all pages: link to file an issue for any innacuracies
+    * make example WAV file with specific values mapping to WRIDs (or specific ints, etc) to double-check/validate field locations from other software
     * create an "SDK" of WRID and descriptive information for embedding in other applications.
     * create reference WAV files and WRID based metadata dumps
     * chunk RIFF1991 RIFF: CSET
