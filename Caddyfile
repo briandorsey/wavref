@@ -1,0 +1,10 @@
+# minimal config intended to be served by Cloud Run
+
+:8080 {
+	root * /srv
+	file_server
+	log {
+		output stdout
+		format json
+	}
+}

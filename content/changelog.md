@@ -9,7 +9,12 @@ If you find an error or would like additional information added, please check th
 
 ## Releases
 
-* Current - 0.1
+* Current - 0.2
+    * ...
+* [release_date] - [version] - [summary]
+	* [things that were done]
+* 2013-01-14 - version 0.1 - Initial release, base structure and TODOs
+    * setup build and deployment
     * wrid_data.csv refactor: literal --> condition
     * added WAVE Format Categories from {{ spec=(ref"RIFF1991") }}
     * better table column wrapping
@@ -32,12 +37,11 @@ If you find an error or would like additional information added, please check th
     * create spec_detail shortcode (draft version for now)
     * create spec and spec_bib shortcodes, using static spec data
     * Setup Zola and prototype initial structure
-* [release_date] - [version] - [summary]
-	* [things that were done]
+
+---- 
+
 * Future maybe
-    * setup build and deployment
-    * --- draft release ---
-    * create list of wrid normalized data types and shortcode to link to them
+    * create list of WRID normalized data types and shortcode to link to them
     * scroll wide tables horizontally without affecting overall page
     * RIFF1991:data 
     * RIFF1991:cue
@@ -67,7 +71,7 @@ If you find an error or would like additional information added, please check th
         * what to do about sequence numbers (cue, for example)? ignore? we're just trying to get to specific fields in the general sense, not specific data
     * update `spec/_index` to show more info
     * fix HTML layout on narrow windows - what to do about TOC? 
-    * --- initial release ---
+    * --- initial release once above complete ---
     * add footer note to all pages: link to file an issue for any innacuracies
     * make example WAV file with specific values mapping to WRIDs (or specific ints, etc) to double-check/validate field locations from other software
     * create an "SDK" of WRID and descriptive information for embedding in other applications.
