@@ -2,8 +2,9 @@
 
 DRAFT: WAV Reference Book.  
 
-An attempt to collect WAV file format specification data in one place. Primarily focused on metadata specs, but eventually hope it will be comprehensive resource.
+Source files for a WAV Reference Book. 
 
+This is an attempt to collect and normalize WAV chunk specifications in one place. It is primarily focused on metadata, but I aspire to eventually cover all chunks in common use.
 
 
 ## build notes
