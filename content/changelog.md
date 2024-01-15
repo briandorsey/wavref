@@ -10,6 +10,7 @@ If you find an error or would like additional information added, please check th
 ## Releases
 
 * Current - 0.1
+    * add favicon.ico
     * add column display filtering for `desc` and `wrid` to wrid_table() and wrid_table_subchunks()
     * add wrid_table() and wrid_table_subchunks() filtering on "spec" 
     * decide on data structure changes to include field details from specs. (include them as additional rows with same WRID and different `spec` value - a new column with spec reference ids. 
@@ -55,6 +56,7 @@ If you find an error or would like additional information added, please check th
     * setup build and deployment
     * fix HTML layout on narrow windows - what to do about TOC? 
     * --- initial release ---
+    * create an "SDK" of WRID and descriptive information for embedding in other applications.
     * create reference WAV files and WRID based metadata dumps
     * chunk RIFF1991 RIFF: CSET
     * chunk RIFF1991 RIFF: JUNK
