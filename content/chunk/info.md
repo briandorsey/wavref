@@ -12,6 +12,8 @@ status = "DRAFT"
 
 # WRID>RIFF-WAVE>LIST-INFO
 
+> DRAFT!
+
 TODO: overview
 
 The `LIST` chunk is a container which holds additional subchunks of `list_type`. This page is about the `INFO` variant. 

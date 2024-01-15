@@ -36,11 +36,13 @@ If you find an error or would like additional information added, please check th
     * chunk: cue - see how it fits into WRID model 
         * anything with more than one parent? 
         * what to do about sequence numbers? ignore? we're just trying to get to specific fields in the general sense, not specific data
+    * create list of wrid normalized data types and shortcode to link to them
+    * setup build and deployment
+    * --- draft release ---
     * go through each chunk and pull a few spec quotes
     * write WAV overview - wav_general.md
     * write initial glossary
     * write initial doc about metadata
-    * create list of wrid normalized data types and shortcode to link to them
     * fmt chunk: download and include table of audio types: 
         * [WAVE and AVI Codec Registries](https://www.iana.org/assignments/wave-avi-codec-registry/wave-avi-codec-registry.xhtml) RFC2361. 
     * chunk: add one XML based chunk, probably iXML. Needed before release to verify WRID data model. 
@@ -52,8 +54,6 @@ If you find an error or would like additional information added, please check th
         * ok for chunks to repeat for WRID, since the goal is to reliably map field names to which chunk they're stored in. 
             * question: if this is true... do we actually need the full chunk path? Or can we assume chunk ids are unique? Would shorten WRIDs a lot if we go with that.
     * update `spec/_index` to show more info
-    * add license info 
-    * setup build and deployment
     * fix HTML layout on narrow windows - what to do about TOC? 
     * --- initial release ---
     * create an "SDK" of WRID and descriptive information for embedding in other applications.
