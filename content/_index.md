@@ -10,14 +10,6 @@ sort_by = "weight"
 
 So... WAV files. They're probably the most commonly supported audio format. And can be fairly simple. Just a list of [chunks](@/chunk/_index.md). The original standard {{ spec(ref="RIFF1991") }} documents them... and allows custom chunks. So any particular WAV file might contain any of dozens (hundreds?) of different chunks, each with their own format, hopefully documented. :) Aaaaand, those docs were published over several decades... some no longer even have an official home. 
 
-
-<p>
-<img src="//imgs.xkcd.com/comics/standards.png" title="Fortunately, the charging one has been solved now that we&#39;ve all standardized on mini-USB. Or is it micro-USB? Shit." alt="Standards" srcset="//imgs.xkcd.com/comics/standards_2x.png 2x" style="image-orientation:none" />
-<br/>from: https://xkcd.com/927/
-</p>
-
-
-
 This is an attempt to collect and normalize WAV chunk specifications in one place. It is primarily focused on [metadata](@/metadata.md), but I aspire to eventually cover all chunks in common use.
 
 Goals: 

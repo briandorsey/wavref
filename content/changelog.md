@@ -79,6 +79,7 @@ If you find an error or would like additional information added, please check th
     * --- initial release once above complete ---
     * add footer note to all pages: link to file an issue for any innacuracies
     * make example WAV file with specific values mapping to WRIDs (or specific ints, etc) to double-check/validate field locations from other software
+        * add page describing how to use this to learn what metadata different apps support and specifically where they read/write it.
     * create an "SDK" of WRID and descriptive information for embedding in other applications.
     * create reference WAV files and WRID based metadata dumps
     * chunk RIFF1991 RIFF: CSET
