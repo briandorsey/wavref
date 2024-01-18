@@ -10,6 +10,7 @@ If you find an error or would like additional information added, please check th
 ## Releases
 
 * Current - 0.1.1
+    * add more WAV Formats from MS web page
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
     * fix broken tables in Safari. 
 * [release_date] - [version] - [summary]
@@ -57,6 +58,7 @@ If you find an error or would like additional information added, please check th
     * RIFF1991:plst
     * RIFF1991: country codes
     * RIFF1991: language and dialect codes
+    * question... how deep to dig into fmt: WAV Format Tag inconsistencies between different docs & applications? 
     * go through full RIFF1994 spec and add data to wrid_data.csv
     * go through each chunk and pull a few spec quotes
     * write WAV overview - wav_general.md
