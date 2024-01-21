@@ -429,5 +429,13 @@ blockquote {
   }
 }
 
+
+// TODO: unifiy table CSS - may all cols have this max-width?
+.md_table {
+  td {
+    max-width: 20rem; 
+  }
+}
+
 @import "fabric-icons-inline";
 @import "search";
