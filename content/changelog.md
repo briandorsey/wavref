@@ -10,7 +10,7 @@ If you find an error or would like additional information added, please check th
 ## Releases
 
 * Current - 0.1.1
-    * add more WAV Formats from MS web page and wwreg.h
+    * add more WAV Formats from MS web page and mmreg.h
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
     * fix broken tables in Safari. 
 * [release_date] - [version] - [summary]
