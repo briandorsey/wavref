@@ -2,6 +2,7 @@
 title = "Glossary"
 weight = 80
 
+aliases = ["glossary"]
 # use [chunk](/g#chunk) to link to words #}
 +++
 

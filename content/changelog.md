@@ -3,13 +3,19 @@ title = "Change Log"
 weight = 90
 +++
 
+# Current Status
+
+This is a very early draft, I haven't even added the chunks defined in the initial WAV spec {{ spec(ref="RIFF1991") }} or any explanatory text. 
+
 # Change Log
 
 If you find an error or would like additional information added, please check the [issue tracker](https://github.com/briandorsey/wavref/issues) and comment on an existing issue or add a new one. Thank you in advance! 
 
 ## Releases
 
-* Current - 0.1.1
+* Current - 
+    * chunk RIFF1991 RIFF: CSET
+    * add /glossary --> /g redirect?
     * add more WAV Formats from MS web page and mmreg.h
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
     * fix broken tables in Safari. 
@@ -43,12 +49,11 @@ If you find an error or would like additional information added, please check th
 ---- 
 
 * Future maybe
-    * add /glossary --> /g redirect? (or the other way around?)
     * wav files: both simple and complex, depending on what you want to do with them. 
     * wav files: better intro to riff (maybe with a visual?)
     * metadata: why do people care about metadata?
     * create list of WRID normalized data types and shortcode to link to them
-    * scroll wide tables horizontally without affecting overall page
+    * CSS: scroll wide tables horizontally without affecting overall page
     * RIFF1991:data 
     * RIFF1991:cue
     * RIFF1991:LIST-adtl
@@ -64,8 +69,6 @@ If you find an error or would like additional information added, please check th
     * write WAV overview - wav_general.md
     * write initial glossary
     * write initial doc about metadata
-    * fmt chunk: download and include table of audio types: 
-        * [WAVE and AVI Codec Registries](https://www.iana.org/assignments/wave-avi-codec-registry/wave-avi-codec-registry.xhtml) RFC2361. 
     * chunk: add one XML based chunk, probably iXML. Needed before release to verify WRID data model. 
     * write WRID spec and overview
         * current WRID assumes chunks can only ever have one kind of parent... is this true?
@@ -77,17 +80,17 @@ If you find an error or would like additional information added, please check th
             * question: if this is true... do we actually need the full chunk path? Or can we assume chunk ids are unique? Would shorten WRIDs a lot if we go with that.
         * what to do about sequence numbers (cue, for example)? ignore? we're just trying to get to specific fields in the general sense, not specific data
     * update `spec/_index` to show more info
-    * fix HTML layout on narrow windows - what to do about TOC? 
+    * CSS: fix HTML layout on narrow windows - what to do about TOC? 
     * --- initial release once above complete ---
     * add footer note to all pages: link to file an issue for any innacuracies
     * make example WAV file with specific values mapping to WRIDs (or specific ints, etc) to double-check/validate field locations from other software
         * add page describing how to use this to learn what metadata different apps support and specifically where they read/write it.
     * create an "SDK" of WRID and descriptive information for embedding in other applications.
     * create reference WAV files and WRID based metadata dumps
-    * chunk RIFF1991 RIFF: CSET
     * chunk RIFF1991 RIFF: JUNK
     * chunk RIFF1991 WAVE: playlist
     * chunk RIFF1991 WAVE: associated data list
+    * document BEXT: 
     * document iXML: [iXML spec](http://www.gallery.co.uk/ixml/)
     * document XMP: [XMP specification](https://www.adobe.com/devnet/xmp.html)
     * document UMID: [UMID](https://en.wikipedia.org/wiki/Unique_Material_Identifier)

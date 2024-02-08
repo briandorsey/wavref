@@ -311,7 +311,7 @@ From {{ spec(ref="RIFF1991") }}, [Registered FOURCC Codes and WAVE Formats][msfo
 {{ chunk_specs() }}
 * [WAVE and AVI Codec Registries](https://www.iana.org/assignments/wave-avi-codec-registry/wave-avi-codec-registry.xhtml) RFC2361. This is historical, not updated after WavFormatEx was introduced in 1994 
 * [Registered FOURCC Codes and WAVE Formats][msfourcc] Similar to above, but from Microsoft docs. 
-* [mmreg.h][mmreg] online version of MS SDK file which is referred to in the {{ spec(ref="RIFF1991") }} spec. 
+* [mmreg.h][mmreg] online version of MS SDK file which is referenced in the {{ spec(ref="RIFF1991") }} spec. 
 
 [msfourcc]: https://github.com/hughbe/windows-sdk-headers/blob/main/Include/10.0.22621.0/shared/mmreg.h#L2418
 [mmreg]: https://github.com/hughbe/windows-sdk-headers/blob/main/Include/10.0.22621.0/shared/mmreg.h#L2108

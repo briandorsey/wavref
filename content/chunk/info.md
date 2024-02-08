@@ -30,9 +30,16 @@ TODO: info about subchunks... example subchunk:
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-INFO>ICMT") }}
 
+... 
+
+> An ‘INFO’ list should contain only the following chunks. New chunks may be defined, but an application should ignore any chunk it doesn't understand. The chunks listed below may only appear in an ‘INFO’ list. Each chunk contains a ZSTR, or null-terminated text string.
+>
+> {{ spec(ref="RIFF1991") }}
+
 INFO subchunks defined in {{ spec(ref="RIFF1991") }}:
 
 {{ wrid_table_subchunks(prefix="WRID>RIFF-WAVE>LIST-INFO", spec="WAVRef", col_wrid=false) }}
+
 ## Learning References
 
 ## Specification
