@@ -49,11 +49,15 @@ If you find an error or would like additional information added, please check th
 ---- 
 
 * Future maybe
+    * add section of useful references? or just generalize specifications --> references? 
+    * add reference link to FADI BWF guidelines: https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf
+    * update site colors: https://iamkate.com/data/12-bit-rainbow/ (see how those look... if not, maybe solarized?
     * wav files: both simple and complex, depending on what you want to do with them. 
     * wav files: better intro to riff (maybe with a visual?)
     * metadata: why do people care about metadata?
     * create list of WRID normalized data types and shortcode to link to them
     * CSS: scroll wide tables horizontally without affecting overall page
+    * chunk: find specs for `smpl` chunk - document
     * RIFF1991:data 
     * RIFF1991:cue
     * RIFF1991:LIST-adtl
@@ -83,17 +87,24 @@ If you find an error or would like additional information added, please check th
     * CSS: fix HTML layout on narrow windows - what to do about TOC? 
     * --- initial release once above complete ---
     * add footer note to all pages: link to file an issue for any innacuracies
+    * research: AIFF file type... how similar to WAVE? 
     * make example WAV file with specific values mapping to WRIDs (or specific ints, etc) to double-check/validate field locations from other software
         * add page describing how to use this to learn what metadata different apps support and specifically where they read/write it.
     * create an "SDK" of WRID and descriptive information for embedding in other applications.
-    * create reference WAV files and WRID based metadata dumps
+    * create reference/example WAV files and WRID based metadata dumps
+    * reference: [FADGI Guidelines for Embedding Metadata in
+Broadcast WAVE Files](https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf)
+    * add reference to archive.org verson of sonicspot WAVE overview because it's referenced so often: [sonicspot wavefiles](https://web.archive.org/web/20141226210234/http://www.sonicspot.com/guide/wavefiles.html)
+    * reference: a nice WAVE overview with formulas for calculating `fmt` chunk values: [The Dr. Agon WAV File Format Page](http://www.dragonwins.com/domains/getteched/wav/index.htm)
     * chunk RIFF1991 RIFF: JUNK
     * chunk RIFF1991 WAVE: playlist
     * chunk RIFF1991 WAVE: associated data list
-    * document BEXT: 
-    * document iXML: [iXML spec](http://www.gallery.co.uk/ixml/)
-    * document XMP: [XMP specification](https://www.adobe.com/devnet/xmp.html)
-    * document UMID: [UMID](https://en.wikipedia.org/wiki/Unique_Material_Identifier)
+    * chunk BEXT: 
+    * chunk iXML: [iXML spec](http://www.gallery.co.uk/ixml/)
+    * chunk XMP: [XMP specification](https://www.adobe.com/devnet/xmp.html)
+    * chunk UMID: [UMID](https://en.wikipedia.org/wiki/Unique_Material_Identifier)
+    * chunk CART: [CART website](http://www.cartchunk.org/) "The Radio Industry's Traffic Data WAVE File Standard. Now formally ratified as AES46-2002!"
+    * chunk ID3: ID3.org seems to be offline. Alternate spec locations: [Mutagen Spec collection](https://mutagen-specs.readthedocs.io/en/latest/), [fdd useful references](https://www.loc.gov/preservation/digital/formats/fdd/fdd000106.shtml#useful)
     * update sidebar with vertical line (similar to Zola docs)
     * chunks: [Audio Definition Model](https://www.bbc.co.uk/rd/publications/audio-definition-model-software)
         * [EBU ADM Guidelines Introduction](https://adm.ebu.io/index.html)

@@ -20,7 +20,26 @@ TODO: overview
 >
 > {{ spec(ref="RIFF1991") }}
 
-... 
+## Usage
+
+While this chunk is defined in {{ spec(ref="RIFF1991") }}, it seems to be *extremely* rarely included in WAVE files. I haven't been able to find a single example in my collection of files. 
+
+
+The CSET specified countries and languages are also intended to be used in other chunks, however: 
+
+> FADGI recognizes that the values for country codes, languages and dialects
+defined in the CSET chunk are outdated because the RIFF specification in which
+they are defined was last updated in 1991.
+To ensure maximum compatibility, use the CSET codes if the appropriate values
+are defined in the CSET chunk, otherwise use ISO standard code lists: ISO 3166-
+1 code for Country or ISO 639-1 for Language 
+>
+> [FADGI Guidelines for Embedding Metadata in Broadcast WAVE Files](https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf)
+
+It's not clear how to extend the CSET defined countries because both of those ISO standards map to 2-3 letter codes, while CSET specifies an integer mapping. 
+
+
+## Spec
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>CSET", spec="WAVRef") }}
 
