@@ -16,7 +16,17 @@ status = "DRAFT"
 
 TODO: overview
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE") }}
+{{ spec(ref="RIFF1991") }} specifies the following chunks for `WAVE` files: 
+
+
+* [fmt](@/chunk/fmt.md) - Format
+* [fact](@/chunk/fact.md) - Fact chunk
+* cue - Cue points
+* plst - Playlist
+* LIST-asdl - Associated data list
+* data - Wave data
+
+{{ wrid_table(prefix="WRID>RIFF-WAVE", spec="WAVRef") }}
 
 ## Learning References
 

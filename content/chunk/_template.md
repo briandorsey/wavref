@@ -1,8 +1,8 @@
 +++
 draft = true
-title = "RIFF-WAVE>TEMPLATE"
+title = "TEMPLATE"
 weight = 10
-description = "TODO: description of RIFF-WAVE"
+description = "TODO: description of TEMPLATE"
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]
@@ -16,6 +16,7 @@ status = "DRAFT"
 TODO: overview
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>TEMPLATE") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>TEMPLATE", spec="WAVRef") }}
 
 ## Learning References
 

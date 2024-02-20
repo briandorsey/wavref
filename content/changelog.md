@@ -13,8 +13,9 @@ If you find an error or would like additional information added, please check th
 
 ## Releases
 
-* Current - 
-    * chunk RIFF1991 RIFF: CSET
+* Upcomming - 
+    * add chunk RIFF1991:FACT
+    * add chunk RIFF1991 RIFF: CSET
     * add /glossary --> /g redirect?
     * add more WAV Formats from MS web page and mmreg.h
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
@@ -49,6 +50,7 @@ If you find an error or would like additional information added, please check th
 ---- 
 
 * Future maybe
+    * fix sidebar: disappears on narrow views
     * add section of useful references? or just generalize specifications --> references? 
     * add reference link to FADI BWF guidelines: https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf
     * update site colors: https://iamkate.com/data/12-bit-rainbow/ (see how those look... if not, maybe solarized?
@@ -61,7 +63,6 @@ If you find an error or would like additional information added, please check th
     * RIFF1991:data 
     * RIFF1991:cue
     * RIFF1991:LIST-adtl
-    * RIFF1991:FACT
     * RIFF1991:LIST-wavl
     * RIFF1991:slnt
     * RIFF1991:plst
@@ -88,6 +89,7 @@ If you find an error or would like additional information added, please check th
     * --- initial release once above complete ---
     * add footer note to all pages: link to file an issue for any innacuracies
     * research: AIFF file type... how similar to WAVE? 
+    * reference: [MIDI Technical Fanatic's Brainwashing Center / tech / WAVE format](http://midi.teragonaudio.com/tech/wave.htm) - opinionated guide to WAV. Very clear writing. also documents `smpl` and `inst` chunks
     * make example WAV file with specific values mapping to WRIDs (or specific ints, etc) to double-check/validate field locations from other software
         * add page describing how to use this to learn what metadata different apps support and specifically where they read/write it.
     * create an "SDK" of WRID and descriptive information for embedding in other applications.
