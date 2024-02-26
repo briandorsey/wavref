@@ -13,15 +13,16 @@ If you find an error or would like additional information added, please check th
 
 ## Releases
 
-* Upcomming - 
-    * add chunk RIFF1991:FACT
+* [release_date] - [version] - [summary]
+	* [things that were done]
+* Upcoming - version 0.2 - 
+    * add RIFF1991:cue
+    * add chunk RIFF1991:fact
     * add chunk RIFF1991 RIFF: CSET
     * add /glossary --> /g redirect?
     * add more WAV Formats from MS web page and mmreg.h
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
     * fix broken tables in Safari. 
-* [release_date] - [version] - [summary]
-	* [things that were done]
 * 2013-01-14 - version 0.1 - Initial release, base structure and TODOs
     * setup build and deployment
     * wrid_data.csv refactor: literal --> condition
@@ -61,7 +62,6 @@ If you find an error or would like additional information added, please check th
     * CSS: scroll wide tables horizontally without affecting overall page
     * chunk: find specs for `smpl` chunk - document
     * RIFF1991:data 
-    * RIFF1991:cue
     * RIFF1991:LIST-adtl
     * RIFF1991:LIST-wavl
     * RIFF1991:slnt
