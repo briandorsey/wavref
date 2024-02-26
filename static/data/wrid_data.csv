@@ -144,4 +144,4 @@
 "WRID>RIFF-WAVE>plst>segments","","plst","segments","4","u32","WAVRef","","Count of play segments.","","",""
 "WRID>RIFF-WAVE>plst>name","","plst","name","4","u32","WAVRef","","play-segment field: Specifies the cue point name. This value must match one of the names listed in the [cue](@/chunk/cue.md) cue-point table.","","",""
 "WRID>RIFF-WAVE>plst>length","","plst","length","4","u32","WAVRef","","play-segment field: Specifies the length of the section in samples.","","",""
-"WRID>RIFF-WAVE>plst>loops","","plst","position","4","u32","WAVRef","","play-segment field: Specifies the number of times to play the section.","","",""
+"WRID>RIFF-WAVE>plst>loops","","plst","loops","4","u32","WAVRef","","play-segment field: Specifies the number of times to play the section.","","",""

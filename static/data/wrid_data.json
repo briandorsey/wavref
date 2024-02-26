@@ -2033,7 +2033,7 @@
     "WRID": "WRID>RIFF-WAVE>plst>loops",
     "sort_spec": null,
     "chunk": "plst",
-    "name": "position",
+    "name": "loops",
     "bytes": "4",
     "type": "u32",
     "spec": "WAVRef",
