@@ -53,7 +53,7 @@
          <code>{{ wrid.condition}}</code>
       </td> {% endif %}
       {%- if col_desc%}
-      <td class="desc">{{ wrid.desc}}</td>
+      <td class="desc">{% if wrid.desc %}{{ wrid.desc | markdown(inline=true) |safe }}{% endif %}</td>
       {%- endif %}
       {%- if col_wrid %}
       {%- if prefix %}
