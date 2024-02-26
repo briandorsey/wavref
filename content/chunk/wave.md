@@ -21,8 +21,8 @@ TODO: overview
 
 * [fmt](@/chunk/fmt.md) - Format
 * [fact](@/chunk/fact.md) - Fact chunk
-* cue - Cue points
-* plst - Playlist
+* [cue](@/chunk/cue.md) - Cue points
+* [plst](@/chunk/plst.md) - Playlist
 * LIST-asdl - Associated data list
 * data - Wave data
 

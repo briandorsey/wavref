@@ -16,6 +16,7 @@ If you find an error or would like additional information added, please check th
 * [release_date] - [version] - [summary]
 	* [things that were done]
 * Upcoming - version 0.2 - 
+    * add RIFF1991:plst
     * add RIFF1991:cue
     * add chunk RIFF1991:fact
     * add chunk RIFF1991 RIFF: CSET
@@ -65,7 +66,6 @@ If you find an error or would like additional information added, please check th
     * RIFF1991:LIST-adtl
     * RIFF1991:LIST-wavl
     * RIFF1991:slnt
-    * RIFF1991:plst
     * RIFF1991: country codes
     * RIFF1991: language and dialect codes
     * question... how deep to dig into fmt: WAV Format Tag inconsistencies between different docs & applications? 
