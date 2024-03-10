@@ -21,10 +21,12 @@ TODO: overview
 
 * [fmt](@/chunk/fmt.md) - Format
 * [fact](@/chunk/fact.md) - Fact chunk
+* data - Wave data
 * [cue](@/chunk/cue.md) - Cue points
 * [plst](@/chunk/plst.md) - Playlist
+* [LIST-INFO](@/chunk/info.md) - Info data list
 * LIST-asdl - Associated data list
-* data - Wave data
+* [JUNK](@/chunk/junk.md) - file padding (no content)
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE", spec="WAVRef") }}
 

@@ -1,6 +1,6 @@
 +++
 title = "fact"
-weight = 30
+weight = 12
 description = "TODO: description of fact"
 
 [taxonomies]

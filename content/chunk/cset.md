@@ -1,6 +1,6 @@
 +++
 title = "CSET"
-weight = 22
+weight = 52
 description = "TODO: description of CSET"
 
 [taxonomies]

@@ -1,6 +1,6 @@
 +++
 title = "LIST-INFO"
-weight = 20
+weight = 30
 description = "TODO: description of LIST-INFO"
 
 [taxonomies]

@@ -1,6 +1,6 @@
 +++
 title = "cue"
-weight = 10
+weight = 43
 description = "TODO: description of cue"
 
 [taxonomies]

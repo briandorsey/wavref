@@ -14,6 +14,8 @@ status = "DRAFT"
 
 > DRAFT!
 
+> Note: all chunks are four bytes. `fmt` is `"fmt "`, the last character is a space (ASCII 32).
+
 TODO: overview
 TODO: update for WAVFORMATEX and describe how to parse
 
