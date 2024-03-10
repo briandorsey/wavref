@@ -7,6 +7,8 @@ weight = 90
 
 This is a very early draft, I haven't even added the chunks defined in the initial WAV spec {{ spec(ref="RIFF1991") }} or any explanatory text. 
 
+Each [chunk](@/chunk/_index.md) also has its own status. One of DRAFT, REFERENCE, READY. 
+
 # Change Log
 
 If you find an error or would like additional information added, please check the [issue tracker](https://github.com/briandorsey/wavref/issues) and comment on an existing issue or add a new one. Thank you in advance! 
@@ -16,10 +18,12 @@ If you find an error or would like additional information added, please check th
 * [release_date] - [version] - [summary]
 	* [things that were done]
 * Upcoming - version 0.2 - 
+    * add RIFF1991:LIST-adtl
+    * add RIFF1991:JUNK (also, PAD, FLLR)
     * add RIFF1991:plst
     * add RIFF1991:cue
     * add chunk RIFF1991:fact
-    * add chunk RIFF1991 RIFF: CSET
+    * add chunk RIFF1991:CSET
     * add /glossary --> /g redirect?
     * add more WAV Formats from MS web page and mmreg.h
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
@@ -53,6 +57,7 @@ If you find an error or would like additional information added, please check th
 
 * Future maybe
     * fix sidebar: disappears on narrow views
+    * figure out wavref types (things like fourcc)
     * add section of useful references? or just generalize specifications --> references? 
     * add reference link to FADI BWF guidelines: https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf
     * update site colors: https://iamkate.com/data/12-bit-rainbow/ (see how those look... if not, maybe solarized?
@@ -63,7 +68,6 @@ If you find an error or would like additional information added, please check th
     * CSS: scroll wide tables horizontally without affecting overall page
     * chunk: find specs for `smpl` chunk - document
     * RIFF1991:data 
-    * RIFF1991:LIST-adtl
     * RIFF1991:LIST-wavl
     * RIFF1991:slnt
     * RIFF1991: country codes
@@ -86,6 +90,7 @@ If you find an error or would like additional information added, please check th
         * what to do about sequence numbers (cue, for example)? ignore? we're just trying to get to specific fields in the general sense, not specific data
     * update `spec/_index` to show more info
     * CSS: fix HTML layout on narrow windows - what to do about TOC? 
+    * article / essay on common parsing errors ("header", fixed position parsing, etc)
     * --- initial release once above complete ---
     * add footer note to all pages: link to file an issue for any innacuracies
     * research: AIFF file type... how similar to WAVE? 
@@ -98,9 +103,6 @@ If you find an error or would like additional information added, please check th
 Broadcast WAVE Files](https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf)
     * add reference to archive.org verson of sonicspot WAVE overview because it's referenced so often: [sonicspot wavefiles](https://web.archive.org/web/20141226210234/http://www.sonicspot.com/guide/wavefiles.html)
     * reference: a nice WAVE overview with formulas for calculating `fmt` chunk values: [The Dr. Agon WAV File Format Page](http://www.dragonwins.com/domains/getteched/wav/index.htm)
-    * chunk RIFF1991 RIFF: JUNK
-    * chunk RIFF1991 WAVE: playlist
-    * chunk RIFF1991 WAVE: associated data list
     * chunk BEXT: 
     * chunk iXML: [iXML spec](http://www.gallery.co.uk/ixml/)
     * chunk XMP: [XMP specification](https://www.adobe.com/devnet/xmp.html)

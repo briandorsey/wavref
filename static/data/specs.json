@@ -30,5 +30,16 @@
     "publication_date": "2019-10",
     "version": "2.0",
     "see": ""
+  },
+  "UNKNOWN" : 
+  {
+    "id": "UNKNOWN",
+    "title": "Placeholder for chunks which are observed to be in use, but don't have a known specification.",
+    "publication_year": null,
+    "authority": "",
+    "urls": [],
+    "publication_date": "",
+    "version": "",
+    "see": ""
   }
 }
