@@ -14,7 +14,9 @@ status = "DRAFT"
 
 TODO: overview
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl") }}
+> The associated data list provides the ability to attach information like labels to sections of the waveform data stream.
+> 
+> {{ spec(ref="RIFF1991") }}
 
 `LIST-adtl` chunk
 
