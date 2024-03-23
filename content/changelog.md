@@ -18,12 +18,15 @@ If you find an error or would like additional information added, please check th
 * [release_date] - [version] - [summary]
 	* [things that were done]
 * Upcoming - version 0.2 - 
+    * add MediaArea:MD5
     * add RIFF1991:LIST-adtl
     * add RIFF1991:JUNK (also, PAD, FLLR)
     * add RIFF1991:plst
     * add RIFF1991:cue
     * add chunk RIFF1991:fact
     * add chunk RIFF1991:CSET
+    * add RIFF1991: country codes
+    * add RIFF1991: language and dialect codes
     * add /glossary --> /g redirect?
     * add more WAV Formats from MS web page and mmreg.h
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
@@ -56,22 +59,27 @@ If you find an error or would like additional information added, please check th
 ---- 
 
 * Future maybe
-    * fix sidebar: disappears on narrow views
+    * fix sidebar (cut off at bottom)
+    * chunk bext: 
+    * implement spec details widget (shortcodes/spec_detail.html)
+    * convert chunk reference page to a table
     * figure out wavref types (things like fourcc)
+    * WRID "sentinel" value mapping, special ints/strings for each field
+    * create references page, similar setup to glossary page
     * add section of useful references? or just generalize specifications --> references? 
     * add reference link to FADI BWF guidelines: https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf
     * update site colors: https://iamkate.com/data/12-bit-rainbow/ (see how those look... if not, maybe solarized?
     * wav files: both simple and complex, depending on what you want to do with them. 
     * wav files: better intro to riff (maybe with a visual?)
+    * write intro to what a chunk is on Chunk reference page
     * metadata: why do people care about metadata?
     * create list of WRID normalized data types and shortcode to link to them
     * CSS: scroll wide tables horizontally without affecting overall page
+    * CSS: fix HTML layout on narrow windows - what to do about TOC? 
     * chunk: find specs for `smpl` chunk - document
     * RIFF1991:data 
     * RIFF1991:LIST-wavl
     * RIFF1991:slnt
-    * RIFF1991: country codes
-    * RIFF1991: language and dialect codes
     * question... how deep to dig into fmt: WAV Format Tag inconsistencies between different docs & applications? 
     * go through full RIFF1994 spec and add data to wrid_data.csv
     * go through each chunk and pull a few spec quotes
@@ -89,9 +97,11 @@ If you find an error or would like additional information added, please check th
             * question: if this is true... do we actually need the full chunk path? Or can we assume chunk ids are unique? Would shorten WRIDs a lot if we go with that.
         * what to do about sequence numbers (cue, for example)? ignore? we're just trying to get to specific fields in the general sense, not specific data
     * update `spec/_index` to show more info
-    * CSS: fix HTML layout on narrow windows - what to do about TOC? 
     * article / essay on common parsing errors ("header", fixed position parsing, etc)
+        * references
+            * https://www.appletonaudio.com/blog/2012/wave-file-format-implementation-errors/
     * --- initial release once above complete ---
+    * article / essay on which chunks actually matter for different use cases
     * add footer note to all pages: link to file an issue for any innacuracies
     * research: AIFF file type... how similar to WAVE? 
     * reference: [MIDI Technical Fanatic's Brainwashing Center / tech / WAVE format](http://midi.teragonaudio.com/tech/wave.htm) - opinionated guide to WAV. Very clear writing. also documents `smpl` and `inst` chunks
@@ -103,7 +113,6 @@ If you find an error or would like additional information added, please check th
 Broadcast WAVE Files](https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf)
     * add reference to archive.org verson of sonicspot WAVE overview because it's referenced so often: [sonicspot wavefiles](https://web.archive.org/web/20141226210234/http://www.sonicspot.com/guide/wavefiles.html)
     * reference: a nice WAVE overview with formulas for calculating `fmt` chunk values: [The Dr. Agon WAV File Format Page](http://www.dragonwins.com/domains/getteched/wav/index.htm)
-    * chunk BEXT: 
     * chunk iXML: [iXML spec](http://www.gallery.co.uk/ixml/)
     * chunk XMP: [XMP specification](https://www.adobe.com/devnet/xmp.html)
     * chunk UMID: [UMID](https://en.wikipedia.org/wiki/Unique_Material_Identifier)

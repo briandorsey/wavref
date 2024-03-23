@@ -9,7 +9,7 @@
     "spec": "WAVRef",
     "condition": "id = RIFF",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -23,7 +23,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -37,7 +37,7 @@
     "spec": "WAVRef",
     "condition": "form_type = WAVE",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -51,7 +51,7 @@
     "spec": "RIFF1991",
     "condition": "id = RIFF",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -65,7 +65,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -79,7 +79,7 @@
     "spec": "RIFF1991",
     "condition": "form_type = WAVE",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -91,9 +91,9 @@
     "bytes": "4",
     "type": "u8[4]",
     "spec": "WAVRef",
-    "condition": "id = fmt",
+    "condition": "id = \"fmt \"",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -107,7 +107,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -121,7 +121,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -135,7 +135,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -149,7 +149,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -163,7 +163,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -177,7 +177,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -191,7 +191,7 @@
     "spec": "WAVRef",
     "condition": "format_tag = 0x0001",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -203,9 +203,9 @@
     "bytes": "4",
     "type": "FOURCC",
     "spec": "RIFF1991",
-    "condition": "id = fmt",
+    "condition": "id = \"fmt \"",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -219,7 +219,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -233,7 +233,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -247,7 +247,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -261,7 +261,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -275,7 +275,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "For PCM data, the wAvgBytesPerSec field of the ‘fmt’ chunk should be equal to the following formula rounded up to the next whole number: wChannels x wBitsPerSecond x ( wBitsPerSample / 8 )",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -289,7 +289,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -303,7 +303,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -317,7 +317,7 @@
     "spec": "RIFF1991",
     "condition": "wFormatTag = 0x0001",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -331,7 +331,7 @@
     "spec": "WAVRef",
     "condition": "id = data",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -345,7 +345,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -359,7 +359,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": true,
+    "notes_binary": "TODO: divisble by WRID>RIFF|WAVE>fmt >block_align",
     "notes_content": null,
     "notes_usage": null
   },
@@ -373,7 +373,7 @@
     "spec": "RIFF1991",
     "condition": "id = data",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -387,7 +387,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -401,7 +401,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": true,
+    "notes_binary": "TODO: divisble by WRID>RIFF|WAVE>fmt >block_align",
     "notes_content": null,
     "notes_usage": null
   },
@@ -415,7 +415,7 @@
     "spec": "RIFF1991",
     "condition": "id = LIST",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -429,7 +429,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -443,7 +443,7 @@
     "spec": "RIFF1991",
     "condition": "list_type = INFO",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -457,7 +457,7 @@
     "spec": "RIFF1991",
     "condition": "id = IARL",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -471,7 +471,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -485,7 +485,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Archival Location. Indicates where the subject of the file is archived.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -499,7 +499,7 @@
     "spec": "RIFF1991",
     "condition": "id = IGNR",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -513,7 +513,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -527,7 +527,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Genre. Describes the original work, such as \"landscape\", \"portrait\", \"still life\", etc.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -541,7 +541,7 @@
     "spec": "RIFF1991",
     "condition": "id = IKEY",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -555,7 +555,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -569,7 +569,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Keywords. Provides a list of keywords that refer to the file or subject of the file. Separate multiple keywords with a semicolon and a blank. For example, \"Seattle; aerial view; scenery\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -583,7 +583,7 @@
     "spec": "RIFF1991",
     "condition": "id = ILGT",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -597,7 +597,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -611,7 +611,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Lightness. Describes the changes in lightness settings on the digitizer required to produce the file. Note that the format of this information depends on hardware used.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -625,7 +625,7 @@
     "spec": "RIFF1991",
     "condition": "id = IMED",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -639,7 +639,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -653,7 +653,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Medium. Describes the original subject of the file, such as \"computer image\", \"drawing\", \"lithograph\", and so forth.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -667,7 +667,7 @@
     "spec": "RIFF1991",
     "condition": "id = INAM",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -681,7 +681,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -695,7 +695,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Name. Stores the title of the subject of the file, such as \"Seattle From Above\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -709,7 +709,7 @@
     "spec": "RIFF1991",
     "condition": "id = IPLT",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -723,7 +723,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -737,7 +737,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Palette Setting. Specifies the number of colors requested when digitizing an image, such as \"256\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -751,7 +751,7 @@
     "spec": "RIFF1991",
     "condition": "id = IPRD",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -765,7 +765,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -779,7 +779,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Product. Specifies the name of the title the file was originally intended for, such as \"Encyclopedia of Pacific Northwest Geography\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -793,7 +793,7 @@
     "spec": "RIFF1991",
     "condition": "id = ISBJ",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -807,7 +807,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -821,7 +821,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Subject. Describes the contents of the file, such as \"Aerial view of Seattle\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -835,7 +835,7 @@
     "spec": "RIFF1991",
     "condition": "id = ISFT",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -849,7 +849,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -863,7 +863,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Software. Identifies the name of the software package used to create the file, such as \"Microsoft WaveEdit\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -877,7 +877,7 @@
     "spec": "RIFF1991",
     "condition": "id = ISHP",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -891,7 +891,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -905,7 +905,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Sharpness. Identifies the changes in sharpness for the digitizer required to produce the file (the format depends on the hardware used).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -919,7 +919,7 @@
     "spec": "RIFF1991",
     "condition": "id = IART",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -933,7 +933,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -947,7 +947,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Artist. Lists the artist of the original subject of the file. For example, \"Michaelangelo\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -961,7 +961,7 @@
     "spec": "RIFF1991",
     "condition": "id = ISRC",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -975,7 +975,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -989,7 +989,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Source. Identifies the name of the person or organization who supplied the original subject of the file. For example, \"Trey Research\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1003,7 +1003,7 @@
     "spec": "RIFF1991",
     "condition": "id = ISRF",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1017,7 +1017,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1031,7 +1031,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Source Form. Identifies the original form of the material that was digitized, such as \"slide\", \"paper\", \"map\", and so forth. This is not necessarily the same as IMED.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1045,7 +1045,7 @@
     "spec": "RIFF1991",
     "condition": "id = ITCH",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1059,7 +1059,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1073,7 +1073,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Technician. Identifies the technician who digitized the subject file. For example, \"Smith, John.\"",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1087,7 +1087,7 @@
     "spec": "RIFF1991",
     "condition": "id = ICMS",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1101,7 +1101,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1115,7 +1115,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Commissioned. Lists the name of the person or organization that commissioned the subject of the file. For example, \"Pope Julian II\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1129,7 +1129,7 @@
     "spec": "RIFF1991",
     "condition": "id = ICMT",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1143,7 +1143,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1157,7 +1157,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Comments. Provides general comments about the file or the subject of the file. If the comment is several sentences long, end each sentence with a period. Do not include newline characters.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1171,7 +1171,7 @@
     "spec": "RIFF1991",
     "condition": "id = ICOP",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1185,7 +1185,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1199,7 +1199,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Copyright. Records the copyright information for the file. For example, \"Copyright Encyclopedia International 1991.\" If there are multiple copyrights, separate them by a semicolon followed by a space.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1213,7 +1213,7 @@
     "spec": "RIFF1991",
     "condition": "id = ICRD",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1227,7 +1227,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1241,7 +1241,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Creation date. Specifies the date the subject of the file was created. List dates in year-month-day format, padding one-digit months and days with a zero on the left. For example, \"1553-05-03\" for May 3, 1553.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1255,7 +1255,7 @@
     "spec": "RIFF1991",
     "condition": "id = ICRP",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1269,7 +1269,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1283,7 +1283,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Cropped. Describes whether an image has been cropped and, if so, how it was cropped. For example, \"lower right corner\". IDIM Dimensions. Specifies the size of the original subject of the file. For example, \"8.5 in h, 11 in w\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1297,7 +1297,7 @@
     "spec": "RIFF1991",
     "condition": "id = IDPI",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1311,7 +1311,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1325,7 +1325,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Dots Per Inch. Stores dots per inch setting of the digitizer used to produce the file, such as \"300\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1339,7 +1339,7 @@
     "spec": "RIFF1991",
     "condition": "id = IENG",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1353,7 +1353,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1367,7 +1367,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Engineer. Stores the name of the engineer who worked on the file. If there are multiple engineers, separate the names by a semicolon and a blank. For example, \"Smith, John; Adams, Joe\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1381,7 +1381,7 @@
     "spec": "WAVRef",
     "condition": "id = LIST",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1395,7 +1395,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1409,7 +1409,7 @@
     "spec": "WAVRef",
     "condition": "list_type = INFO",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1423,7 +1423,7 @@
     "spec": "WAVRef",
     "condition": "id = IARL",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1437,7 +1437,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1451,7 +1451,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Archival Location. Indicates where the subject of the file is archived.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1465,7 +1465,7 @@
     "spec": "WAVRef",
     "condition": "id = IGNR",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1479,7 +1479,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1493,7 +1493,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Genre. Describes the original work, such as \"landscape\", \"portrait\", \"still life\", etc.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1507,7 +1507,7 @@
     "spec": "WAVRef",
     "condition": "id = IKEY",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1521,7 +1521,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1535,7 +1535,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Keywords. Provides a list of keywords that refer to the file or subject of the file. Separate multiple keywords with a semicolon and a blank. For example, \"Seattle; aerial view; scenery\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1549,7 +1549,7 @@
     "spec": "WAVRef",
     "condition": "id = ILGT",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1563,7 +1563,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1577,7 +1577,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Lightness. Describes the changes in lightness settings on the digitizer required to produce the file. Note that the format of this information depends on hardware used.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1591,7 +1591,7 @@
     "spec": "WAVRef",
     "condition": "id = IMED",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1605,7 +1605,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1619,7 +1619,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Medium. Describes the original subject of the file, such as \"computer image\", \"drawing\", \"lithograph\", and so forth.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1633,7 +1633,7 @@
     "spec": "WAVRef",
     "condition": "id = INAM",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1647,7 +1647,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1661,7 +1661,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Name. Stores the title of the subject of the file, such as \"Seattle From Above\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1675,7 +1675,7 @@
     "spec": "WAVRef",
     "condition": "id = IPLT",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1689,7 +1689,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1703,7 +1703,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Palette Setting. Specifies the number of colors requested when digitizing an image, such as \"256\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1717,7 +1717,7 @@
     "spec": "WAVRef",
     "condition": "id = IPRD",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1731,7 +1731,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1745,7 +1745,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Product. Specifies the name of the title the file was originally intended for, such as \"Encyclopedia of Pacific Northwest Geography\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1759,7 +1759,7 @@
     "spec": "WAVRef",
     "condition": "id = ISBJ",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1773,7 +1773,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1787,7 +1787,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Subject. Describes the contents of the file, such as \"Aerial view of Seattle\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1801,7 +1801,7 @@
     "spec": "WAVRef",
     "condition": "id = ISFT",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1815,7 +1815,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1829,7 +1829,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Software. Identifies the name of the software package used to create the file, such as \"Microsoft WaveEdit\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1843,7 +1843,7 @@
     "spec": "WAVRef",
     "condition": "id = ISHP",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1857,7 +1857,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1871,7 +1871,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Sharpness. Identifies the changes in sharpness for the digitizer required to produce the file (the format depends on the hardware used).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1885,7 +1885,7 @@
     "spec": "WAVRef",
     "condition": "id = IART",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1899,7 +1899,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1913,7 +1913,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Artist. Lists the artist of the original subject of the file. For example, \"Michaelangelo\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1927,7 +1927,7 @@
     "spec": "WAVRef",
     "condition": "id = ISRC",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1941,7 +1941,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1955,7 +1955,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Source. Identifies the name of the person or organization who supplied the original subject of the file. For example, \"Trey Research\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1969,7 +1969,7 @@
     "spec": "WAVRef",
     "condition": "id = ISRF",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1983,7 +1983,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -1997,7 +1997,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Source Form. Identifies the original form of the material that was digitized, such as \"slide\", \"paper\", \"map\", and so forth. This is not necessarily the same as IMED.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2011,7 +2011,7 @@
     "spec": "WAVRef",
     "condition": "id = ITCH",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2025,7 +2025,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2039,7 +2039,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Technician. Identifies the technician who digitized the subject file. For example, \"Smith, John.\"",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2053,7 +2053,7 @@
     "spec": "WAVRef",
     "condition": "id = ICMS",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2067,7 +2067,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2081,7 +2081,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Commissioned. Lists the name of the person or organization that commissioned the subject of the file. For example, \"Pope Julian II\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2095,7 +2095,7 @@
     "spec": "WAVRef",
     "condition": "id = ICMT",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2109,7 +2109,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2123,7 +2123,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Comments. Provides general comments about the file or the subject of the file. If the comment is several sentences long, end each sentence with a period. Do not include newline characters.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2137,7 +2137,7 @@
     "spec": "WAVRef",
     "condition": "id = ICOP",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2151,7 +2151,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2165,7 +2165,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Copyright. Records the copyright information for the file. For example, \"Copyright Encyclopedia International 1991.\" If there are multiple copyrights, separate them by a semicolon followed by a space.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2179,7 +2179,7 @@
     "spec": "WAVRef",
     "condition": "id = ICRD",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2193,7 +2193,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2207,7 +2207,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Creation date. Specifies the date the subject of the file was created. List dates in year-month-day format, padding one-digit months and days with a zero on the left. For example, \"1553-05-03\" for May 3, 1553.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2221,7 +2221,7 @@
     "spec": "WAVRef",
     "condition": "id = ICRP",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2235,7 +2235,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2249,7 +2249,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Cropped. Describes whether an image has been cropped and, if so, how it was cropped. For example, \"lower right corner\". IDIM Dimensions. Specifies the size of the original subject of the file. For example, \"8.5 in h, 11 in w\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2263,7 +2263,7 @@
     "spec": "WAVRef",
     "condition": "id = IDPI",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2277,7 +2277,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2291,7 +2291,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Dots Per Inch. Stores dots per inch setting of the digitizer used to produce the file, such as \"300\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2305,7 +2305,7 @@
     "spec": "WAVRef",
     "condition": "id = IENG",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2319,7 +2319,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2333,7 +2333,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Engineer. Stores the name of the engineer who worked on the file. If there are multiple engineers, separate the names by a semicolon and a blank. For example, \"Smith, John; Adams, Joe\".",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2347,7 +2347,7 @@
     "spec": "RIFF1991",
     "condition": "id = CSET",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2361,7 +2361,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2375,7 +2375,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the code page used for file elements. If the CSET chunk is not present, or if this field has value zero, assume standard ISO 8859/1 code page (identical to code page 1004 without code points defined in hex columns 0, 1, 8, and 9).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2389,7 +2389,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the country code used for file elements. See “ Country Codes,” following this section, for a list of currently defined country codes. If the CSET chunk is not present, or if this field has value zero, assume USA (country code 001).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2403,7 +2403,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specify the language and dialect used for file elements. See “Language and Dialect Codes,” later in this chapter, for a list of language and dialect codes. If the CSET chunk is not present, or if these fields have value zero, assume US English (language code 9, dialect code 1).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2417,7 +2417,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specify the language and dialect used for file elements. See “Language and Dialect Codes,” later in this chapter, for a list of language and dialect codes. If the CSET chunk is not present, or if these fields have value zero, assume US English (language code 9, dialect code 1).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2431,7 +2431,7 @@
     "spec": "WAVRef",
     "condition": "id = CSET",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2445,7 +2445,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2459,7 +2459,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the code page used for file elements. If the CSET chunk is not present, or if this field has value zero, assume standard ISO 8859/1 code page (identical to code page 1004 without code points defined in hex columns 0, 1, 8, and 9).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2473,7 +2473,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the country code used for file elements. See “ Country Codes,” following this section, for a list of currently defined country codes. If the CSET chunk is not present, or if this field has value zero, assume USA (country code 001).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2487,7 +2487,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specify the language and dialect used for file elements. See “Language and Dialect Codes,” later in this chapter, for a list of language and dialect codes. If the CSET chunk is not present, or if these fields have value zero, assume US English (language code 9, dialect code 1).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2501,7 +2501,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specify the language and dialect used for file elements. See “Language and Dialect Codes,” later in this chapter, for a list of language and dialect codes. If the CSET chunk is not present, or if these fields have value zero, assume US English (language code 9, dialect code 1).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2515,7 +2515,7 @@
     "spec": "RIFF1991",
     "condition": "id = fact",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2529,7 +2529,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2543,7 +2543,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Number of samples",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2557,7 +2557,7 @@
     "spec": "WAVRef",
     "condition": "id = fact",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2571,7 +2571,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2585,7 +2585,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Number of samples. RIFF1991 named this field dwFileSize, even though it's documented as \"Number of samples\"",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2597,9 +2597,9 @@
     "bytes": "4",
     "type": "FOURCC",
     "spec": "RIFF1991",
-    "condition": "id = cue",
+    "condition": "id = \"cue \"",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2613,7 +2613,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2627,7 +2627,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Count of cue points. The number of times the cue-point struct repeats within this chunk.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2641,7 +2641,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "cue-point field: Specifies the cue point name. Each <cue-point> record must have a unique dwName field.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2655,7 +2655,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "cue-point field: Specifies the sample position of the cue point. This is the sequential sample number within the play order. See “ Playlist Chunk,” later in this document, for a discussion of the play order.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2669,7 +2669,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "cue-point field: Specifies the name or chunk ID of the chunk containing the cue point.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2683,7 +2683,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "cue-point field: Specifies the file position of the start of the chunk containing the cue point. This is a byte offset relative to the start of the data section of the ‘wavl’ LIST chunk.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2697,7 +2697,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "cue-point field: Specifies the file position of the start of the block containing the position. This is a byte offset relative to the start of the data section of the ‘wavl’ LIST chunk.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2711,7 +2711,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "cue-point field: Specifies the sample offset of the cue point relative to the start of the block.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2723,9 +2723,9 @@
     "bytes": "4",
     "type": "u8[4]",
     "spec": "WAVRef",
-    "condition": "id = cue",
+    "condition": "id = \"cue \"",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2739,7 +2739,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2753,7 +2753,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Count of cue points. The number of times the cue-point struct repeats within this chunk.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2767,7 +2767,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "cue-point field: Specifies the cue point name. Each <cue-point> record must have a unique dwName field.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2780,8 +2780,8 @@
     "type": "u32",
     "spec": "WAVRef",
     "condition": null,
-    "desc": "cue-point field: Specifies the sample position of the cue point. This is the sequential sample number within the play order. See [`plst`](@/chunk/plst.md) chunk, for a discussion of the play order.",
-    "notes_binary": false,
+    "desc": "cue-point field: Specifies the sample position of the cue point. This is the sequential sample number within the play order. See [`plst`](@/chunk/plst.md) chunk, for a discussion of the play order. ",
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2795,7 +2795,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "cue-point field: Specifies the name or chunk ID of the chunk containing the cue point.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2809,7 +2809,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "cue-point field: Specifies the file position of the start of the chunk containing the cue point. This is a byte offset relative to the start of the data section of the ‘wavl’ LIST chunk.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2823,7 +2823,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "cue-point field: Specifies the file position of the start of the block containing the position. This is a byte offset relative to the start of the data section of the ‘wavl’ LIST chunk.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2837,7 +2837,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "cue-point field: Specifies the sample offset of the cue point relative to the start of the block.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2851,7 +2851,7 @@
     "spec": "RIFF1991",
     "condition": "id = plst",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2865,7 +2865,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2879,7 +2879,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Count of play segments.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2893,7 +2893,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "play-segment field: Specifies the cue point name. This value must match one of the names listed in the <cue-ck> cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2907,7 +2907,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "play-segment field: Specifies the length of the section in samples.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2921,7 +2921,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "play-segment field: Specifies the number of times to play the section.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2935,7 +2935,7 @@
     "spec": "WAVRef",
     "condition": "id = plst",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2949,7 +2949,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2963,7 +2963,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Count of play segments.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2977,7 +2977,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "play-segment field: Specifies the cue point name. This value must match one of the names listed in the [cue](@/chunk/cue.md) cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -2991,7 +2991,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "play-segment field: Specifies the length of the section in samples.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3005,7 +3005,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "play-segment field: Specifies the number of times to play the section.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3019,7 +3019,7 @@
     "spec": "RIFF1991",
     "condition": "id = JUNK",
     "desc": "A JUNK chunk represents padding, filler or outdated information. It contains no relevant data; it is a space filler of arbitrary size.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3033,7 +3033,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3047,7 +3047,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3061,7 +3061,7 @@
     "spec": "WAVRef",
     "condition": "id = JUNK",
     "desc": "A JUNK chunk represents padding, filler or outdated information. It contains no relevant data; it is a space filler of arbitrary size.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3075,7 +3075,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3089,7 +3089,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3103,7 +3103,7 @@
     "spec": "RIFF1991",
     "condition": "id = PAD",
     "desc": "A PAD chunk represents padding, filler or outdated information. It contains no relevant data; it is a space filler of arbitrary size.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3117,7 +3117,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3131,7 +3131,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3145,7 +3145,7 @@
     "spec": "WAVRef",
     "condition": "id = PAD",
     "desc": "A PAD chunk represents padding, filler or outdated information. It contains no relevant data; it is a space filler of arbitrary size.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3159,7 +3159,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3173,7 +3173,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3187,7 +3187,7 @@
     "spec": "RIFF1991",
     "condition": "id = FLLR",
     "desc": "A FLLR chunk represents FLLRding, filler or outdated information. It contains no relevant data; it is a space filler of arbitrary size.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3201,7 +3201,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3215,7 +3215,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3229,7 +3229,7 @@
     "spec": "WAVRef",
     "condition": "id = FLLR",
     "desc": "A FLLR chunk represents FLLRding, filler or outdated information. It contains no relevant data; it is a space filler of arbitrary size.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3243,7 +3243,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3257,7 +3257,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3271,7 +3271,7 @@
     "spec": "RIFF1991",
     "condition": "id = LIST",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3285,7 +3285,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3299,7 +3299,7 @@
     "spec": "RIFF1991",
     "condition": "list_type = adtl",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3313,7 +3313,7 @@
     "spec": "WAVRef",
     "condition": "id = LIST",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3327,7 +3327,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3341,7 +3341,7 @@
     "spec": "WAVRef",
     "condition": "list_type = adtl",
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3355,7 +3355,7 @@
     "spec": "RIFF1991",
     "condition": "id = labl",
     "desc": "The ‘labl’ chunk contains a label, or title, to associate with a cue point.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3369,7 +3369,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3383,7 +3383,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the <cue-ck> cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3397,7 +3397,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies a NULL-terminated string containing a text label.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3411,7 +3411,7 @@
     "spec": "WAVRef",
     "condition": "id = labl",
     "desc": "The ‘labl’ chunk contains a label, or title, to associate with a cue point.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3425,7 +3425,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3439,7 +3439,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the [`cue`](@/chunk/cue.md) chunk' cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3453,7 +3453,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies a NULL-terminated string containing a text label.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3467,7 +3467,7 @@
     "spec": "RIFF1991",
     "condition": "id = note",
     "desc": "The ‘note’ chunk contains comment text for a cue point",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3481,7 +3481,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3495,7 +3495,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the <cue-ck> cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3509,7 +3509,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies a NULL-terminated string containing comment text.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3523,7 +3523,7 @@
     "spec": "WAVRef",
     "condition": "id = note",
     "desc": "The ‘note’ chunk contains comment text for a cue point",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3537,7 +3537,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3551,7 +3551,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the [`cue`](@/chunk/cue.md) chunk' cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3565,7 +3565,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies a NULL-terminated string containing comment text.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3579,7 +3579,7 @@
     "spec": "RIFF1991",
     "condition": "id = ltxt",
     "desc": "The “ ltxt” chunk contains text that is associated with a data segment of specific length",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3593,7 +3593,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3607,7 +3607,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the <cue-ck> cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3621,7 +3621,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the number of samples in the segment of waveform data.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3635,7 +3635,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the type or purpose of the text. For example, dwPurpose can specify a FOURCC code like 'scrp' for script text or 'capt' for close-caption text.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3649,7 +3649,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the country code for the text. See \"Country Codes\" in Chapter 2, \"Resource Interchange File Format\", for a current list of country codes.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3663,7 +3663,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specify the language for the text. See \"Language and Dialect Codes\" in Chapter 2, \"Resource Interchange File Format\", for a current list of language and dialect codes.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3677,7 +3677,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specify the dialect codes for the text. See \"Language and Dialect Codes\" in Chapter 2, \"Resource Interchange File Format\", for a current list of language and dialect codes.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3691,7 +3691,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the code page for the text.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3705,7 +3705,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3719,7 +3719,7 @@
     "spec": "WAVRef",
     "condition": "id = ltxt",
     "desc": "The “ ltxt” chunk contains text that is associated with a data segment of specific length",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3733,7 +3733,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3747,7 +3747,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the [`cue`](@/chunk/cue.md) chunk' cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3761,7 +3761,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the number of samples in the segment of waveform data.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3775,7 +3775,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the type or purpose of the text. For example, dwPurpose can specify a FOURCC code like 'scrp' for script text or 'capt' for close-caption text.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3789,7 +3789,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the country code for the text. See \"Country Codes\" in [`CSET`](@/chunk/cset.md) chunk, for a current list of country codes.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3803,7 +3803,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specify the language for the text. See \"Language and Dialect Codes\" in [`CSET`](@/chunk/cset.md) chunk, for a current list of language and dialect codes.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3817,7 +3817,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specify the dialect codes for the text. See \"Language and Dialect Codes\" in [`CSET`](@/chunk/cset.md) chunk, for a current list of language and dialect codes.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3831,7 +3831,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the code page for the text. See [`CSET`](@/chunk/cset.md) chunk for details.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3845,7 +3845,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3859,7 +3859,7 @@
     "spec": "RIFF1991",
     "condition": "id = file",
     "desc": "The 'file' chunk contains information described in other file formats (for example, an 'RDIB' file or an ASCII text file).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3873,7 +3873,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3887,7 +3887,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the <cue-ck> cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3901,7 +3901,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the <cue-ck> cue-point table.Specifies the file type contained in the fileData field. If the fileData section contains a RIFF form, the dwMedType field is the same as the RIFF form type for the file. This field can contain a zero value.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3915,7 +3915,7 @@
     "spec": "RIFF1991",
     "condition": null,
     "desc": "Contains the media file.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3929,7 +3929,7 @@
     "spec": "WAVRef",
     "condition": "id = file",
     "desc": "The 'file' chunk contains information described in other file formats (for example, an 'RDIB' file or an ASCII text file).",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3943,7 +3943,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": null,
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3957,7 +3957,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the [`cue`](@/chunk/cue.md) chunk' cue-point table.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3971,7 +3971,7 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Specifies the cue point name. This value must match one of the names listed in the <cue-ck> cue-point table.Specifies the file type contained in the fileData field. If the fileData section contains a RIFF form, the dwMedType field is the same as the RIFF form type for the file. This field can contain a zero value.",
-    "notes_binary": false,
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   },
@@ -3985,7 +3985,49 @@
     "spec": "WAVRef",
     "condition": null,
     "desc": "Contains the media file.",
-    "notes_binary": false,
+    "notes_binary": null,
+    "notes_content": null,
+    "notes_usage": null
+  },
+  {
+    "WRID": "WRID>RIFF-WAVE>MD5 >id",
+    "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>1.1",
+    "chunk": "file",
+    "name": "id",
+    "bytes": "4",
+    "type": "u8[4]",
+    "spec": "WAVRef",
+    "condition": "id = \"MD5 \"",
+    "desc": "MD5 audio data checksum.",
+    "notes_binary": null,
+    "notes_content": null,
+    "notes_usage": null
+  },
+  {
+    "WRID": "WRID>RIFF-WAVE>MD5 >size",
+    "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>1.2",
+    "chunk": "file",
+    "name": "size",
+    "bytes": "4",
+    "type": "u32",
+    "spec": "WAVRef",
+    "condition": null,
+    "desc": "size is always 16 bytes.",
+    "notes_binary": null,
+    "notes_content": null,
+    "notes_usage": null
+  },
+  {
+    "WRID": "WRID>RIFF-WAVE>MD5 >name",
+    "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>1.3",
+    "chunk": "file",
+    "name": "md5",
+    "bytes": "16",
+    "type": "u128",
+    "spec": "WAVRef",
+    "condition": null,
+    "desc": "MD5 checksum of the data chunk, not including the optional badding byte.",
+    "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
   }

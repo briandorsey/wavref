@@ -1,7 +1,7 @@
 +++
 title = "PAD"
 weight = 80
-description = "TODO: description of PAD"
+description = "padding, filler or outdated information"
 
 [taxonomies]
 spec=["UNKNOWN"]

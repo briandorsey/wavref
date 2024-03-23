@@ -1,7 +1,7 @@
 +++
 title = "JUNK"
 weight = 80
-description = "TODO: description of JUNK"
+description = "padding, filler or outdated information"
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]

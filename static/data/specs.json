@@ -20,6 +20,17 @@
     "version": "3.0",
     "see": "pages 12-22"
   },
+  "MD5_2017" : 
+  {
+    "id": "MD5_2017",
+    "title": "Audio Data Checksums - MD5 checksum of data chunk",
+    "publication_year": 2017,
+    "authority": "MediaArea",
+    "urls": ["https://mediaarea.net/BWFMetaEdit/md5"],
+    "publication_date": "2017-06",
+    "version": "",
+    "see": ""
+  },
   "BW64" : 
   {
     "id": "BW64",

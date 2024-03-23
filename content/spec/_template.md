@@ -9,5 +9,5 @@ TEMPLATE
 
 TODO: overview
 
-{# spec_detail(ref="TEMPLATE")  
+{{ spec_detail(ref="TEMPLATE") }} 
 
