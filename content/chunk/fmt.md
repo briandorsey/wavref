@@ -1,7 +1,7 @@
 +++
 title = "fmt"
 weight = 11
-description = "TODO: description of fmt"
+description = "Format of audio samples in data chunk."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]

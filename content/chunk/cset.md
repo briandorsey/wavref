@@ -1,7 +1,7 @@
 +++
 title = "CSET"
 weight = 52
-description = "TODO: description of CSET"
+description = "Character set information. Code page, language, etc. Very Rare."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]

@@ -1,7 +1,7 @@
 +++
 title = "RIFF-WAVE"
 weight = 10
-description = "TODO: description of RIFF-WAVE"
+description = "Container structure for multimedia data."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]

@@ -1,7 +1,7 @@
 +++
 title = "fact"
 weight = 12
-description = "TODO: description of fact"
+description = "Number of samples for compressed audio in data chunk."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]

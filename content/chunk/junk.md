@@ -7,7 +7,7 @@ description = "padding, filler or outdated information"
 spec=["RIFF1991", "RIFF1994"]
 
 [extra]
-status = "READY"
+status = ""
 +++
 
 # WRID>RIFF-WAVE>JUNK

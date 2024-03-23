@@ -1,7 +1,7 @@
 +++
 title = "plst"
 weight = 44
-description = "TODO: description of plst"
+description = "Play order for cue points. Very rare."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]

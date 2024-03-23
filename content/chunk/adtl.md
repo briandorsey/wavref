@@ -1,7 +1,7 @@
 +++
 title = "LIST-adtl"
 weight = 35
-description = "TODO: description of LIST-adtl"
+description = "A LIST containing CuePoint annotation chunks."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]

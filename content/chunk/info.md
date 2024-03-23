@@ -1,7 +1,7 @@
 +++
 title = "LIST-INFO"
 weight = 30
-description = "TODO: description of LIST-INFO"
+description = "A LIST containing text chunks."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]

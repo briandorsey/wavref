@@ -7,7 +7,7 @@ description = "MD5 checksum of data chunk"
 spec=["MD5_2017"]
 
 [extra]
-status = "READY"
+status = ""
 +++
 
 # WRID>RIFF-WAVE>MD5
@@ -20,7 +20,6 @@ status = "READY"
 
 This chunk is defined by [BWFMetaEdit](https://mediaarea.net/BWFMetaEdit/) (a WAVE metadata viewer/editor focused on archival use cases). 
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>MD5 ") }}
 {{ wrid_table(prefix="WRID>RIFF-WAVE>MD5 ", spec="WAVRef") }}
 
 ## Learning References
