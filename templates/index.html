@@ -24,7 +24,7 @@
     {% endif -%}
 
     {%- block nav -%}
-        <menu>
+        <nav>
             {% if config.extra.logo -%}
                 {% set _logo = config.extra.logo -%}
                 {% if (_logo is starting_with("http")) == false -%}
@@ -42,7 +42,7 @@
                 <h1><a href="{{ config.base_url }}{{ _ugly_url }}">{{ config.title }}</a><br/>DRAFT<hr></h1>
             {% endif -%}
 
-            <div id="trees">
+            <menu id="trees">
                 <li {%- if current_path == "/" %} class="active"{% endif %}><a href="/">Introduction</a></li>
                 {% set section_ = get_section(path="_index.md") -%}
                 {# pages in the root -#}
@@ -70,8 +70,8 @@
                 </div>
             {% endif -%}
 
-            </div>
-        </menu>
+            </menu >
+        </nav>
     {% endblock nav -%}
 
     <article>
@@ -89,7 +89,7 @@
             </div>
         {% endif -%}
 
-        <div id="wrap">
+        <div>
             {% block content -%}
                 {%- if section.word_count -%}
                     {{ section.content |safe }}

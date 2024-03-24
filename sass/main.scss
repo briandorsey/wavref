@@ -145,7 +145,7 @@ pre {
     display: block;
   }
 
-menu {
+nav {
   position: sticky;
   height: 92vh;
   top:$baseline;
@@ -161,6 +161,10 @@ menu {
     font-size: 120%;
     // color: $links; 
   }
+
+  li {
+    list-style: none; 
+  }
 }
 
 #toc {
@@ -171,7 +175,6 @@ menu {
 
   li {
     color:$color;
-    margin-left: $font-size;
 
   &::before {
     display: inline-block;
@@ -226,6 +229,7 @@ main {
  #trees {
   overflow-y: auto;
   height: 100%;
+  padding-left: 0; 
  }
 
  .subtree {
@@ -287,7 +291,7 @@ main {
 
  .subtree li {
   list-style-type: none;
-  margin-left: $baseline;
+  margin-left: $baseline / 2;
 
 
   a {
@@ -311,6 +315,10 @@ article {
   // width: calc(100% - (#{$baseline} * 4 + 10rem));
   width: calc(100% - 10rem);
   margin-left:calc(#{$baseline} );
+
+  h1 {
+    margin-block-start: 0; 
+  }
 
   img {
    max-width:100%;
