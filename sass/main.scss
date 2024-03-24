@@ -33,15 +33,17 @@ a {
   &:link {
     color:$links;
     text-decoration: none;
+    font-weight: bold; 
+  }
+
+  &:visited {
+    color:$visited-links;
   }
 
   &:hover {
     color:$hover-links;
   }
 
-  &:visited {
-    color:$visited-links;
-  }
 }
 
 h2,
@@ -143,18 +145,21 @@ pre {
     display: block;
   }
 
-nav {
+menu {
   position: sticky;
   height: 92vh;
   top:$baseline;
-  left:$baseline;
+  // left:$baseline;
   bottom: $baseline;
-  padding-right: $baseline;
+  // padding-right: $baseline /2;
+  padding-left: $baseline / 2; 
   width: 10rem;
 
   h1 {
-    margin:0;
+    margin: 0 0 0 0;
     line-height: 1;
+    font-size: 120%;
+    // color: $links; 
   }
 }
 
@@ -214,17 +219,17 @@ main {
   }
  }
 
- nav label {
+ menu label {
   display:block;
  }
 
  #trees {
   overflow-y: auto;
-  height: 80%;
+  height: 100%;
  }
 
  .subtree {
-  overflow:hidden;
+  // overflow:hidden;
   margin:calc(#{$baseline} / 8) 0;
   transition: overflow 0.2s ease-in-out;
   padding: 0;
@@ -303,12 +308,13 @@ main {
 
 
 article {
- width: calc(100% - (#{$baseline} * 4 + 10rem));
- margin-left:calc(#{$baseline} * 2);
+  // width: calc(100% - (#{$baseline} * 4 + 10rem));
+  width: calc(100% - 10rem);
+  margin-left:calc(#{$baseline} );
 
- img {
+  img {
    max-width:100%;
- }
+  }
 
 }
 
@@ -317,14 +323,14 @@ article {
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1) {
 
   main {
     flex-flow: column nowrap;
     width: 100%;
   }
 
-  nav {
+  menu {
     position: inherit;
     height:auto;
     margin:$baseline $baseline 0 $baseline;

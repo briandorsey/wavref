@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
@@ -10,7 +10,7 @@
         {% endif -%}
         <link rel="icon" href="{{ _favicon | safe }}">
     {% endif -%}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
     {% endif -%}
 
     {%- block nav -%}
-        <nav>
+        <menu>
             {% if config.extra.logo -%}
                 {% set _logo = config.extra.logo -%}
                 {% if (_logo is starting_with("http")) == false -%}
@@ -71,7 +71,7 @@
             {% endif -%}
 
             </div>
-        </nav>
+        </menu>
     {% endblock nav -%}
 
     <article>
