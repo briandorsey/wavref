@@ -1,5 +1,4 @@
-{% set data = load_data(path="static/data/wrid_data.json") %}
-
+{% set data = load_data(path="static/data/wrid_data.json") %} 
 {%- if spec %}
     {% set data = data | filter(attribute="spec", value=spec) %}
 {%- endif %}
@@ -8,7 +7,7 @@
 {%- endif %}
 
 {%- if prefix %}
-    {%- set pattern = "^" ~ prefix ~ ">[^>]*[^}]>value$" %}
+    {%- set pattern = "^" ~ prefix ~ ">[^>]*[^}]>text$" %}
     {%- set filtered_data = [] %}
     {%- for wrid in data %}
         {%- if not prefix or wrid.WRID is matching(pattern) %}

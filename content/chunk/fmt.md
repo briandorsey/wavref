@@ -17,6 +17,13 @@ status = "DRAFT"
 > Note: all chunks are four bytes. `fmt` is `"fmt "`, the last character is a space (ASCII 32).
 
 TODO: overview
+
+> A number indicating the WAVE format category of the file. The content of the
+> `format-specific-fields` \[ed: everything after `block_align`\] portion of the `fmt` chunk, and the interpretation of
+> the waveform data, depend on this value. 
+> 
+> {{ spec(ref="RIFF1991") }}
+
 TODO: update for WAVFORMATEX and describe how to parse
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", spec="WAVRef") }}

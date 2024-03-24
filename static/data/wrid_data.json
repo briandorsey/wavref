@@ -120,7 +120,7 @@
     "type": "u16",
     "spec": "WAVRef",
     "condition": null,
-    "desc": null,
+    "desc": "A number indicating the WAVE format category of the file. The content of the <format-specific-fields> portion of the ‘fmt’ chunk, and the interpretation of the waveform data, depend on this value.",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -134,7 +134,7 @@
     "type": "u16",
     "spec": "WAVRef",
     "condition": null,
-    "desc": null,
+    "desc": "The number of channels represented in the waveform data, such as 1 for mono or 2 for stereo.",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -148,7 +148,7 @@
     "type": "u32",
     "spec": "WAVRef",
     "condition": null,
-    "desc": null,
+    "desc": "The sampling rate (in samples per second) at which each channel should be played.",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -162,7 +162,7 @@
     "type": "u32",
     "spec": "WAVRef",
     "condition": null,
-    "desc": null,
+    "desc": "The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value.",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -176,7 +176,7 @@
     "type": "u16",
     "spec": "WAVRef",
     "condition": null,
-    "desc": null,
+    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -190,7 +190,7 @@
     "type": "u16",
     "spec": "WAVRef",
     "condition": "format_tag = 0x0001",
-    "desc": null,
+    "desc": "The wBitsPerSample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -232,7 +232,7 @@
     "type": "WORD",
     "spec": "RIFF1991",
     "condition": null,
-    "desc": null,
+    "desc": "A number indicating the WAVE format category of the file. The content of the <format-specific-fields> portion of the ‘fmt’ chunk, and the interpretation of the waveform data, depend on this value.",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -246,7 +246,7 @@
     "type": "WORD",
     "spec": "RIFF1991",
     "condition": null,
-    "desc": null,
+    "desc": "The number of channels represented in the waveform data, such as 1 for mono or 2 for stereo.",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -260,7 +260,7 @@
     "type": "DWORD",
     "spec": "RIFF1991",
     "condition": null,
-    "desc": null,
+    "desc": "The sampling rate (in samples per second) at which each channel should be played.",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -274,7 +274,7 @@
     "type": "DWORD",
     "spec": "RIFF1991",
     "condition": null,
-    "desc": "For PCM data, the wAvgBytesPerSec field of the ‘fmt’ chunk should be equal to the following formula rounded up to the next whole number: wChannels x wBitsPerSecond x ( wBitsPerSample / 8 )",
+    "desc": "The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value.",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -288,7 +288,7 @@
     "type": "WORD",
     "spec": "RIFF1991",
     "condition": null,
-    "desc": "The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )",
+    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -316,7 +316,7 @@
     "type": "WORD",
     "spec": "RIFF1991",
     "condition": "wFormatTag = 0x0001",
-    "desc": null,
+    "desc": "The wBitsPerSample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. ",
     "notes_binary": null,
     "notes_content": null,
     "notes_usage": null
@@ -476,10 +476,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IARL>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IARL>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>1.3",
     "chunk": "IARL",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -518,10 +518,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IGNR>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IGNR>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>10.3",
     "chunk": "IGNR",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -560,10 +560,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IKEY>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IKEY>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>11.3",
     "chunk": "IKEY",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -602,10 +602,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ILGT>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ILGT>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>12.3",
     "chunk": "ILGT",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -644,10 +644,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IMED>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IMED>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>13.3",
     "chunk": "IMED",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -686,10 +686,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>INAM>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>INAM>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>14.3",
     "chunk": "INAM",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -728,10 +728,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IPLT>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IPLT>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>15.3",
     "chunk": "IPLT",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -770,10 +770,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IPRD>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IPRD>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>16.3",
     "chunk": "IPRD",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -812,10 +812,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISBJ>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISBJ>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>17.3",
     "chunk": "ISBJ",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -854,10 +854,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISFT>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISFT>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>18.3",
     "chunk": "ISFT",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -896,10 +896,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISHP>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISHP>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>19.3",
     "chunk": "ISHP",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -938,10 +938,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IART>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IART>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>2.3",
     "chunk": "IART",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -980,10 +980,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISRC>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISRC>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>20.3",
     "chunk": "ISRC",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1022,10 +1022,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISRF>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISRF>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>21.3",
     "chunk": "ISRF",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1064,10 +1064,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ITCH>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ITCH>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>22.3",
     "chunk": "ITCH",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1106,10 +1106,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICMS>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICMS>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>3.3",
     "chunk": "ICMS",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1148,10 +1148,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICMT>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICMT>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>4.3",
     "chunk": "ICMT",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1190,10 +1190,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICOP>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICOP>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>5.3",
     "chunk": "ICOP",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1232,10 +1232,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICRD>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICRD>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>6.3",
     "chunk": "ICRD",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1274,10 +1274,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICRP>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICRP>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>7.3",
     "chunk": "ICRP",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1316,10 +1316,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IDPI>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IDPI>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>8.3",
     "chunk": "IDPI",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1358,10 +1358,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IENG>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IENG>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>9.3",
     "chunk": "IENG",
-    "name": "(value)",
+    "name": "(text)",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "RIFF1991",
@@ -1442,10 +1442,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IARL>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IARL>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>1.3",
     "chunk": "IARL",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1484,10 +1484,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IGNR>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IGNR>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>10.3",
     "chunk": "IGNR",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1526,10 +1526,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IKEY>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IKEY>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>11.3",
     "chunk": "IKEY",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1568,10 +1568,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ILGT>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ILGT>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>12.3",
     "chunk": "ILGT",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1610,10 +1610,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IMED>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IMED>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>13.3",
     "chunk": "IMED",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1652,10 +1652,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>INAM>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>INAM>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>14.3",
     "chunk": "INAM",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1694,10 +1694,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IPLT>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IPLT>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>15.3",
     "chunk": "IPLT",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1736,10 +1736,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IPRD>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IPRD>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>16.3",
     "chunk": "IPRD",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1778,10 +1778,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISBJ>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISBJ>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>17.3",
     "chunk": "ISBJ",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1820,10 +1820,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISFT>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISFT>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>18.3",
     "chunk": "ISFT",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1862,10 +1862,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISHP>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISHP>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>19.3",
     "chunk": "ISHP",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1904,10 +1904,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IART>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IART>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>2.3",
     "chunk": "IART",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1946,10 +1946,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISRC>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISRC>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>20.3",
     "chunk": "ISRC",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -1988,10 +1988,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISRF>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ISRF>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>21.3",
     "chunk": "ISRF",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -2030,10 +2030,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ITCH>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ITCH>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>22.3",
     "chunk": "ITCH",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -2072,10 +2072,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICMS>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICMS>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>3.3",
     "chunk": "ICMS",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -2114,10 +2114,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICMT>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICMT>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>4.3",
     "chunk": "ICMT",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -2156,10 +2156,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICOP>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICOP>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>5.3",
     "chunk": "ICOP",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -2198,10 +2198,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICRD>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICRD>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>6.3",
     "chunk": "ICRD",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -2240,10 +2240,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICRP>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>ICRP>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>7.3",
     "chunk": "ICRP",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -2282,10 +2282,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IDPI>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IDPI>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>8.3",
     "chunk": "IDPI",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
@@ -2324,10 +2324,10 @@
     "notes_usage": null
   },
   {
-    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IENG>value",
+    "WRID": "WRID>RIFF-WAVE>LIST-INFO>IENG>text",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>9.3",
     "chunk": "IENG",
-    "name": "value",
+    "name": "text",
     "bytes": "size",
     "type": "ZSTR",
     "spec": "WAVRef",
