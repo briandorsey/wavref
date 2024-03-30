@@ -18,6 +18,9 @@ If you find an error or would like additional information added, please check th
 * [release_date] - [version] - [summary]
 	* [things that were done]
 * Upcoming - version 0.2 - 
+    * show more of the WRID prefix on subchunks
+    * add RIFF1991:LIST-wavl
+    * add RIFF1991:slnt
     * add MediaArea:MD5
     * add RIFF1991:LIST-adtl
     * add RIFF1991:JUNK (also, PAD, FLLR)
@@ -60,6 +63,7 @@ If you find an error or would like additional information added, please check th
 
 * Future maybe
     * fix sidebar (cut off at bottom)
+    * "Chunk reference" page should show LIST subchunks as well. 
     * chunk bext: 
     * implement spec details widget (shortcodes/spec_detail.html)
     * convert chunk reference page to a table
@@ -78,8 +82,6 @@ If you find an error or would like additional information added, please check th
     * CSS: fix HTML layout on narrow windows - what to do about TOC? 
     * chunk: find specs for `smpl` chunk - document
     * RIFF1991:data 
-    * RIFF1991:LIST-wavl
-    * RIFF1991:slnt
     * question... how deep to dig into fmt: WAV Format Tag inconsistencies between different docs & applications? 
     * go through full RIFF1994 spec and add data to wrid_data.csv
     * go through each chunk and pull a few spec quotes

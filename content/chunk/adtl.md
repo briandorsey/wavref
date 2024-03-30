@@ -1,7 +1,7 @@
 +++
 title = "LIST-adtl"
 weight = 35
-description = "A LIST containing CuePoint annotation chunks."
+description = "A LIST of CuePoint annotation chunks."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]
@@ -18,25 +18,29 @@ TODO: overview
 > 
 > {{ spec(ref="RIFF1991") }}
 
-`LIST-adtl` chunk
+## `LIST-adtl` chunk
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl", spec="WAVRef") }}
 
-`labl` chunk
+## `labl` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>labl", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>labl", spec="WAVRef"
+    trim_prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
-`note` chunk
+## `note` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>note", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>note", spec="WAVRef"
+    trim_prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
-`ltxt` chunk
+## `ltxt` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>ltxt", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>ltxt", spec="WAVRef"
+    trim_prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
-`file` chunk
+## `file` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>file", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>file", spec="WAVRef"
+    trim_prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
 ## Learning References
 

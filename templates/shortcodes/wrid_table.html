@@ -21,6 +21,10 @@
     {%- set pattern = "" %}
 {%- endif %}
 
+{%- if prefix and not trim_prefix %}
+    {%- set trim_prefix = prefix %}
+{%- endif %}
+
 {%- set condition_in_pattern = false %}
 {%- set has_condition= data | filter(attribute="condition") %} 
 {%- for item in has_condition %}
@@ -57,7 +61,7 @@
       {%- endif %}
       {%- if col_wrid %}
       {%- if prefix %}
-      <td class="WRID">{{ wrid.WRID | replace(from=prefix, to="...") }}</td>
+      <td class="WRID">{{ wrid.WRID | replace(from=trim_prefix, to="...") }}</td>
       {%- else %}
       <td class="WRID">{{ wrid.WRID }}</td>
       {%- endif %}

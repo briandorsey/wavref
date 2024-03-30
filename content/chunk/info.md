@@ -1,7 +1,7 @@
 +++
 title = "LIST-INFO"
 weight = 30
-description = "A LIST containing text chunks."
+description = "A LIST of descripitve text chunks."
 
 [taxonomies]
 spec=["RIFF1991", "RIFF1994"]
@@ -24,11 +24,17 @@ The `LIST` chunk is a container which holds additional subchunks of `list_type`.
 
 ... 
 
+## `LIST-INFO` chunk
+
 {{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-INFO", spec="WAVRef") }}
+
+## Example chunk
 
 TODO: info about subchunks... example subchunk:
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-INFO>ICMT", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-INFO>ICMT", spec="WAVRef"
+    trim_prefix="WRID>RIFF-WAVE>LIST-INFO") }}
+) }}
 
 All of the subchunks are the same format, with only the `id` changing between them.
 
@@ -40,7 +46,9 @@ The name `text` is a placeholder made up for this reference book. {{ spec(ref="R
 >
 > {{ spec(ref="RIFF1991") }}
 
-INFO subchunks defined in {{ spec(ref="RIFF1991") }}:
+## INFO subchunks 
+
+Defined in {{ spec(ref="RIFF1991") }}
 
 {{ wrid_table_subchunks(prefix="WRID>RIFF-WAVE>LIST-INFO", spec="WAVRef", col_wrid=false) }}
 

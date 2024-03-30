@@ -20,6 +20,8 @@ TODO: overview
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>cue", spec="WAVRef") }}
 
+All fields after `cue_points` repeat as a group (struct), `cue_points` number of times. 
+
 ## Usage
 
 * See the "Cue-Points Chunk", "Examples of File Position Values" section of {{ spec(ref="RIFF1991") }} for basic information on interpreting the cue-point values. However, it doesn't clearly specify some things. For example: is `sample_offset` a byte offset, or a "frame" offset (sample rate * channels).

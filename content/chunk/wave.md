@@ -19,13 +19,14 @@ TODO: overview
 {{ spec(ref="RIFF1991") }} specifies the following chunks for `WAVE` files: 
 
 
-* [fmt](@/chunk/fmt.md) - Format
-* [fact](@/chunk/fact.md) - Fact chunk
-* data - Wave data
-* [cue](@/chunk/cue.md) - Cue points
-* [plst](@/chunk/plst.md) - Playlist
-* [LIST-INFO](@/chunk/info.md) - Info data list
-* LIST-asdl - Associated data list
+* [fmt](@/chunk/fmt.md) - Format of audio samples in data chunk. 
+* [fact](@/chunk/fact.md) - Number of samples for compressed audio in data chunk. 
+* [data](@/chunk/data.md) - Wave sample data
+* [cue](@/chunk/cue.md) -  A series of positions in the waveform data chunk. 
+* [plst](@/chunk/plst.md) - Play order for cue points. Very rare. 
+* [LIST-INFO](@/chunk/info.md) - A LIST of descripitve text chunks. 
+* [LIST-adtl](@/chunk/adtl.md) - A LIST of CuePoint annotation chunks. 
+* [LIST-wavl](@/chunk/wavl.md) - A LIST of audio and/or silence chunks: data, slnt 
 * [JUNK](@/chunk/junk.md) - file padding (no content)
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE", spec="WAVRef") }}
