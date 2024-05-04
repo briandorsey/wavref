@@ -22,6 +22,12 @@ Appears to be added by some Apple APIs. According so some forum posts, it may be
 
 ## Learning References
 
+## Related Chunks
+
+ * similar to [PAD](@/chunk/pad.md).
+ * similar to [JUNK](@/chunk/junk.md).
+
+
 ## Specification
 
 {{ chunk_specs() }}

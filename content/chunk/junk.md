@@ -20,6 +20,11 @@ status = ""
 
 ## Learning References
 
+## Related Chunks
+
+ * similar to [PAD](@/chunk/pad.md).
+ * similar to [FLLR](@/chunk/fllr.md).
+
 ## Specification
 
 {{ chunk_specs() }}
