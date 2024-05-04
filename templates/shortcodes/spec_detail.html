@@ -9,7 +9,17 @@
 {{ spec.version }}
 ({{ spec.publication_year }}).
 {%- if spec.see %} See {{spec.see}}.{% endif %}
-<p>TODO: implement spec details widget </p>
+
+{%- if spec.urls %} 
+<p>URLs:
+<ul>
+  {%- for url in spec.urls %}
+  <li><a href="{{url}}">{{url}}</a> </li>
+  {%- endfor %}
+</ul></p>
+{% endif %}
+
+<p>TODO: implement spec_detail widget </p>
 <p>
 {%- for key, value in spec %} 
 |&nbsp;&nbsp;&nbsp;&nbsp;<b>{{key}}</b>: {{value}}<br/>
