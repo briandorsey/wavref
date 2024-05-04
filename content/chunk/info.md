@@ -34,7 +34,6 @@ TODO: info about subchunks... example subchunk:
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-INFO>ICMT", spec="WAVRef"
     trim_prefix="WRID>RIFF-WAVE>LIST-INFO") }}
-) }}
 
 All of the subchunks are the same format, with only the `id` changing between them.
 
@@ -50,7 +49,11 @@ The name `text` is a placeholder made up for this reference book. {{ spec(ref="R
 
 Defined in {{ spec(ref="RIFF1991") }}
 
-{{ wrid_table_subchunks(prefix="WRID>RIFF-WAVE>LIST-INFO", spec="WAVRef", col_wrid=false) }}
+{{ wrid_table_subchunks(prefix="WRID>RIFF-WAVE>LIST-INFO", spec="RIFF1991", col_wrid=false) }}
+
+Defined in {{ spec(ref="RIFF1994") }}
+
+{{ wrid_table_subchunks(prefix="WRID>RIFF-WAVE>LIST-INFO", spec="RIFF1994", col_wrid=false) }}
 
 
 ## Learning References
