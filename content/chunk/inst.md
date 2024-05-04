@@ -1,7 +1,7 @@
 +++
 title = "inst"
 weight = 66
-description = "Pitch, volume, velocity for playback by sampler."
+description = "Pitch, volume, and velocity for playback by sampler."
 
 [taxonomies]
 spec=["RIFF1994"]
