@@ -11,16 +11,20 @@ This is a very early draft, many of the core chunks have technical documentation
 
 If you find an error or would like additional information added, please check the [issue tracker](https://github.com/briandorsey/wavref/issues) and comment on an existing issue or add a new one. Thank you in advance! 
 
-## Release template
+# Release template
 
 * [version] - [release_date] - [summary]
 	* [things that were done]
 
-## Releases
+Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
+
+# Releases
 
 * [Upcoming] - [release_date] - 
-    * 2 new INFO chunks from RIFF1994: ISMP, IDIT
-    * PAD is actually from RIFF1994
+    * [IMP] documentation of repeated sub-structs: ex: plst, cue, smpl
+    * [NEW] add RIFF1994:inst
+    * [NEW] 2 new INFO chunks from RIFF1994: ISMP, IDIT
+    * [FIX] PAD is actually from RIFF1994
 * [0.1.4] - 2024-03-29 - Finish RIFF1991 chunks
     * show more of the WRID prefix on subchunks
     * add RIFF1991:LIST-wavl
@@ -66,9 +70,7 @@ If you find an error or would like additional information added, please check th
 ---- 
 
 * Future maybe
-    * improve documentation of repeated sub-structs: ex: plst, cue, smpl
     * RIFF1994
-        * add RIFF1994:inst
         * add RIFF1994:smpl
         * update `fmt ` to document WAVEFORMATEX
         * compare wFormatTags table on pg20 to current list
