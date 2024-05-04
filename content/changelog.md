@@ -66,9 +66,10 @@ If you find an error or would like additional information added, please check th
 ---- 
 
 * Future maybe
+    * improve documentation of repeated sub-structs: ex: plst, cue, smpl
     * RIFF1994
-        * add RIFF1994:smpl
         * add RIFF1994:inst
+        * add RIFF1994:smpl
         * update `fmt ` to document WAVEFORMATEX
         * compare wFormatTags table on pg20 to current list
             0x0000 redefined "for development purposes" 
@@ -86,7 +87,7 @@ If you find an error or would like additional information added, please check th
     * create references page, similar setup to glossary page
     * add section of useful references? or just generalize specifications --> references? 
     * add reference link to FADI BWF guidelines: https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf
-    * update site colors: https://iamkate.com/data/12-bit-rainbow/ (see how those look... if not, maybe solarized?
+    * update site colors: https://iamkate.com/data/12-bit-rainbow/ (see how those look... if not, maybe solarized?)
     * wav files: both simple and complex, depending on what you want to do with them. 
     * wav files: better intro to riff (maybe with a visual?)
     * write intro to what a chunk is on Chunk reference page
@@ -95,7 +96,6 @@ If you find an error or would like additional information added, please check th
     * CSS: scroll wide tables horizontally without affecting overall page
     * CSS: fix HTML layout on narrow windows - what to do about TOC? 
     * question... how deep to dig into fmt: WAV Format Tag inconsistencies between different docs & applications? 
-    * go through full RIFF1994 spec and add data to wrid_data.csv
     * go through each chunk and pull a few spec quotes
     * write WAV overview - wav_general.md
     * write initial glossary
