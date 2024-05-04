@@ -7,7 +7,7 @@ description = "A series of positions in the waveform data chunk."
 spec=["RIFF1991", "RIFF1994"]
 
 [extra]
-status = "DRAFT"
+status = "REF"
 +++
 
 # WRID>RIFF-WAVE>cue

@@ -7,7 +7,7 @@ description = "Play order for cue points. Very rare."
 spec=["RIFF1991", "RIFF1994"]
 
 [extra]
-status = "DRAFT"
+status = "REF"
 +++
 
 # WRID>RIFF-WAVE>plst

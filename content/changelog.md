@@ -5,19 +5,23 @@ weight = 90
 
 # Current Status
 
-This is a very early draft, I haven't even added the chunks defined in the initial WAV spec {{ spec(ref="RIFF1991") }} or any explanatory text. 
-
-Each [chunk](@/chunk/_index.md) also has its own status. One of DRAFT, REFERENCE, READY. 
+This is a very early draft, many of the core chunks have technical documentation, but most are missing explanatory text.  Each [chunk](@/chunk/_index.md) also has its own status. 
 
 # Change Log
 
 If you find an error or would like additional information added, please check the [issue tracker](https://github.com/briandorsey/wavref/issues) and comment on an existing issue or add a new one. Thank you in advance! 
 
+## Release template
+
+* [version] - [release_date] - [summary]
+	* [things that were done]
+
 ## Releases
 
-* [release_date] - [version] - [summary]
-	* [things that were done]
-* Upcoming - version 0.2 - 
+* [Upcoming] - [release_date] - 
+    * 2 new INFO chunks from RIFF1994: ISMP, IDIT
+    * PAD is actually from RIFF1994
+* [0.1.4] - 2024-03-29 - Finish RIFF1991 chunks
     * show more of the WRID prefix on subchunks
     * add RIFF1991:LIST-wavl
     * add RIFF1991:slnt
@@ -34,7 +38,7 @@ If you find an error or would like additional information added, please check th
     * add more WAV Formats from MS web page and mmreg.h
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
     * fix broken tables in Safari. 
-* 2013-01-14 - version 0.1 - Initial release, base structure and TODOs
+* [0.1.0] - 2013-01-14 - Initial release, base structure and TODOs
     * setup build and deployment
     * wrid_data.csv refactor: literal --> condition
     * added WAVE Format Categories from {{ spec=(ref"RIFF1991") }}
@@ -62,6 +66,16 @@ If you find an error or would like additional information added, please check th
 ---- 
 
 * Future maybe
+    * RIFF1994
+        * add RIFF1994:smpl
+        * add RIFF1994:inst
+        * update `fmt ` to document WAVEFORMATEX
+        * compare wFormatTags table on pg20 to current list
+            0x0000 redefined "for development purposes" 
+        * add `fact` struct info for ADPCM, maybe others, ignore most. 
+        * compare country codes and language and dialect code tables to current list
+        * try to find additional docs listed in Overview
+        * reference: [MIDI Technical Fanatic's Brainwashing Center / tech / WAVE format](http://midi.teragonaudio.com/tech/wave.htm) - opinionated guide to WAV. Very clear writing. also documents `smpl` and `inst` chunks
     * fix sidebar (cut off at bottom)
     * "Chunk reference" page should show LIST subchunks as well. 
     * chunk bext: 
@@ -80,8 +94,6 @@ If you find an error or would like additional information added, please check th
     * create list of WRID normalized data types and shortcode to link to them
     * CSS: scroll wide tables horizontally without affecting overall page
     * CSS: fix HTML layout on narrow windows - what to do about TOC? 
-    * chunk: find specs for `smpl` chunk - document
-    * RIFF1991:data 
     * question... how deep to dig into fmt: WAV Format Tag inconsistencies between different docs & applications? 
     * go through full RIFF1994 spec and add data to wrid_data.csv
     * go through each chunk and pull a few spec quotes
@@ -106,7 +118,6 @@ If you find an error or would like additional information added, please check th
     * article / essay on which chunks actually matter for different use cases
     * add footer note to all pages: link to file an issue for any innacuracies
     * research: AIFF file type... how similar to WAVE? 
-    * reference: [MIDI Technical Fanatic's Brainwashing Center / tech / WAVE format](http://midi.teragonaudio.com/tech/wave.htm) - opinionated guide to WAV. Very clear writing. also documents `smpl` and `inst` chunks
     * make example WAV file with specific values mapping to WRIDs (or specific ints, etc) to double-check/validate field locations from other software
         * add page describing how to use this to learn what metadata different apps support and specifically where they read/write it.
     * create an "SDK" of WRID and descriptive information for embedding in other applications.

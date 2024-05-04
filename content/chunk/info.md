@@ -7,7 +7,7 @@ description = "A LIST of descripitve text chunks."
 spec=["RIFF1991", "RIFF1994"]
 
 [extra]
-status = "DRAFT"
+status = "REF"
 +++
 
 # WRID>RIFF-WAVE>LIST-INFO

@@ -7,7 +7,7 @@ description = "A LIST of CuePoint annotation chunks."
 spec=["RIFF1991", "RIFF1994"]
 
 [extra]
-status = "DRAFT"
+status = "REF"
 +++
 
 # WRID>RIFF-WAVE>LIST-adtl

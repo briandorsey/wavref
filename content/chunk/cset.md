@@ -7,7 +7,7 @@ description = "Character set information. Code page, language, etc. Very Rare."
 spec=["RIFF1991", "RIFF1994"]
 
 [extra]
-status = "DRAFT"
+status = "REF"
 +++
 
 # WRID>RIFF-WAVE>CSET

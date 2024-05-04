@@ -7,7 +7,7 @@ description = "A LIST of audio and/or silence chunks: data, slnt"
 spec=["RIFF1991"]
 
 [extra]
-status = "DRAFT"
+status = "REF"
 +++
 
 # WRID>RIFF-WAVE>LIST-wavl
