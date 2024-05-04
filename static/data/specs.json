@@ -15,7 +15,7 @@
     "title": "New Multimedia Data Types and Data Techniques",
     "publication_year": 1994,
     "authority": "Microsoft",
-    "urls": ["http://example.com"],
+    "urls": ["https://www.mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/Docs/RIFFNEW.pdf"],
     "publication_date": "1994-04-15",
     "version": "3.0",
     "see": "pages 12-22"
@@ -56,7 +56,7 @@
   "UNKNOWN" : 
   {
     "id": "UNKNOWN",
-    "title": "Placeholder for chunks which are observed to be in use, but don't have a known specification.",
+    "title": "Placeholder for chunks which don't have a known specification.",
     "publication_year": null,
     "authority": "",
     "urls": [],
