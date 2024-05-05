@@ -1,7 +1,7 @@
 +++
 title = "smpl"
 weight = 68
-description = "Information needed to use a WAVE as a sampling instrument."
+description = "Information needed for use as a sampling instrument."
 
 [taxonomies]
 spec=["RIFF1994"]
