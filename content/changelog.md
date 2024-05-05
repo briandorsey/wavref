@@ -140,3 +140,4 @@ Broadcast WAVE Files](https://www.digitizationguidelines.gov/audio-visual/docume
     * chunks: [Audio Definition Model](https://www.bbc.co.uk/rd/publications/audio-definition-model-software)
         * [EBU ADM Guidelines Introduction](https://adm.ebu.io/index.html)
     * add live fuzzy match filtering to the long WRID table
+    * chunk atem: appears to contain sampler related JSON
