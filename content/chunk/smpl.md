@@ -18,7 +18,7 @@ TODO: overview
 >
 > {{ spec(ref="RIFF1994") }}
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>smpl", col_repeat_group=true) }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>smpl", col_group=true) }}
 
 ## Learning References
 

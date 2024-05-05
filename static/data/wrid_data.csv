@@ -1,4 +1,4 @@
-"WRID","sort_spec","chunk","repeat_group","name","name_spec","bytes","type","type_spec","spec","condition","desc"
+"WRID","sort_spec","chunk","group","name","name_spec","bytes","type","type_spec","spec","condition","desc"
 "WRID>RIFF-WAVE>id","","RIFF-WAVE","","id","ckID","4","u8[4]","FOURCC","RIFF1991","id = RIFF",""
 "WRID>RIFF-WAVE>size","","RIFF-WAVE","","size","ckSize","4","u32","DWORD","RIFF1991","",""
 "WRID>RIFF-WAVE>form_type","","RIFF-WAVE","","form_type","formType","4","u8[4]","FOURCC","RIFF1991","form_type = WAVE",""

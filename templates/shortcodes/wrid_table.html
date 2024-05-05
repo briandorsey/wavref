@@ -9,8 +9,8 @@
 {%- if col_wrid is undefined %}
     {% set col_wrid = true %}
 {%- endif %}
-{%- if col_repeat_group is undefined %}
-    {% set col_repeat_group = false %}
+{%- if col_group is undefined %}
+    {% set col_group = false %}
 {%- endif %}
 {%- if col_name_spec is undefined %}
     {% set col_name_spec = false %}
@@ -46,7 +46,7 @@
   <thead>
     <tr>
       <th>Chunk</th>
-      {% if col_repeat_group %}<th>Repeat<br/>Group</th>{% endif -%}
+      {% if col_group %}<th>Group</th>{% endif -%}
       <th>Name</th>
       {% if col_name_spec %}<th>Name<br/>as Specified</th>{% endif -%}
       <th>Bytes</th>
@@ -62,8 +62,8 @@
     {%- if not prefix or wrid.WRID is matching(pattern) %}
     <tr>
       <td>{{ wrid.chunk}}</td>
-      {%- if col_repeat_group %}
-      <td class="desc">{% if wrid.repeat_group %}{{ wrid.repeat_group }}{% endif %}</td>
+      {%- if col_group %}
+      <td class="desc">{% if wrid.group%}{{ wrid.group}}{% endif %}</td>
       {%- endif %}
       <td><code>{{ wrid.name}}</code></td>
       {%- if col_name_spec %}

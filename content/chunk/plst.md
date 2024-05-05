@@ -26,7 +26,7 @@ While this chunk is defined in {{ spec(ref="RIFF1991") }}, it seems to be *extre
 
 ## Spec
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>plst", col_repeat_group=true) }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>plst", col_group=true) }}
 
 All fields where Repeat Group = `segment` repeat `segments` times as a group (struct).
 
