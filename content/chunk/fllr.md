@@ -12,9 +12,9 @@ status = ""
 
 # WRID>RIFF-WAVE>FLLR
 
-FLLR appears to be a padding chunk similar to [JUNK](@/chunk/junk.md).
+`FLLR` appears to be a padding chunk similar to [`JUNK`](@/chunk/junk.md).
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>FLLR", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>FLLR") }}
 
 ## Usage
 
@@ -24,8 +24,8 @@ Appears to be added by some Apple APIs. According so some forum posts, it may be
 
 ## Related Chunks
 
- * similar to [PAD](@/chunk/pad.md).
- * similar to [JUNK](@/chunk/junk.md).
+ * similar to [`PAD `](@/chunk/pad.md).
+ * similar to [`JUNK`](@/chunk/junk.md).
 
 
 ## Specification

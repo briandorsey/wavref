@@ -20,26 +20,26 @@ TODO: overview
 
 ## `LIST-adtl` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
 ## `labl` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>labl", spec="WAVRef"
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>labl",
     trim_prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
 ## `note` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>note", spec="WAVRef"
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>note",
     trim_prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
 ## `ltxt` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>ltxt", spec="WAVRef"
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>ltxt",
     trim_prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
 ## `file` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>file", spec="WAVRef"
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-adtl>file",
     trim_prefix="WRID>RIFF-WAVE>LIST-adtl") }}
 
 ## Learning References

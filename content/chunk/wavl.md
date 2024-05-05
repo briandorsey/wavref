@@ -25,7 +25,7 @@ While this chunk is defined in {{ spec(ref="RIFF1991") }}, it seems to be *extre
 
 ## `LIST-wavl` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-wavl", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-wavl") }}
 
 ## `data` chunk
 
@@ -33,7 +33,7 @@ See: [`data`](@/chunk/data.md) - Wave sample data
 
 ## `slnt` chunk
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-wavl>slnt", spec="WAVRef"
+{{ wrid_table(prefix="WRID>RIFF-WAVE>LIST-wavl>slnt"
     trim_prefix="WRID>RIFF-WAVE>LIST-wavl") }}
 
 > Note: The ‘slnt’ chunk represents silence, not necessarily a repeated zero

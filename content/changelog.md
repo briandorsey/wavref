@@ -21,6 +21,8 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 # Releases
 
 * [Upcoming] - [release_date] - 
+    * [IMP] add table of fields defined by each specifcation on its spec page.
+    * [IMP] refactor source spec data to reduce duplication (combining WRID mapped name & type with orginal spec name & type). Show both names and types in full WRID list. 
     * [IMP] documentation of repeated sub-structs: ex: plst, cue, smpl
     * [NEW] add RIFF1994:inst
     * [NEW] 2 new INFO chunks from RIFF1994: ISMP, IDIT

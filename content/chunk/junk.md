@@ -16,14 +16,14 @@ status = ""
 >
 > {{ spec(ref="RIFF1991") }}
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>JUNK", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>JUNK") }}
 
 ## Learning References
 
 ## Related Chunks
 
- * similar to [PAD](@/chunk/pad.md).
- * similar to [FLLR](@/chunk/fllr.md).
+ * similar to [`PAD `](@/chunk/pad.md).
+ * similar to [`FLLR`](@/chunk/fllr.md).
 
 ## Specification
 

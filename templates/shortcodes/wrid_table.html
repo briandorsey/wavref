@@ -12,6 +12,12 @@
 {%- if col_repeat_group is undefined %}
     {% set col_repeat_group = false %}
 {%- endif %}
+{%- if col_name_spec is undefined %}
+    {% set col_name_spec = false %}
+{%- endif %}
+{%- if col_type_spec is undefined %}
+    {% set col_type_spec = false %}
+{%- endif %}
 
 {%- if prefix %}
     {%- set pattern = "^" ~ prefix ~ ">[^>]*$" %}
@@ -42,8 +48,10 @@
       <th>Chunk</th>
       {% if col_repeat_group %}<th>Repeat<br/>Group</th>{% endif -%}
       <th>Name</th>
+      {% if col_name_spec %}<th>Name<br/>as Specified</th>{% endif -%}
       <th>Bytes</th>
       <th>Type</th>
+      {% if col_type_spec%}<th>Type<br/>as Specified</th>{% endif -%}
       {% if condition_in_pattern %}<th>condition</th>{% endif -%}
       {% if col_desc %}<th>Description</th>{% endif -%}
       {% if col_wrid %}<th>WRID</th>{% endif -%}
@@ -54,12 +62,18 @@
     {%- if not prefix or wrid.WRID is matching(pattern) %}
     <tr>
       <td>{{ wrid.chunk}}</td>
-      {%- if col_repeat_group%}
-      <td class="desc">{% if wrid.repeat_group %}{{ wrid.repeat_group | markdown(inline=true) |safe }}{% endif %}</td>
+      {%- if col_repeat_group %}
+      <td class="desc">{% if wrid.repeat_group %}{{ wrid.repeat_group }}{% endif %}</td>
       {%- endif %}
       <td><code>{{ wrid.name}}</code></td>
+      {%- if col_name_spec %}
+      <td class="desc">{% if wrid.name_spec %}{{ wrid.name_spec }}{% endif %}</td>
+      {%- endif %}
       <td><code>{{ wrid.bytes}}</code></td>
       <td class="type"><code>{{ wrid.type}}</code></td>
+      {%- if col_type_spec %}
+      <td class="desc">{% if wrid.type_spec%}{{ wrid.type_spec}}{% endif %}</td>
+      {%- endif %}
       {%- if condition_in_pattern %} <td class="condition">
          <code>{{ wrid.condition}}</code>
       </td> {% endif %}

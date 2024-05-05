@@ -20,7 +20,7 @@ status = ""
 
 This chunk is defined by [BWFMetaEdit](https://mediaarea.net/BWFMetaEdit/) (a WAVE metadata viewer/editor focused on archival use cases). 
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>MD5 ", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>MD5 ") }}
 
 ## Learning References
 

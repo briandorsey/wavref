@@ -20,7 +20,7 @@ TODO: overview
 
 ... 
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>fact", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>fact") }}
 
 ...
 

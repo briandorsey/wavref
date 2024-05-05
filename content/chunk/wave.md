@@ -20,7 +20,7 @@ TODO: overview
 > 
 > {{ spec(ref="RIFF1991") }}
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE") }}
 
 The only chunks you can expect to be in every valid WAVE file are [`fmt `](@/chunk/fmt.md) and [`data`](@/chunk/data.md). Everything else is optional. 
 

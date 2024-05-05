@@ -26,7 +26,7 @@ TODO: overview
 
 TODO: update for WAVFORMATEX and describe how to parse
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ") }}
 
 ## WAVE Format Tags (Categories)
 
@@ -312,12 +312,8 @@ From {{ spec(ref="RIFF1991") }}, [Registered FOURCC Codes and WAVE Formats][msfo
 
 ## Specification
 
-### RIFF1991 original notation
-
-{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", spec="RIFF1991", col_wrid=false) }}
-
-
 {{ chunk_specs() }}
+
 * [WAVE and AVI Codec Registries](https://www.iana.org/assignments/wave-avi-codec-registry/wave-avi-codec-registry.xhtml) RFC2361. This is historical, not updated after WavFormatEx was introduced in 1994 
 * [Registered FOURCC Codes and WAVE Formats][msfourcc] Similar to above, but from Microsoft docs. 
 * [mmreg.h][mmreg] online version of MS SDK file which is referenced in the {{ spec(ref="RIFF1991") }} spec. 

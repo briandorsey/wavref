@@ -12,10 +12,12 @@ status = "DRAFT"
 
 # WRID>RIFF-WAVE>data
 
+> very DRAFT
+
 TODO: overview
 
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>data", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>data") }}
 
 ## Learning References
 

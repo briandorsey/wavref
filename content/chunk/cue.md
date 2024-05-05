@@ -18,7 +18,7 @@ TODO: overview
 >
 > {{ spec(ref="RIFF1991") }}
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>cue", spec="WAVRef", col_repeat_group=true) }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>cue", col_repeat_group=true) }}
 
 All fields where Repeat Group = `cue_point` repeat `cue_points` times as a group (struct).
 

@@ -19,7 +19,7 @@ parameters
 >
 > {{ spec(ref="RIFF1994") }}
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>inst", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>inst") }}
 
 ## Learning References
 

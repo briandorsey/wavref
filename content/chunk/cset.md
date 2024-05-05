@@ -41,7 +41,7 @@ It's not clear how to extend the CSET defined countries because both of those IS
 
 ## Spec
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>CSET", spec="WAVRef") }}
+{{ wrid_table(prefix="WRID>RIFF-WAVE>CSET") }}
 
 ## Country Codes
 

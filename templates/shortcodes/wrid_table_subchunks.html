@@ -31,6 +31,7 @@
       <th>Chunk</th>
       {% if condition_in_pattern %}<th>condition</th>{% endif %}
       <th>Description</th>
+      <th>Specification</th>
       {%- if col_wrid %}
       <th>WRID</th>
       {%- endif %}
@@ -45,6 +46,7 @@
          <code>{{ wrid.condition}}</code>
       </td> {% endif %}
       <td class="desc" style="max-width:35rem;">{{ wrid.desc}}</td>
+      <td> {{ wrid.spec }} </td>
       {%- if col_wrid %}
       {%- if prefix %}
       <td class="WRID">{{ wrid.WRID | replace(from=prefix, to="...") }}</td>
