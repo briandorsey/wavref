@@ -16,7 +16,7 @@ status = "REF"
 
 TODO: overview
 
-This chunk is fiddly. The interpretation of data in this chunk depends on the value of the first 2 bytes, the `format_tag`: 
+This chunk is fiddly and it's one of two required chunks. The interpretation of data in this chunk depends on the value of the first 2 bytes, the `format_tag`: 
 
 > A number indicating the WAVE format category of the file. The content of the
 > `format-specific-fields` \[ed: everything after `block_align`\] portion of the `fmt` chunk, and the interpretation of
@@ -24,20 +24,20 @@ This chunk is fiddly. The interpretation of data in this chunk depends on the va
 > 
 > {{ spec(ref="RIFF1991") }}
 
-The first several fields are consistent, followed by format specific fields. The default and most basic layout is called `WAVE_FORMAT_PCM` with a `format_tag` = `0x0001`. 
+The first several fields are consistent, followed by format specific fields. The most common layout is `format_tag` = `0x0001` (`WAVE_FORMAT_PCM`). 
 
 
-## WAVE_FORMAT_PCM
+## WAVE_FORMAT_PCM (0x0001)
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", group="W_F_PCM") }}
 
-## WAVE_FORMAT_UNKNOWN
+## WAVE_FORMAT_UNKNOWN (0x0000 or default to this if unknown)
 
 All other `format_tags` should follow the following structure (known as `WAVEFORMATEX`), which is also the structure for the `WAVE_FORMAT_UNKNOWN` `format_tag`.
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", group="W_F_UNKNOWN") }}
 
-## WAVE_FORMAT_ADPCM
+## WAVE_FORMAT_ADPCM (0x0002)
 
 [ADPCM](https://en.wikipedia.org/wiki/Adaptive_differential_pulse-code_modulation) is a lossy audio compression format which compresses to approximately 1/4 the size of raw PCM data. It was used in telephony and early consumer multimedia systems, and some more recent embedded devices because very little CPU time is needed to decode (compared to other lossy formats).
 
