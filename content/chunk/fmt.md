@@ -50,7 +50,7 @@ The {{ spec(ref="RIFF1994") }} specification includes an algorithm for encoding 
 Most of the `fmt ` chunk definitions are for proprietary compressed formats from the early 90s. With a few exceptions (see above) I haven't documented them here, because I *think* they're extremely rare. If you're aware usage of a particlar `format_tag` that isn't already documented please let me know, and I'll add it to the book.
 
 
-From {{ spec(ref="RIFF1991") }}, [Registered FOURCC Codes and WAVE Formats][msfourcc] and [mmreg.h][mmreg]: 
+From {{ spec(ref="RIFF1991") }}, [Registered FOURCC Codes and WAVE Formats][msfourcc] and [mmreg.h][mmreg_tags]: 
 
 <div class="md_table">
 
@@ -336,8 +336,9 @@ From {{ spec(ref="RIFF1991") }}, [Registered FOURCC Codes and WAVE Formats][msfo
 
 * [WAVE and AVI Codec Registries](https://www.iana.org/assignments/wave-avi-codec-registry/wave-avi-codec-registry.xhtml) RFC2361. This is historical, not updated after WavFormatEx was introduced in 1994 
 * [Registered FOURCC Codes and WAVE Formats][msfourcc] Similar to above, but from Microsoft docs. 
-* [mmreg.h][mmreg] online version of MS SDK file which is referenced in the {{ spec(ref="RIFF1991") }} spec. 
+* [mmreg.h][mmreg_pcm] online version of MS SDK file which is referenced in the {{ spec(ref="RIFF1991") }} spec. 
 
-[msfourcc]: https://github.com/hughbe/windows-sdk-headers/blob/main/Include/10.0.22621.0/shared/mmreg.h#L2418
-[mmreg]: https://github.com/hughbe/windows-sdk-headers/blob/main/Include/10.0.22621.0/shared/mmreg.h#L2108
+[msfourcc]: https://learn.microsoft.com/en-us/previous-versions/aa904731(v=vs.80)
+[mmreg_pcm]: https://github.com/hughbe/windows-sdk-headers/blob/main/Include/10.0.22621.0/shared/mmreg.h#L2418
+[mmreg_tags]: https://github.com/hughbe/windows-sdk-headers/blob/main/Include/10.0.22621.0/shared/mmreg.h#L2108
 
