@@ -21,6 +21,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 # Releases
 
 * [Upcoming] - [release_date] - 
+    * [IMP] update `fmt ` to document WAVEFORMATEX tags: WAVE_FORMAT_UNKNOWN and WAVE_FORMAT_ADPCM.
     * [IMP] add language and dialect codes from RIFF1994
     * [IMP] compare wFormatTags table on RIFF1994 pg20 to current list
     * [NEW] add RIFF1994:smpl
@@ -75,15 +76,15 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 ---- 
 
 * Future maybe
-    * RIFF1994
-        * update `fmt ` to document WAVEFORMATEX
-        * add `fact` struct info for ADPCM, maybe others, ignore most. 
-        * reference: [MIDI Technical Fanatic's Brainwashing Center / tech / WAVE format](http://midi.teragonaudio.com/tech/wave.htm) - opinionated guide to WAV. Very clear writing. also documents `smpl` and `inst` chunks
     * fix sidebar (cut off at bottom)
     * "Chunk reference" page should show LIST subchunks as well. 
     * chunk bext: 
     * implement spec details widget (shortcodes/spec_detail.html)
     * convert chunk reference page to a table
+    * write chunk reference info
+        * id, size data
+        * uppercase RIFF, lowercase forms (in *theory*, but not in practice)
+        * etc
     * figure out wavref types (things like fourcc)
     * create a system for noting that a field overlaps or duplicates data in another field, hopefully automatically create crosslinks between them.
     * WRID "sentinel" value mapping, special ints/strings for each field

@@ -12,7 +12,7 @@ status = ""
 
 # WRID>RIFF-WAVE>PAD
 
-> Note: all chunks are four bytes. `PAD` is `"PAD "`, the last character is a space (ASCII 32).
+> Note: all chunks are four bytes. `PAD` is `"PAD "`. The last character is a space (ASCII 32).
 
 
 > A PAD chunk represents padding. It contains no relevant data; it is a space filler of arbitrary size. When duplicating the file, the copier should maintain the padding of the PAD chunk. Specifically, if the PAD chunk makes the next chunk align on a 2K boundary in the physical file, then this alignment should be preserved even if the size of the PAD chunk must change

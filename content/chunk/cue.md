@@ -12,6 +12,8 @@ status = "REF"
 
 # WRID>RIFF-WAVE>cue
 
+> Note: all chunks are four bytes. `MD5` is `"MD5 "`. The last character is a space (ASCII 32).
+
 TODO: overview
 
 > ... cue-points chunk identifies a series of positions in the waveform data stream.

@@ -12,7 +12,7 @@ status = ""
 
 # WRID>RIFF-WAVE>MD5
 
-> Note: all chunks are four bytes. `MD5` is `"MD5 "`, the last character is a space (ASCII 32).
+> Note: all chunks are four bytes. `MD5` is `"MD5 "`. The last character is a space (ASCII 32).
 
 > ...an audio-data-only checksum (including the entire <data> chunk, excluding the chunk id, size declaration, and any optional padding byte). This will create a hash value for only the audio portion of the file which helps validate the integrity of the audio but allows for alteration of the metadata.
 >

@@ -1,31 +1,27 @@
-{% set data = load_data(path="static/data/wrid_data.json") %}
+{%- set data = load_data(path="static/data/wrid_data.json") %}
 
+{#- set parameter defaults #}
 {%- if spec %}
-    {% set data = data | filter(attribute="spec", value=spec) %}
+    {%- set data = data | filter(attribute="spec", value=spec) %}
 {%- endif %}
 {%- if col_desc is undefined %}
-    {% set col_desc = true %}
+    {%- set col_desc = true %}
 {%- endif %}
 {%- if col_wrid is undefined %}
-    {% set col_wrid = true %}
+    {%- set col_wrid = true %}
 {%- endif %}
 {%- if col_group is undefined %}
-    {% set col_group = false %}
+    {%- set col_group = false %}
 {%- endif %}
 {%- if col_name_spec is undefined %}
-    {% set col_name_spec = false %}
+    {%- set col_name_spec = false %}
 {%- endif %}
 {%- if col_type_spec is undefined %}
-    {% set col_type_spec = false %}
+    {%- set col_type_spec = false %}
 {%- endif %}
 
 {%- if prefix %}
     {%- set pattern = "^" ~ prefix ~ ">[^>]*$" %}
-    {%- set filtered_data = [] %}
-    {%- for wrid in data %}
-        {%- if not prefix or wrid.WRID is matching(pattern) %}
-        {%- endif %}
-    {%- endfor %}
 {%- else %}
     {%- set pattern = "" %}
 {%- endif %}
@@ -34,6 +30,8 @@
     {%- set trim_prefix = prefix %}
 {%- endif %}
 
+{#- check the subset of the data we're showing, 
+        true if any rows have data in condition column #}
 {%- set condition_in_pattern = false %}
 {%- set has_condition= data | filter(attribute="condition") %} 
 {%- for item in has_condition %}
@@ -60,6 +58,7 @@
   <tbody>
   {%- for wrid in data %}
     {%- if not prefix or wrid.WRID is matching(pattern) %}
+    {%- if not group or wrid.group == group %} 
     <tr>
       <td>{{ wrid.chunk}}</td>
       {%- if col_group %}
@@ -88,6 +87,7 @@
       {%- endif %}
       {%- endif %}
     </tr>
+    {%- endif %}
     {%- endif %}
   {%- endfor %}
   </tbody>

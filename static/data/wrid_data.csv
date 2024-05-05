@@ -2,15 +2,6 @@
 "WRID>RIFF-WAVE>id","","RIFF-WAVE","","id","ckID","4","u8[4]","FOURCC","RIFF1991","id = RIFF",""
 "WRID>RIFF-WAVE>size","","RIFF-WAVE","","size","ckSize","4","u32","DWORD","RIFF1991","",""
 "WRID>RIFF-WAVE>form_type","","RIFF-WAVE","","form_type","formType","4","u8[4]","FOURCC","RIFF1991","form_type = WAVE",""
-"WRID>RIFF-WAVE>fmt >id","","fmt","","id","ckID","4","u8[4]","FOURCC","RIFF1991","id = ""fmt """,""
-"WRID>RIFF-WAVE>fmt >size","","fmt","","size","ckSize","4","u32","DWORD","RIFF1991","",""
-"WRID>RIFF-WAVE>fmt >format_tag","","fmt","","format_tag","wFormatTag","2","u16","WORD","RIFF1991","","A number indicating the WAVE format category of the file. The content of the <format-specific-fields> portion of the ‘fmt’ chunk, and the interpretation of the waveform data, depend on this value."
-"WRID>RIFF-WAVE>fmt >channels","","fmt","","channels","wChannels","2","u16","WORD","RIFF1991","","The number of channels represented in the waveform data, such as 1 for mono or 2 for stereo."
-"WRID>RIFF-WAVE>fmt >samples_per_sec","","fmt","","samples_per_sec","dwSamplesPerSec","4","u32","DWORD","RIFF1991","","The sampling rate (in samples per second) at which each channel should be played."
-"WRID>RIFF-WAVE>fmt >avg_bytes_per_sec","","fmt","","avg_bytes_per_sec","dwAvgBytesPerSec","4","u32","DWORD","RIFF1991","","The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value."
-"WRID>RIFF-WAVE>fmt >block_align","","fmt","","block_align","wBlockAlign","2","u16","WORD","RIFF1991","","The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
-"WRID>RIFF-WAVE>fmt >bits_per_sample","","fmt","","bits_per_sample","wBitsPerSample","2","u16","WORD","RIFF1991","format_tag = 0x0001","The wBitsPerSample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
-"WRID>RIFF-WAVE>fmt >format-specific-fields","","fmt","","","format-specific-fields","size - 14","depends on format_tag","","RIFF1991","",""
 "WRID>RIFF-WAVE>data>id","","data","","id","ckID","4","u8[4]","FOURCC","RIFF1991","id = data",""
 "WRID>RIFF-WAVE>data>size","","data","","size","ckSize","4","u32","DWORD","RIFF1991","",""
 "WRID>RIFF-WAVE>data>data","","data","","data","ckData","size","u8[size]","ckData[ckSize]","RIFF1991","",""
@@ -196,3 +187,57 @@
 "WRID>RIFF-WAVE>smpl>end","","smpl","sample_loop","end","dwEnd","4","u32","DWORD","RIFF1994","","Specifies the endpoint of the loop in samples (this sample will also be played)."
 "WRID>RIFF-WAVE>smpl>fraction","","smpl","sample_loop","fraction","dwFraction","4","u32","DWORD","RIFF1994","","Allows fine-tuning for loop fractional areas between samples. Values range from 0x00000000 to 0xFFFFFFFF. A value of 0x80000000 represents 1/2 of a sample length."
 "WRID>RIFF-WAVE>smpl>play_count","","smpl","sample_loop","play_count","dwPlayCount","4","u32","DWORD","RIFF1994","","Specifies the number of times to play the loop. A value of 0 specifies an infinite sustain loop."
+"WRID>RIFF-WAVE>fmt >id","","fmt","W_F_PCM","id","ckID","4","u8[4]","FOURCC","RIFF1991","id = ""fmt """,""
+"WRID>RIFF-WAVE>fmt >size","","fmt","W_F_PCM","size","ckSize","4","u32","DWORD","RIFF1991","",""
+"WRID>RIFF-WAVE>fmt >format_tag","","fmt","W_F_PCM","format_tag","wFormatTag","2","u16","WORD","RIFF1991"," = 0x0001","A number indicating the WAVE format category of the file. The content of the <format-specific-fields> portion of the ‘fmt’ chunk, and the interpretation of the waveform data, depend on this value."
+"WRID>RIFF-WAVE>fmt >channels","","fmt","W_F_PCM","channels","wChannels","2","u16","WORD","RIFF1991","","The number of channels represented in the waveform data, such as 1 for mono or 2 for stereo."
+"WRID>RIFF-WAVE>fmt >samples_per_sec","","fmt","W_F_PCM","samples_per_sec","dwSamplesPerSec","4","u32","DWORD","RIFF1991","","The sampling rate (in samples per second) at which each channel should be played."
+"WRID>RIFF-WAVE>fmt >avg_bytes_per_sec","","fmt","W_F_PCM","avg_bytes_per_sec","dwAvgBytesPerSec","4","u32","DWORD","RIFF1991","","The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value."
+"WRID>RIFF-WAVE>fmt >block_align","","fmt","W_F_PCM","block_align","wBlockAlign","2","u16","WORD","RIFF1991","","The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
+"WRID>RIFF-WAVE>fmt >bits_per_sample","","fmt","W_F_PCM","bits_per_sample","wBitsPerSample","2","u16","WORD","RIFF1991","","The wBitsPerSample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
+"WRID>RIFF-WAVE>fmt >id","","fmt","W_F_UNKNOWN","id","ckID","4","u8[4]","FOURCC","RIFF1994","id = ""fmt """,""
+"WRID>RIFF-WAVE>fmt >size","","fmt","W_F_UNKNOWN","size","ckSize","4","u32","DWORD","RIFF1994","",""
+"WRID>RIFF-WAVE>fmt >format_tag","","fmt","W_F_UNKNOWN","format_tag","wFormatTag","2","u16","WORD","RIFF1994","","A number indicating the WAVE format category of the file. The content of the <format-specific-fields> portion of the ‘fmt’ chunk, and the interpretation of the waveform data, depend on this value."
+"WRID>RIFF-WAVE>fmt >channels","","fmt","W_F_UNKNOWN","channels","wChannels","2","u16","WORD","RIFF1994","","The number of channels represented in the waveform data, such as 1 for mono or 2 for stereo."
+"WRID>RIFF-WAVE>fmt >samples_per_sec","","fmt","W_F_UNKNOWN","samples_per_sec","dwSamplesPerSec","4","u32","DWORD","RIFF1994","","The sampling rate (in samples per second) at which each channel should be played."
+"WRID>RIFF-WAVE>fmt >avg_bytes_per_sec","","fmt","W_F_UNKNOWN","avg_bytes_per_sec","dwAvgBytesPerSec","4","u32","DWORD","RIFF1994","","The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value."
+"WRID>RIFF-WAVE>fmt >block_align","","fmt","W_F_UNKNOWN","block_align","wBlockAlign","2","u16","WORD","RIFF1994","","The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
+"WRID>RIFF-WAVE>fmt >bits_per_sample","","fmt","W_F_UNKNOWN","bits_per_sample","wBitsPerSample","2","u16","WORD","RIFF1994","","The wBitsPerSample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
+"WRID>RIFF-WAVE>fmt >extra_size","","fmt","W_F_UNKNOWN","extra_size","cbSize","2","u16","WORD","RIFF1994","","The count in bytes of the extra size.The size in bytes of the extra information in the WAVE format header not including the size of the WAVEFORMATEX structure. (size of fields from `format_tag` through `extra_size` inclusive (all fields except `id`, `size` and the `extra_data`))"
+"WRID>RIFF-WAVE>fmt >extra_data","","fmt","W_F_UNKNOWN","extra_data","","size-18","u8[size-18]","WORD","RIFF1994","","The extra information as bytes. For use when `format_tag` is unknown, so this portion can't be parsed deteriministically."
+"WRID>RIFF-WAVE>fmt >id","","fmt","W_F_ADPCM","id","ckID","4","u8[4]","FOURCC","RIFF1994","id = ""fmt """,""
+"WRID>RIFF-WAVE>fmt >size","","fmt","W_F_ADPCM","size","ckSize","4","u32","DWORD","RIFF1994","",""
+"WRID>RIFF-WAVE>fmt >format_tag","","fmt","W_F_ADPCM","format_tag","wFormatTag","2","u16","WORD","RIFF1994"," = 0x0002","A number indicating the WAVE format category of the file. The content of the <format-specific-fields> portion of the ‘fmt’ chunk, and the interpretation of the waveform data, depend on this value. This must be set to WAVE_FORMAT_ADPCM."
+"WRID>RIFF-WAVE>fmt >channels","","fmt","W_F_ADPCM","channels","wChannels","2","u16","WORD","RIFF1994","","The number of channels represented in the waveform data, such as 1 for mono or 2 for stereo."
+"WRID>RIFF-WAVE>fmt >samples_per_sec","","fmt","W_F_ADPCM","samples_per_sec","dwSamplesPerSec","4","u32","DWORD","RIFF1994","","Frequency of the sample rate of the wave file. This should be 11025, 22050, or 44100. Other sample rates are allowed, but not encouraged."
+"WRID>RIFF-WAVE>fmt >avg_bytes_per_sec","","fmt","W_F_ADPCM","avg_bytes_per_sec","dwAvgBytesPerSec","4","u32","DWORD","RIFF1994","","The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value. ((nSamplesperSec / nSamplesPerBlock) * nBlockAlign)."
+"WRID>RIFF-WAVE>fmt >block_align","","fmt","W_F_ADPCM","block_align","wBlockAlign","2","u16","WORD","RIFF1994","","The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. 
+
+|(nSamplesPerSec x Channels) | nBlockAlign |
+|-|-|
+|8k | 256|
+|11k | 256|
+|22k | 512|
+|44k | 1024|"
+"WRID>RIFF-WAVE>fmt >bits_per_sample","","fmt","W_F_ADPCM","bits_per_sample","wBitsPerSample","2","u16","WORD","RIFF1994","","This is the number of bits per sample of ADPCM. Currently only 4 bits per
+sample is defined. Other values are reserved."
+"WRID>RIFF-WAVE>fmt >extra_size","","fmt","W_F_ADPCM","extra_size","cbSize","2","u16","WORD","RIFF1994","","The size in bytes of the extended information after the WAVEFORMATEX structure. For the standard WAVE_FORMAT_ADPCM using the standard seven coefficient pairs, this is 32. If extra coefficients are added, then this value will increase."
+"WRID>RIFF-WAVE>fmt >samples_per_block","","fmt","W_F_ADPCM","samples_per_block","nSamplesPerBlock","2","u16","WORD","RIFF1994","","Count of number of samples per block. (((nBlockAlign - (7 * nChannels)) * 8) / (wBitsPerSample * nChannels)) + 2."
+"WRID>RIFF-WAVE>fmt >coefficient_count","","fmt","W_F_ADPCM","coefficient_count","nNumCoef","2","u16","WORD","RIFF1994","","Count of the number of coefficient sets defined in `coefficients`."
+"WRID>RIFF-WAVE>fmt >coefficients","","fmt","W_F_ADPCM","coefficients","aCoeff","4 * coef_count","(i16, i16)[coef_count]","aCoeff[wNumCoef]","RIFF1994","","These are the coefficients used by the wave to play. They may be interpreted
+as fixed point 8.8 signed values. Currently there are 7 preset coefficient sets.
+They must appear in the following order.
+
+|Coef1 |Coef2|
+|-|-|
+|256 |0|
+|512 |-256|
+|0 |0|
+|192 |64|
+|240 |0|
+|460 |-208|
+|392 |-232|
+
+Note that if even only 1 coefficient set was used to encode the file then all
+coefficient sets are still included. More coefficients may be added by the
+encoding software, but the first 7 must always be the same."

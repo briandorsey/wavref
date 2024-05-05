@@ -12,11 +12,11 @@ status = "REF"
 
 # WRID>RIFF-WAVE>fmt >
 
-> DRAFT!
-
-> Note: all chunks are four bytes. `fmt` is `"fmt "`, the last character is a space (ASCII 32).
+> Note: all chunks are four bytes. `fmt` is `"fmt "`. The last character is a space (ASCII 32).
 
 TODO: overview
+
+This chunk is fiddly. The interpretation of data in this chunk depends on the value of the first 2 bytes, the `format_tag`: 
 
 > A number indicating the WAVE format category of the file. The content of the
 > `format-specific-fields` \[ed: everything after `block_align`\] portion of the `fmt` chunk, and the interpretation of
@@ -24,11 +24,31 @@ TODO: overview
 > 
 > {{ spec(ref="RIFF1991") }}
 
-TODO: update for WAVFORMATEX and describe how to parse
+The first several fields are consistent, followed by format specific fields. The default and most basic layout is called `WAVE_FORMAT_PCM` with a `format_tag` = `0x0001`. 
 
-{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ") }}
+
+## WAVE_FORMAT_PCM
+
+{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", group="W_F_PCM") }}
+
+## WAVE_FORMAT_UNKNOWN
+
+All other `format_tags` should follow the following structure (known as `WAVEFORMATEX`), which is also the structure for the `WAVE_FORMAT_UNKNOWN` `format_tag`.
+
+{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", group="W_F_UNKNOWN") }}
+
+## WAVE_FORMAT_ADPCM
+
+[ADPCM](https://en.wikipedia.org/wiki/Adaptive_differential_pulse-code_modulation) is a lossy audio compression format which compresses to approximately 1/4 the size of raw PCM data. It was used in telephony and early consumer multimedia systems, and some more recent embedded devices because very little CPU time is needed to decode (compared to other lossy formats).
+
+The {{ spec(ref="RIFF1994") }} specification includes an algorithm for encoding and decoding ADPCM data.
+
+{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", group="W_F_ADPCM") }}
 
 ## WAVE Format Tags (Categories)
+
+Most of the `fmt ` chunk definitions are for proprietary compressed formats from the early 90s. With a few exceptions (see above) I haven't documented them here, because I *think* they're extremely rare. If you're aware usage of a particlar `format_tag` that isn't already documented please let me know, and I'll add it to the book.
+
 
 From {{ spec(ref="RIFF1991") }}, [Registered FOURCC Codes and WAVE Formats][msfourcc] and [mmreg.h][mmreg]: 
 
