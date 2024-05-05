@@ -21,6 +21,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 # Releases
 
 * [Upcoming] - [release_date] - 
+    * [IMP] compare wFormatTags table on RIFF1994 pg20 to current list
     * [NEW] add RIFF1994:smpl
     * [IMP] add table of fields defined by each specifcation on its spec page.
     * [IMP] refactor source spec data to reduce duplication (combining WRID mapped name & type with orginal spec name & type). Show both names and types in full WRID list. 
@@ -75,11 +76,8 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 * Future maybe
     * RIFF1994
         * update `fmt ` to document WAVEFORMATEX
-        * compare wFormatTags table on pg20 to current list
-            0x0000 redefined "for development purposes" 
         * add `fact` struct info for ADPCM, maybe others, ignore most. 
         * compare country codes and language and dialect code tables to current list
-        * try to find additional docs listed in Overview
         * reference: [MIDI Technical Fanatic's Brainwashing Center / tech / WAVE format](http://midi.teragonaudio.com/tech/wave.htm) - opinionated guide to WAV. Very clear writing. also documents `smpl` and `inst` chunks
     * fix sidebar (cut off at bottom)
     * "Chunk reference" page should show LIST subchunks as well. 
@@ -95,6 +93,8 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
     * update site colors: https://iamkate.com/data/12-bit-rainbow/ (see how those look... if not, maybe solarized?)
     * wav files: both simple and complex, depending on what you want to do with them. 
     * wav files: better intro to riff (maybe with a visual?)
+    * archeology
+        * try to find additional docs listed in RIFF1994 Overview
     * write intro to what a chunk is on Chunk reference page
     * metadata: why do people care about metadata?
     * create list of WRID normalized data types and shortcode to link to them

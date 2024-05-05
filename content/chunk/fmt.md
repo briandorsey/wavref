@@ -63,9 +63,9 @@ From {{ spec(ref="RIFF1991") }}, [Registered FOURCC Codes and WAVE Formats][msfo
 |	0x0021	|	WAVE_FORMAT_SONARC	|	Speech Compression	|		|
 |	0x0022	|	WAVE_FORMAT_DSPGROUP_TRUESPEECH	|	DSP Group, Inc	|		|
 |	0x0023	|	WAVE_FORMAT_ECHOSC1	|	Echo Speech Corporation	|		|
-|	0x0024	|	WAVE_FORMAT_AUDIOFILE_AF36	|	Virtual Music, Inc.	|		|
+|	0x0024	|	WAVE_FORMAT_AUDIOFILE_AF36	| Audiofile, Inc. |		|
 |	0x0025	|	WAVE_FORMAT_APTX	|	Audio Processing Technology	|		|
-|	0x0026	|	WAVE_FORMAT_AUDIOFILE_AF10	|	Virtual Music, Inc.	|		|
+|	0x0026	|	WAVE_FORMAT_AUDIOFILE_AF10	| Audiofile, Inc. |		|
 |	0x0027	|	WAVE_FORMAT_PROSODY_1612	|	Aculab plc	|	Prosody CTI speech card	|
 |	0x0028	|	WAVE_FORMAT_LRC	|	Merging Technologies S.A.	|		|
 |	0x0030	|	WAVE_FORMAT_DOLBY_AC2	|	Dolby Laboratories	|		|
