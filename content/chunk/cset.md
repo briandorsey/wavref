@@ -80,54 +80,54 @@ It's not clear how to extend the CSET defined countries because both of those IS
 
 ## Language and Dialect Codes
 
-| Language Code | Dialect Code | Language                         |
-|-              |-             |-                                 |
-|	0	            |	0	           |	None (assume 9,1 = US English)	|
-|	1	            |	1	           |	Arabic	                        |
-|	2	            |	1	           |	Bulgarian	                      |
-|	3	            |	1	           |	Catalan	                        |
-|	4	            |	1	           |	Traditional Chinese	            |
-|	4	            |	2	           |	Simplified Chinese	            |
-|	5	            |	1	           |	Czech	                          |
-|	6	            |	1	           |	Danish	                        |
-|	7	            |	1	           |	German	                        |
-|	7	            |	2	           |	Swiss German	                  |
-|	8	            |	1	           |	Greek	                          |
-|	9	            |	1	           |	US English	                    |
-|	9	            |	2	           |	UK English	                    |
-|	10	          |	1	           |	Spanish	                        |
-|	10	          |	2	           |	Spanish Mexican	                |
-|	11	          |	1	           |	Finnish	                        |
-|	12	          |	1	           |	French	                        |
-|	12	          |	2	           |	Belgian French	                |
-|	12	          |	3	           |	Canadian French	                |
-|	12	          |	4	           |	Swiss French	                  |
-|	13	          |	1	           |	Hebrew	                        |
-| 14            | 1            |  Hungarian                       |
-| 15            | 1            |  Icelandic                       | 
-| 16            | 1            |  Italian                         | 
-| 16            | 2            |  Swiss Italian                   | 
-| 17            | 1            |  Japanese                        | 
-| 18            | 1            |  Korean                          | 
-| 19            | 1            |  Dutch                           | 
-| 19            | 2            |  Belgian Dutch                   | 
-| 20            | 1            |  Norwegian - Bokmal              | 
-| 20            | 2            |  Norwegian - Nynorsk             | 
-| 21            | 1            |  Polish                          | 
-| 22            | 1            |  Brazilian Portuguese            | 
-| 22            | 2            |  Portuguese                      | 
-| 23            | 1            |  Rhaeto-Romanic                  | 
-| 24            | 1            |  Romanian                        | 
-| 25            | 1            |  Russian                         | 
-| 26            | 1            |  Serbo-Croatian (Latin)          | 
-| 26            | 2            |  Serbo-Croatian (Cyrillic)       | 
-| 27            | 1            |  Slovak                          | 
-| 28            | 1            |  Albanian                        | 
-| 29            | 1            |  Swedish                         | 
-| 30            | 1            |  Thai                            | 
-| 31            | 1            |  Turkish                         | 
-| 32            | 1            |  Urdu                            | 
-| 33            | 1            |  Bahasa                          | 
+| Language Code | Dialect Code | Language                         | Specification |
+|-              |-             |-                                 |-              |
+|	0	            |	0	           |	None (assume 9,1 = US English)	| RIFF1991      |
+|	1	            |	1	           |	Arabic	                        | RIFF1991      |
+|	2	            |	1	           |	Bulgarian	                      | RIFF1991      |
+|	3	            |	1	           |	Catalan	                        | RIFF1991      |
+|	4	            |	1	           |	Traditional Chinese	            | RIFF1991      |
+|	4	            |	2	           |	Simplified Chinese	            | RIFF1991      |
+|	5	            |	1	           |	Czech	                          | RIFF1991      |
+|	6	            |	1	           |	Danish	                        | RIFF1991      |
+|	7	            |	1	           |	German	                        | RIFF1991      |
+|	7	            |	2	           |	Swiss German	                  | RIFF1991      |
+|	8	            |	1	           |	Greek	                          | RIFF1991      |
+|	9	            |	1	           |	US English	                    | RIFF1991      |
+|	9	            |	2	           |	UK English	                    | RIFF1991      |
+|	10	          |	1	           |	Spanish	                        | RIFF1991      |
+|	10	          |	2	           |	Spanish Mexican	                | RIFF1991      |
+|	11	          |	1	           |	Finnish	                        | RIFF1991      |
+|	12	          |	1	           |	French	                        | RIFF1991      |
+|	12	          |	2	           |	Belgian French	                | RIFF1991      |
+|	12	          |	3	           |	Canadian French	                | RIFF1991      |
+|	12	          |	4	           |	Swiss French	                  | RIFF1991      |
+|	13	          |	1	           |	Hebrew	                        | RIFF1991      |
+| 14            | 1            |  Hungarian                       | RIFF1994      |
+| 15            | 1            |  Icelandic                       | RIFF1994      | 
+| 16            | 1            |  Italian                         | RIFF1994      | 
+| 16            | 2            |  Swiss Italian                   | RIFF1994      | 
+| 17            | 1            |  Japanese                        | RIFF1994      | 
+| 18            | 1            |  Korean                          | RIFF1994      | 
+| 19            | 1            |  Dutch                           | RIFF1994      | 
+| 19            | 2            |  Belgian Dutch                   | RIFF1994      | 
+| 20            | 1            |  Norwegian - Bokmal              | RIFF1994      | 
+| 20            | 2            |  Norwegian - Nynorsk             | RIFF1994      | 
+| 21            | 1            |  Polish                          | RIFF1994      | 
+| 22            | 1            |  Brazilian Portuguese            | RIFF1994      | 
+| 22            | 2            |  Portuguese                      | RIFF1994      | 
+| 23            | 1            |  Rhaeto-Romanic                  | RIFF1994      | 
+| 24            | 1            |  Romanian                        | RIFF1994      | 
+| 25            | 1            |  Russian                         | RIFF1994      | 
+| 26            | 1            |  Serbo-Croatian (Latin)          | RIFF1994      | 
+| 26            | 2            |  Serbo-Croatian (Cyrillic)       | RIFF1994      | 
+| 27            | 1            |  Slovak                          | RIFF1994      | 
+| 28            | 1            |  Albanian                        | RIFF1994      | 
+| 29            | 1            |  Swedish                         | RIFF1994      | 
+| 30            | 1            |  Thai                            | RIFF1994      | 
+| 31            | 1            |  Turkish                         | RIFF1994      | 
+| 32            | 1            |  Urdu                            | RIFF1994      | 
+| 33            | 1            |  Bahasa                          | RIFF1994      | 
 
 
 ## Learning References
