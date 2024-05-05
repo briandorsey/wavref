@@ -21,6 +21,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 # Releases
 
 * [Upcoming] - [release_date] - 
+    * [IMP] add language and dialect codes from RIFF1994
     * [IMP] compare wFormatTags table on RIFF1994 pg20 to current list
     * [NEW] add RIFF1994:smpl
     * [IMP] add table of fields defined by each specifcation on its spec page.
@@ -77,7 +78,6 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
     * RIFF1994
         * update `fmt ` to document WAVEFORMATEX
         * add `fact` struct info for ADPCM, maybe others, ignore most. 
-        * compare country codes and language and dialect code tables to current list
         * reference: [MIDI Technical Fanatic's Brainwashing Center / tech / WAVE format](http://midi.teragonaudio.com/tech/wave.htm) - opinionated guide to WAV. Very clear writing. also documents `smpl` and `inst` chunks
     * fix sidebar (cut off at bottom)
     * "Chunk reference" page should show LIST subchunks as well. 
