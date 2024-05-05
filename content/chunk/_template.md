@@ -16,7 +16,6 @@ status = "DRAFT"
 TODO: overview
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>TEMPLATE") }}
-{{ wrid_table(prefix="WRID>RIFF-WAVE>TEMPLATE", spec="WAVRef") }}
 
 ## Learning References
 

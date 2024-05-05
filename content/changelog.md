@@ -21,6 +21,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 # Releases
 
 * [Upcoming] - [release_date] - 
+    * [NEW] add RIFF1994:smpl
     * [IMP] add table of fields defined by each specifcation on its spec page.
     * [IMP] refactor source spec data to reduce duplication (combining WRID mapped name & type with orginal spec name & type). Show both names and types in full WRID list. 
     * [IMP] documentation of repeated sub-structs: ex: plst, cue, smpl
@@ -73,7 +74,6 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 
 * Future maybe
     * RIFF1994
-        * add RIFF1994:smpl
         * update `fmt ` to document WAVEFORMATEX
         * compare wFormatTags table on pg20 to current list
             0x0000 redefined "for development purposes" 
@@ -87,6 +87,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
     * implement spec details widget (shortcodes/spec_detail.html)
     * convert chunk reference page to a table
     * figure out wavref types (things like fourcc)
+    * create a system for noting that a field overlaps or duplicates data in another field, hopefully automatically create crosslinks between them.
     * WRID "sentinel" value mapping, special ints/strings for each field
     * create references page, similar setup to glossary page
     * add section of useful references? or just generalize specifications --> references? 
