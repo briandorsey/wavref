@@ -2727,14 +2727,14 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "The count in bytes of the extra size.The size in bytes of the extra information in the WAVE format header not including the size of the WAVEFORMATEX structure. (size of fields from `format_tag` through `extra_size` inclusive (all fields except `id`, `size` and the `extra_data`))"
+    "desc": "The count in bytes of the extra extensible data. The size in bytes of the extra information in the WAVE format header not including the size of the WAVEFORMATEX structure. (size of fields from `format_tag` through `extra_size` inclusive (all fields except `id`, `size` and the `extra_bytes`))"
   },
   {
-    "WRID": "WRID>RIFF-WAVE>fmt >extra_data",
+    "WRID": "WRID>RIFF-WAVE>fmt >extra_bytes",
     "sort_spec": null,
     "chunk": "fmt",
     "group": "W_F_UNKNOWN",
-    "name": "extra_data",
+    "name": "extra_bytes",
     "name_spec": null,
     "bytes": "size-18",
     "type": "u8[size-18]",
