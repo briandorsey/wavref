@@ -2587,7 +2587,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1991",
     "condition": null,
-    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
+    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of block_align bytes of data at a time, so the value of block_align can be used for buffer alignment. The block_align field should be equal to the following formula, rounded to the next whole number: channels x ( bits_per_sample / 8 )"
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >bits_per_sample",
@@ -2601,7 +2601,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1991",
     "condition": null,
-    "desc": "The wBitsPerSample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
+    "desc": "The bits_per_sample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. The block_align field should be equal to the following formula, rounded to the next whole number: channels x ( bits_per_sample / 8 )"
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >id",
@@ -2699,7 +2699,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
+    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of block_align bytes of data at a time, so the value of block_align can be used for buffer alignment. The block_align field should be equal to the following formula, rounded to the next whole number: channels x ( bits_per_sample / 8 )"
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >bits_per_sample",
@@ -2713,7 +2713,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "The wBitsPerSample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. The wBlockAlign field should be equal to the following formula, rounded to the next whole number: wChannels x ( wBitsPerSample / 8 )"
+    "desc": "The bits_per_sample field specifies the number of bits of data used to represent each sample of each channel. If there are multiple channels, the sample size is the same for each channel. The block_align field should be equal to the following formula, rounded to the next whole number: channels x ( bits_per_sample / 8 )"
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >extra_size",
@@ -2825,7 +2825,7 @@
     "type_spec": "DWORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value. ((nSamplesperSec / nSamplesPerBlock) * nBlockAlign)."
+    "desc": "The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value. ((samples_per_sec / samples_per_block) * block_align)."
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >block_align",
@@ -2839,7 +2839,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. \n\n|(nSamplesPerSec x Channels) | nBlockAlign |\n|-|-|\n|8k | 256|\n|11k | 256|\n|22k | 512|\n|44k | 1024|"
+    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of block_align bytes of data at a time, so the value of block_align can be used for buffer alignment. \n\n|(samples_per_sec x channels) | block_align |\n|-|-|\n|8k | 256|\n|11k | 256|\n|22k | 512|\n|44k | 1024|"
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >bits_per_sample",
@@ -2853,7 +2853,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "This is the number of bits per sample of ADPCM. Currently only 4 bits per\nsample is defined. Other values are reserved."
+    "desc": "This is the number of bits per sample of ADPCM. Currently only 4 bits per sample is defined. Other values are reserved."
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >extra_size",
@@ -2881,7 +2881,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "Count of number of samples per block. (((nBlockAlign - (7 * nChannels)) * 8) / (wBitsPerSample * nChannels)) + 2."
+    "desc": "Count of number of samples per block. (((block_align - (7 * channels)) * 8) / (bits_per_sample * channels)) + 2."
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >coefficient_count",
@@ -2993,7 +2993,7 @@
     "type_spec": "DWORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value. ((nSamplesperSec / nSamplesPerBlock) * nBlockAlign)."
+    "desc": "The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value. ((samples_per_sec / samples_per_block) * block_align)."
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >block_align",
@@ -3007,7 +3007,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. \n\n|wBitsPerSample | nBlockAlign |\n|-|-|\n|3 | (( N * 3 ) + 1 ) * 4 * nChannels |\n|4 | (N + 1) * 4 * nChannels |\n|| Where N = 0, 1, 2, 3 . . . |\n\nThe recommended block size for coding is 256 * <nChannels> bytes* min(1, (<nSamplesPerSecond>/ 11 kHz))  Smaller values cause the block header to become a more significant storage overhead. But, it is up to the implementation of the coding portion of the algorithm to decide the optimal value for <nBlockAlign> within the given constraints (see above). The decoding portion of the algorithm must be able to handle any valid block size. Playback software needs to process a multiple of <nBlockAlign> bytes of data at a time, so the value of <nBlockAlign> can be used for allocating buffers."
+    "desc": "The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. \n\n|bits_per_sample | block_align |\n|-|-|\n|3 | (( N * 3 ) + 1 ) * 4 * channels |\n|4 | (N + 1) * 4 * channels |\n|| where N = 0, 1, 2, 3 . . . |\n\nThe recommended block size for coding is 256 * <channels> bytes* min(1, (<samples_per_second>/ 11 kHz))  Smaller values cause the block header to become a more significant storage overhead. But, it is up to the implementation of the coding portion of the algorithm to decide the optimal value for <block_align> within the given constraints (see above). The decoding portion of the algorithm must be able to handle any valid block size. Playback software needs to process a multiple of <block_align> bytes of data at a time, so the value of <block_align> can be used for allocating buffers."
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >bits_per_sample",
@@ -3021,7 +3021,7 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "This is the number of bits per sample of data. DVI ADPCM supports 3 or 4\nbits per sample."
+    "desc": "This is the number of bits per sample of data. DVI ADPCM supports 3 or 4 bits per sample."
   },
   {
     "WRID": "WRID>RIFF-WAVE>fmt >extra_size",
@@ -3049,6 +3049,6 @@
     "type_spec": "WORD",
     "spec": "RIFF1994",
     "condition": null,
-    "desc": "Count of number of samples per block. \n(((nBlockAlign - (4 * nChannels)) * 8) / (wBitsPerSample * nChannels)) + 1."
+    "desc": "Count of number of samples per block. \n(((block_align - (4 * channels)) * 8) / (bits_per)sample * channels)) + 1."
   }
 ]
