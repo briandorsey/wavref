@@ -14,7 +14,7 @@ status = "DRAFT"
 
 TODO: overview
 
-> The “ fact” chunk is required if the waveform data is contained in a “ wavl” LIST chunk and for all compressed audio formats. The chunk is not required for PCM files using the “ data” chunk format.
+> The "fact" chunk is required if the waveform data is contained in a "wavl" LIST chunk and for all compressed audio formats. The chunk is not required for PCM files using the "data"  chunk format.
 >
 > {{ spec(ref="RIFF1991") }}
 

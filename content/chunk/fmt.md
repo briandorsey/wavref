@@ -26,6 +26,8 @@ This chunk is fiddly and it's one of two required chunks. The interpretation of 
 
 The first several fields are consistent, followed by format specific fields. The most common layout is `format_tag` = `0x0001` (`WAVE_FORMAT_PCM`). 
 
+Several formats are documented in detail below. Additional formats are documented in {{ spec(ref="RIFF1994") }}. I prioritiezed documenting formats currently in use, but I probably missed some. If run across files in a format not documented below, [please let me know](https://github.com/briandorsey/wavref/issues). 
+
 
 ## WAVE_FORMAT_PCM (0x0001)
 
@@ -41,9 +43,21 @@ All other `format_tags` should follow the following structure (known as `WAVEFOR
 
 [ADPCM](https://en.wikipedia.org/wiki/Adaptive_differential_pulse-code_modulation) is a lossy audio compression format which compresses to approximately 1/4 the size of raw PCM data. It was used in telephony and early consumer multimedia systems, and some more recent embedded devices because very little CPU time is needed to decode (compared to other lossy formats).
 
+This variation of ADPCM is also known as Microsoft ADPCM.
+
 The {{ spec(ref="RIFF1994") }} specification includes an algorithm for encoding and decoding ADPCM data.
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", group="W_F_ADPCM") }}
+
+## WAVE_FORMAT_IMA_ADPCM and WAVE_FORMAT_DVI_ADPCM (0x0011)
+
+[ADPCM](https://en.wikipedia.org/wiki/Adaptive_differential_pulse-code_modulation) is a lossy audio compression format which compresses to approximately 1/4 the size of raw PCM data. It was used in telephony and early consumer multimedia systems, and some more recent embedded devices because very little CPU time is needed to decode (compared to other lossy formats).
+
+This variation of ADPCM is also known as IMA ADPCM, or DVI ADPCM. It is documented in more detail in its own specification: [Recommended Practices for Enhancing Digital Audio Compatibility in Multimedia Systems](https://www.cs.columbia.edu/~hgs/audio/dvi/)
+
+The {{ spec(ref="RIFF1994") }} specification includes an algorithm for encoding and decoding DVI ADPCM data.
+
+{{ wrid_table(prefix="WRID>RIFF-WAVE>fmt ", group="W_F_DVI_ADPCM") }}
 
 ## WAVE Format Tags (Categories)
 
@@ -69,6 +83,7 @@ From {{ spec(ref="RIFF1991") }}, [Registered FOURCC Codes and WAVE Formats][msfo
 |	0x000A	|	WAVE_FORMAT_WMAVOICE9	|	Microsoft Corporation	|	Speech audio codec	|
 |	0x000B	|	WAVE_FORMAT_WMAVOICE10	|	Microsoft Corporation	|		|
 |	0x0010	|	WAVE_FORMAT_OKI_ADPCM	|	OKI	|		|
+|	0x0011	|	WAVE_FORMAT_IMA_ADPCM |	|	IMA ADPCM and the DVI ADPCM are identical. 	|
 |	0x0011	|	WAVE_FORMAT_DVI_ADPCM	|	Intel Corporation	|		|
 |	0x0012	|	WAVE_FORMAT_MEDIASPACE_ADPCM	|	Videologic	|		|
 |	0x0013	|	WAVE_FORMAT_SIERRA_ADPCM	|	Sierra Semiconductor Corp	|		|

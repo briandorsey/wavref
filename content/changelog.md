@@ -21,7 +21,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 # Releases
 
 * [Upcoming] - [release_date] - 
-    * [IMP] update `fmt ` to document WAVEFORMATEX tags: WAVE_FORMAT_UNKNOWN and WAVE_FORMAT_ADPCM.
+    * [IMP] update `fmt ` to document WAVEFORMATEX tags: WAVE_FORMAT_UNKNOWN, WAVE_FORMAT_ADPCM, and WAVE_FORMAT_DVI_ADPCM.
     * [IMP] add language and dialect codes from RIFF1994
     * [IMP] compare wFormatTags table on RIFF1994 pg20 to current list
     * [NEW] add RIFF1994:smpl
@@ -76,6 +76,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 ---- 
 
 * Future maybe
+    * categorize chunks by rarity. and/or tag with usage categories?
     * fix sidebar (cut off at bottom)
     * "Chunk reference" page should show LIST subchunks as well. 
     * chunk bext: 

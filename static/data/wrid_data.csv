@@ -241,3 +241,23 @@ They must appear in the following order.
 Note that if even only 1 coefficient set was used to encode the file then all
 coefficient sets are still included. More coefficients may be added by the
 encoding software, but the first 7 must always be the same."
+"WRID>RIFF-WAVE>fmt >id","","fmt","W_F_DVI_ADPCM","id","ckID","4","u8[4]","FOURCC","RIFF1994","id = ""fmt """,""
+"WRID>RIFF-WAVE>fmt >size","","fmt","W_F_DVI_ADPCM","size","ckSize","4","u32","DWORD","RIFF1994","",""
+"WRID>RIFF-WAVE>fmt >format_tag","","fmt","W_F_DVI_ADPCM","format_tag","wFormatTag","2","u16","WORD","RIFF1994"," = 0x0011","A number indicating the WAVE format category of the file. The content of the <format-specific-fields> portion of the ‘fmt’ chunk, and the interpretation of the waveform data, depend on this value. This must be set to WAVE_FORMAT_DVI_ADPCM."
+"WRID>RIFF-WAVE>fmt >channels","","fmt","W_F_DVI_ADPCM","channels","wChannels","2","u16","WORD","RIFF1994","","The number of channels represented in the waveform data, such as 1 for mono or 2 for stereo."
+"WRID>RIFF-WAVE>fmt >samples_per_sec","","fmt","W_F_DVI_ADPCM","samples_per_sec","dwSamplesPerSec","4","u32","DWORD","RIFF1994","","Sample rate of the WAVE file. This should be 8000, 11025, 22050 or 44100. Other sample rates are allowed."
+"WRID>RIFF-WAVE>fmt >avg_bytes_per_sec","","fmt","W_F_DVI_ADPCM","avg_bytes_per_sec","dwAvgBytesPerSec","4","u32","DWORD","RIFF1994","","The average number of bytes per second at which the waveform data should be transferred. Playback software can estimate the buffer size using this value. ((nSamplesperSec / nSamplesPerBlock) * nBlockAlign)."
+"WRID>RIFF-WAVE>fmt >block_align","","fmt","W_F_DVI_ADPCM","block_align","wBlockAlign","2","u16","WORD","RIFF1994","","The block alignment (in bytes) of the waveform data. Playback software needs to process a multiple of wBlockAlign bytes of data at a time, so the value of wBlockAlign can be used for buffer alignment. 
+
+|wBitsPerSample | nBlockAlign |
+|-|-|
+|3 | (( N * 3 ) + 1 ) * 4 * nChannels |
+|4 | (N + 1) * 4 * nChannels |
+|| Where N = 0, 1, 2, 3 . . . |
+
+The recommended block size for coding is 256 * <nChannels> bytes* min(1, (<nSamplesPerSecond>/ 11 kHz))  Smaller values cause the block header to become a more significant storage overhead. But, it is up to the implementation of the coding portion of the algorithm to decide the optimal value for <nBlockAlign> within the given constraints (see above). The decoding portion of the algorithm must be able to handle any valid block size. Playback software needs to process a multiple of <nBlockAlign> bytes of data at a time, so the value of <nBlockAlign> can be used for allocating buffers."
+"WRID>RIFF-WAVE>fmt >bits_per_sample","","fmt","W_F_DVI_ADPCM","bits_per_sample","wBitsPerSample","2","u16","WORD","RIFF1994","","This is the number of bits per sample of data. DVI ADPCM supports 3 or 4
+bits per sample."
+"WRID>RIFF-WAVE>fmt >extra_size","","fmt","W_F_DVI_ADPCM","extra_size","cbSize","2","u16","WORD","RIFF1994","","The size in bytes of the extended information after the WAVEFORMATEX structure. This should be 2."
+"WRID>RIFF-WAVE>fmt >samples_per_block","","fmt","W_F_DVI_ADPCM","samples_per_block","nSamplesPerBlock","2","u16","WORD","RIFF1994","","Count of number of samples per block. 
+(((nBlockAlign - (4 * nChannels)) * 8) / (wBitsPerSample * nChannels)) + 1."
