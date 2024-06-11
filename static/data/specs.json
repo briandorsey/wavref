@@ -37,7 +37,9 @@
     "title": "Broadcast Wave Format: Broadcast Extension",
     "publication_year": 1996,
     "authority": "European Broadcasting Union",
-    "urls": ["https://web.archive.org/web/20101031101749/http://www.ebu.ch/fr/technical/publications/userguides/bwf_user_guide.php", "https://en.wikipedia.org/wiki/Broadcast_Wave_Format"],
+    "urls": ["https://web.archive.org/web/20101031101749/http://www.ebu.ch/fr/technical/publications/userguides/bwf_user_guide.php", 
+      "https://en.wikipedia.org/wiki/Broadcast_Wave_Format", 
+      "https://tech.ebu.ch/docs/tech/tech3285.pdf"],
     "publication_date": "1996",
     "version": "",
     "see": ""

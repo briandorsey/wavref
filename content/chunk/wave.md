@@ -36,6 +36,8 @@ The only chunks you can expect to be in every valid WAVE file are [`fmt `](@/chu
 * [`LIST`-`wavl`](@/chunk/wavl.md) - A LIST of audio and/or silence chunks: data, slnt 
 * [`JUNK`](@/chunk/junk.md) - file padding (no content)
 
+See the [chunk reference](/chunk) for a list of additional documented chunks.
+
 ## Learning References
 
 * [Audio File Format Specifications](https://www.mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html) by Prof. Peter Kabal

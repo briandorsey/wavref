@@ -21,6 +21,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 # Releases
 
 * Upcoming - release_date - 
+    * [NEW] add BEXT1996:bext 
 * 0.2.0 - 2024-06-10 - Add RIFF1994 chunks.
     * [IMP] update `fmt ` to document WAVEFORMATEX tags: WAVE_FORMAT_UNKNOWN, WAVE_FORMAT_ADPCM, and WAVE_FORMAT_DVI_ADPCM.
     * [IMP] add language and dialect codes from RIFF1994
@@ -80,7 +81,6 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
     * categorize chunks by rarity. and/or tag with usage categories?
     * fix sidebar (cut off at bottom)
     * "Chunk reference" page should show LIST subchunks as well. 
-    * chunk bext: 
     * implement spec details widget (shortcodes/spec_detail.html)
     * convert chunk reference page to a table
     * write chunk reference info
