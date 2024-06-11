@@ -20,7 +20,8 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 
 # Releases
 
-* [Upcoming] - [release_date] - 
+* Upcoming - release_date - 
+* 0.2.0 - 2024-06-10 - Add RIFF1994 chunks.
     * [IMP] update `fmt ` to document WAVEFORMATEX tags: WAVE_FORMAT_UNKNOWN, WAVE_FORMAT_ADPCM, and WAVE_FORMAT_DVI_ADPCM.
     * [IMP] add language and dialect codes from RIFF1994
     * [IMP] compare wFormatTags table on RIFF1994 pg20 to current list
@@ -31,7 +32,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
     * [NEW] add RIFF1994:inst
     * [NEW] 2 new INFO chunks from RIFF1994: ISMP, IDIT
     * [FIX] PAD is actually from RIFF1994
-* [0.1.4] - 2024-03-29 - Finish RIFF1991 chunks
+* 0.1.4 - 2024-03-29 - Finish RIFF1991 chunks
     * show more of the WRID prefix on subchunks
     * add RIFF1991:LIST-wavl
     * add RIFF1991:slnt
@@ -48,7 +49,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
     * add more WAV Formats from MS web page and mmreg.h
     * move introduction.md content back to root index and create manual link to it as "Introduction" in sidebar. 
     * fix broken tables in Safari. 
-* [0.1.0] - 2013-01-14 - Initial release, base structure and TODOs
+* 0.1.0 - 2013-01-14 - Initial release, base structure and TODOs
     * setup build and deployment
     * wrid_data.csv refactor: literal --> condition
     * added WAVE Format Categories from {{ spec=(ref"RIFF1991") }}

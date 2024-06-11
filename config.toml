@@ -24,7 +24,7 @@ highlight_code = false
 [extra]
 # Put all your custom variables here
 
-release = "0.1.4"
+release = "0.2.0"
 
 # easydocs theme
 easydocs_heading_threshold = 5
