@@ -22,6 +22,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 
 * Upcoming - release_date - 
     * [NEW] add BEXT1996:bext 
+    * [FIX] correct md5 chunk name in reference data
 * 0.2.0 - 2024-06-10 - Add RIFF1994 chunks.
     * [IMP] update `fmt ` to document WAVEFORMATEX tags: WAVE_FORMAT_UNKNOWN, WAVE_FORMAT_ADPCM, and WAVE_FORMAT_DVI_ADPCM.
     * [IMP] add language and dialect codes from RIFF1994
