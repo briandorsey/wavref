@@ -1962,7 +1962,7 @@
   {
     "WRID": "WRID>RIFF-WAVE>MD5 >id",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>1.1",
-    "chunk": "file",
+    "chunk": "md5",
     "group": null,
     "name": "id",
     "name_spec": null,
@@ -1976,7 +1976,7 @@
   {
     "WRID": "WRID>RIFF-WAVE>MD5 >size",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>1.2",
-    "chunk": "file",
+    "chunk": "md5",
     "group": null,
     "name": "size",
     "name_spec": null,
@@ -1990,7 +1990,7 @@
   {
     "WRID": "WRID>RIFF-WAVE>MD5 >name",
     "sort_spec": "WRID>RIFF-WAVE>LIST-INFO>1.3",
-    "chunk": "file",
+    "chunk": "md5",
     "group": null,
     "name": "md5",
     "name_spec": null,
