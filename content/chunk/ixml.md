@@ -1,12 +1,10 @@
 +++
-draft = true
 title = "iXML"
-weight = 100
-
-description = "TODO: description of iXML"
+weight = 71
+description = "Embedded metadata in production media files."
 
 [taxonomies]
-spec=[]
+spec=["IXML"]
 
 [extra]
 status = "DRAFT"
@@ -14,17 +12,15 @@ status = "DRAFT"
 
 # WRID>RIFF-WAVE>iXML
 
-> DRAFT!
-
 TODO: overview
 
 {{ wrid_table(prefix="WRID>RIFF-WAVE>iXML") }}
 
 ## Learning References
 
-* http://www.gallery.co.uk/ixml/iXML-LineUp.pdf
-
+* [The iXML specification](http://www.gallery.co.uk/ixml/)
 
 ## Specification
 
-* http://www.gallery.co.uk/ixml/
+{{ chunk_specs() }}
+

@@ -23,6 +23,7 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 * Upcoming - release_date - 
     * [NEW] add BEXT1996:bext 
     * [FIX] correct md5 chunk name in reference data
+    * [NEW] add IXML:iXML inital spec info from 1.0
 * 0.2.0 - 2024-06-10 - Add RIFF1994 chunks.
     * [IMP] update `fmt ` to document WAVEFORMATEX tags: WAVE_FORMAT_UNKNOWN, WAVE_FORMAT_ADPCM, and WAVE_FORMAT_DVI_ADPCM.
     * [IMP] add language and dialect codes from RIFF1994
@@ -79,6 +80,9 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 ---- 
 
 * Future maybe
+    * chunk iXML: [iXML spec](http://www.gallery.co.uk/ixml/)
+    * SOON: convert spec pages to an aggregate page for all versions of a spec, removing dates from spec IDs. See IXML as an example. 
+    * all specs: add links to loc.gov information. Super useful for reference. ex: https://www.loc.gov/preservation/digital/formats/fdd/fdd000001.shtml
     * categorize chunks by rarity. and/or tag with usage categories?
     * fix sidebar (cut off at bottom)
     * "Chunk reference" page should show LIST subchunks as well. 
@@ -135,13 +139,17 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 Broadcast WAVE Files](https://www.digitizationguidelines.gov/audio-visual/documents/BWF_Embed_Guideline_v3_2021.pdf)
     * add reference to archive.org verson of sonicspot WAVE overview because it's referenced so often: [sonicspot wavefiles](https://web.archive.org/web/20141226210234/http://www.sonicspot.com/guide/wavefiles.html)
     * reference: a nice WAVE overview with formulas for calculating `fmt` chunk values: [The Dr. Agon WAV File Format Page](http://www.dragonwins.com/domains/getteched/wav/index.htm)
-    * chunk iXML: [iXML spec](http://www.gallery.co.uk/ixml/)
     * chunk XMP: [XMP specification](https://www.adobe.com/devnet/xmp.html)
     * chunk UMID: [UMID](https://en.wikipedia.org/wiki/Unique_Material_Identifier)
     * chunk CART: [CART website](http://www.cartchunk.org/) "The Radio Industry's Traffic Data WAVE File Standard. Now formally ratified as AES46-2002!"
+    * chunk PEAK: local copy of https://web.archive.org/web/20081201144551/http://music.calarts.edu/~tre/PeakChunk.html
+        * See also: https://music-dsp.music.columbia.narkive.com/eDOqPIml/the-peak-chunk-in-aiff-and-wav-files/
+    * chunk levl: [EBU 3285 supplement 3](https://tech.ebu.ch/docs/tech/tech3285s3.pdf)
+    * look through docs of uttori and document any chunks we're missing. https://github.com/uttori/uttori-audio-wave?tab=readme-ov-file
     * chunk ID3: ID3.org seems to be offline. Alternate spec locations: [Mutagen Spec collection](https://mutagen-specs.readthedocs.io/en/latest/), [fdd useful references](https://www.loc.gov/preservation/digital/formats/fdd/fdd000106.shtml#useful)
     * update sidebar with vertical line (similar to Zola docs)
     * chunks: [Audio Definition Model](https://www.bbc.co.uk/rd/publications/audio-definition-model-software)
         * [EBU ADM Guidelines Introduction](https://adm.ebu.io/index.html)
+    * ambisonic b-format WAVFORMATEX: http://dream.cs.bath.ac.uk/researchdev/wave-ex/bformat.html
     * add live fuzzy match filtering to the long WRID table
     * chunk atem: appears to contain sampler related JSON

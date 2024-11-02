@@ -55,6 +55,45 @@
     "version": "2.0",
     "see": ""
   },
+  "IXML" : 
+  {
+    "id": "IXML",
+    "title": "Standard for embedded metadata in production media files",
+    "version": "3",
+    "publication_year": 2004,
+    "versions" : [
+      {
+        "id": "IXML2004",
+        "title": "Standard for embedded metadata in audio files",
+        "publication_year": 2004,
+        "authority": "Gallery, UK",
+        "urls": ["http://web.archive.org/web/20040924101734/http://www.ixml.info/"],
+        "publication_date": "2004-10-09",
+        "version": "1",
+        "see": "http://web.archive.org/web/20040924101734/http://www.ixml.info/"
+      },
+      {
+        "id": "IXML2004",
+        "title": "Standard for embedded metadata in production media files",
+        "publication_year": 2016,
+        "authority": "Gallery, UK",
+        "urls": ["http://web.archive.org/web/20170411113551/http://www.ixml.info/"],
+        "publication_date": "2016-07-11",
+        "version": "2",
+        "see": ""
+      },
+      {
+        "id": "IXML2021",
+        "title": "Long-form file format for the international exchange of audio programme materials with metadata",
+        "publication_year": 2021,
+        "authority": "Gallery, UK",
+        "urls": ["http://www.gallery.co.uk/ixml/", "http://web.archive.org/web/20210607103913/http://www.ixml.info/"],
+        "publication_date": "2021-04-18",
+        "version": "3",
+        "see": ""
+      }
+    ]
+  },
   "UNKNOWN" : 
   {
     "id": "UNKNOWN",
