@@ -20,8 +20,4 @@
 {% endif %}
 
 <p>TODO: implement spec_detail widget </p>
-<p>
-{%- for key, value in spec %} 
-|&nbsp;&nbsp;&nbsp;&nbsp;<b>{{key}}</b>: {{value}}<br/>
-{%- endfor %}
-</p>
+<pre>{{ spec| json_encode(pretty=true) | safe }}</pre>

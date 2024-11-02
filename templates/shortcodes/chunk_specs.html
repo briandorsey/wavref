@@ -7,8 +7,7 @@
 {%- set url = get_url(path="@/spec/" ~ url_ref ~ ".md") -%}
 <li><a href="{{url}}" class="spec_ref">[{{ ref | upper }}]</a> 
 {{ spec.title }}
-{{ spec.version }}
-{%- if spec.publication_year %}({{ spec.publication_year }}).{% endif %}
+{%- if spec.publication_year %} ({{ spec.publication_year }}).{% endif %}
 {%- if spec.see %} See {{spec.see}}.{% endif %}
 </li>
 {%- endfor %}
