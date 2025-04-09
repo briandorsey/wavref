@@ -94,6 +94,17 @@
       }
     ]
   },
+  "ASWG-G006" : 
+  {
+    "id": "ASWG-G006",
+    "title": "iXML-Extension from Sony PlayStation Studios' Audio Standards Working Group",
+    "publication_year": 2021,
+    "authority": "Sony ASWG",
+    "urls": ["https://github.com/Sony-ASWG/iXML-Extension/"],
+    "publication_date": "2021-11",
+    "version": "1.0",
+    "see": ""
+  },
   "UNKNOWN" : 
   {
     "id": "UNKNOWN",
