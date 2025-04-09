@@ -80,11 +80,14 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
 ---- 
 
 * Future maybe
-    * chunk iXML: [iXML spec](http://www.gallery.co.uk/ixml/)
+    * try out newish Zola support for definition lists
+      * https://github.com/pulldown-cmark/pulldown-cmark/pull/915/files#diff-312ca12521ecd11839cb8eba24de011c463162e4c7f63ac34b2978c68a701f61
+      * https://github.com/getzola/zola/pull/2763
     * SOON: convert spec pages to an aggregate page for all versions of a spec, removing dates from spec IDs. See IXML as an example. 
     * all specs: add links to loc.gov information. Super useful for reference. ex: https://www.loc.gov/preservation/digital/formats/fdd/fdd000001.shtml
     * categorize chunks by rarity. and/or tag with usage categories?
     * fix sidebar (cut off at bottom)
+    * fix wide right margin on mobile (narrow viewport)
     * "Chunk reference" page should show LIST subchunks as well. 
     * implement spec details widget (shortcodes/spec_detail.html)
     * convert chunk reference page to a table
