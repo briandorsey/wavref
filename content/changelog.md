@@ -117,12 +117,12 @@ Annotations: NEW, IMProved, FIX, DEPrecated, REMoved, SECurity
     * write WAV overview - wav_general.md
     * write initial glossary
     * write initial doc about metadata
-    * chunk: add one XML based chunk, probably iXML. Needed before release to verify WRID data model. 
     * write WRID spec and overview
         * current WRID assumes chunks can only ever have one kind of parent... is this true?
         * how to refer to the chunk itself? Include trailing `>` to make ids with spaces clearer? 
         * field names: use words from spec, but lowered_and_underscores
         * XML chunks? Use simplified XPath? `/Path/To/Node[idx]`
+          * generally use different separator between chunks vs within a chunk? Tried using slashes just in iXML and it felt weirdly inconsistent
         * fix table scrolling under nav bar
         * ok for chunks to repeat for WRID, since the goal is to reliably map field names to which chunk they're stored in. 
             * question: if this is true... do we actually need the full chunk path? Or can we assume chunk ids are unique? Would shorten WRIDs a lot if we go with that.
